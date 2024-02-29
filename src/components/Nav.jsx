@@ -19,7 +19,7 @@ const Nav = () => {
   return (
     <div className='w-full fixed top-0 left-0 z-10'>
       <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
-            <Link to = '/' className='px-10'>
+            <Link to = '/' className='block  w-[120px] md:w-[260px]'>
                 <img 
                 src = {icono}
                 alt = "Logo"
