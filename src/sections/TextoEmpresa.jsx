@@ -1,5 +1,5 @@
 import React from 'react'
-import image1 from "../assets/images/01.jpg"
+import image1 from "../assets/images/03.jpg"
 
 const TextoEmpresa = () => {
   return (
@@ -15,7 +15,7 @@ const TextoEmpresa = () => {
             <h1 className={` py-2 text-3xl max-md:text-[32px] font-bold  leading-8 text-first-green`}>PASTECH</h1>
             <h1 className={` font-semibold  leading-8 text-3xl py-2  max-md:text-[32px] text-gray-500`}>Pastech es una empresa dedicada al desarrollo y la implementación de tecnología para la gestión eficiente
             del pasto en establecimientos ganaderos</h1>
-            <p className = {` py-9 font-normal text-2xl `}>Nuestra actividad se centra en facilitar la recolección de
+            <p className = {` py-9 font-normal text-xl `}>Nuestra actividad se centra en facilitar la recolección de
             información mediante dispositivos electrónicos que arrojan datos precisos para la toma de decisiones. Nos
             especializamos en la venta de dispositivos electrónicos de medición y ofrecemos servicios de monitoreo y
             gestión del pasto.</p>
