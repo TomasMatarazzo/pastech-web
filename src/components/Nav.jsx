@@ -3,7 +3,7 @@ import icono from "../assets/icons/icono2.svg"
 
 const Nav = () => {
   return (
-    <header className = "fixed padding-x spx-1 py-4 z-10 w-full bg-white">
+    <header className = "fixed padding-x spx-1 py-4 z-10 w-screen bg-white">
         <nav className = "flex justify-between items-center max-container">
             <a href = '/'>
                 <img 
