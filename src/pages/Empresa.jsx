@@ -7,6 +7,7 @@ import image1 from '../assets/images/circuloFer.png'
 import image2 from '../assets/images/circuloAle.png'
 import image3 from '../assets/images/circuloJuan.png'
 import {Footer} from '../sections'
+import TextoEmpresa from '../sections/TextoEmpresa'
 
 
 const Empresa
@@ -14,8 +15,7 @@ const Empresa
   return (
     <div>
     <section className="xl:padding-1 pt-16 max-md:pt-[120px]">
-      {/* <Landing></Landing> */}
-      {/* <Button></Button> */}
+      <TextoEmpresa></TextoEmpresa>
     </section>
     <section>
       <IntegranteEmpresa nombre = {empresa[0].nombre}
