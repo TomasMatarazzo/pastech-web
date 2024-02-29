@@ -13,7 +13,7 @@ import image4 from "./assets/images/04.jpg"
 const App = () => (
   <main className="relative py-0">
     <Nav></Nav>
-    <section className="xl:padding-1">
+    <section className="xl:padding-1 max-md:pt-[90px]">
       <Landing></Landing>
       {/* <Button></Button> */}
     </section>
