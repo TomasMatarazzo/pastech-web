@@ -14,7 +14,7 @@ const Empresa
  = () => {
   return (
     <div>
-    <section className="xl:padding-1 pt-16 max-md:pt-[120px]">
+    <section className="xl:padding-1 pt-16 max-md:pt-[80px]">
       <TextoEmpresa></TextoEmpresa>
     </section>
     <section>

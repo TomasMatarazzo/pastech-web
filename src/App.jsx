@@ -16,14 +16,14 @@ import Mainpage from "./pages/Mainpage";
 const App = () => {
   return (
     <main className="relative py-0">
-      <Nav></Nav>
-      <Routes>
-        <Route path='/' element={<Mainpage></Mainpage>}></Route>
-        <Route path = '/empresa' element={<Empresa></Empresa>}></Route>
-      </Routes>
-      <section className="py-4 bg-[#394140]">
-        <Footer></Footer>
-      </section>
+        <Nav></Nav>
+        <Routes>
+          <Route path='/' element={<Mainpage></Mainpage>}></Route>
+          <Route path = '/empresa' element={<Empresa></Empresa>}></Route>
+        </Routes>
+        <section className="bg-[#394140]">
+          <Footer></Footer>
+        </section>
     </main>
   );
 };

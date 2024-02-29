@@ -20,7 +20,7 @@ const SectionCircular2 = ({nombre,imagen,descripcion,boton,bg = "white"}) => {
         "white":" text-[#626262] "
     }
   return (
-    <section className="  max-md:px-0 pb-[60px] px-[100px] bg-[#f1f4f6] ">
+    <section className="  max-md:px-0 pb-[0px] px-[100px] bg-[#f1f4f6] ">
         <section className="flex relative max-md:flex-row rounded-[2%]">
             <div className = {`font-extralight ${backgroudn[bg]} max-md:flex-col-reverse max-md:items-center max-md:align-middle items-center h-full w-full max-md:w-full px-10 flex flex-row py-16 max-md:py-10 bg-[#02936e] rounded-lg justify-evenly`}>
                 <div className='w-1/3  flex flex-col justify-center max-md:items-center max-md:text-center max-md:w-[300px]'>
