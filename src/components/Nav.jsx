@@ -36,7 +36,7 @@ const Nav = () => {
                         </div>
             </div>
 
-      <ul className={`md:flex gap-8 md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-[5.5rem] ':'top-[-490px]'}`}>
+      <ul className={`md:flex gap-8 md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-200 ease-in ${open ? 'top-[5.5rem] ':'top-[-490px]'}`}>
         {
           Links.map((link)=>(
             <li key={link.name} className='font-montserrat py-2 md:py-0 leading-normal text-[16px] text-slate-gray cursor-pointer hover:text-[#02936e]'>
