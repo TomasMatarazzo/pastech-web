@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import {hamburger} from '../assets/icons'
 import icono from "../assets/icons/icono2.svg"
 
@@ -15,8 +16,8 @@ const Nav = () => {
                 ></img>
             </a>
             <ul className=' flex-1 flex justify-end items-center gap-6 max-lg:hidden'>
-                <li className = 'font-montserrat leading-normal text-[16px] text-slate-gray cursor-pointer hover:text-[#02936e]'>Home</li>
-                 <li className = 'font-montserrat leading-normal text-[16px] text-slate-gray cursor-pointer hover:text-[#02936e]' >Volcan</li>
+                <li className = 'font-montserrat leading-normal text-[16px] text-slate-gray cursor-pointer hover:text-[#02936e]'><Link to = '/'>Home</Link></li>
+                 <li className = 'font-montserrat leading-normal text-[16px] text-slate-gray cursor-pointer hover:text-[#02936e]' ><Link to = '/empresa'>Empresa</Link></li>
                  <li className = 'font-montserrat leading-normal text-[16px] text-slate-gray cursor-pointer hover:text-[#02936e]'   >Donde comprar</li>
                  <li className = 'font-montserrat leading-normal text-[16px] text-slate-gray cursor-pointer hover:text-[#02936e]' >Asistencia</li>
                  <li className = 'font-montserrat leading-normal text-[16px] text-slate-gray cursor-pointer hover:text-[#02936e]' >Contactos </li>
