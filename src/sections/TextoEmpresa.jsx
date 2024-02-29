@@ -12,7 +12,7 @@ const TextoEmpresa = () => {
                         height = {674}
                     />
         <div className='w-[40%] flex flex-col justify-center max-md:items-center max-md:text-center max-md:w-[300px]'>
-            <h1 className={` py-2 text-3xl max-md:text-[32px] font-bold  leading-8 text-first-green`}>PASTECH</h1>
+            <h1 className={` py-2 text-4xl max-md:text-[32px] font-bold  leading-8 text-first-green`}>PASTECH</h1>
             <h1 className={` font-semibold  leading-8 text-3xl py-2  max-md:text-[32px] text-gray-500`}>Pastech es una empresa dedicada al desarrollo y la implementación de tecnología para la gestión eficiente
             del pasto en establecimientos ganaderos</h1>
             <p className = {` py-9 font-normal text-xl `}>Nuestra actividad se centra en facilitar la recolección de
