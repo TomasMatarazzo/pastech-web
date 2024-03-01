@@ -29,15 +29,15 @@ const SectionCircular = ({nombre,imagen,descripcion,boton,bg = "white"}) => {
         <section className="flex relative max-md:flex-col rounded-[2%] ">
             <div className = {`font-extralight ${backgroudn[bg]}  h-full w-full max-md:flex-col max-md:items-center max-md:align-middle px-10 flex flex-row py-16 bg-[#02936e] rounded-lg justify-evenly`}>
                 <img 
-                    className = {`w-[475px] max-md:w-[300px] max-md:h-[300px] max-md:mb-2 bg-center bg-cover duration-500 h-[475px] rounded-[50%] border-[6px] ${button[bg]}`}
+                    className = {`w-[700px] clip-circle max-md:w-[300px] max-md:h-[300px] max-md:mb-2 bg-center bg-cover duration-500 h-[475px] rounded-[50%] ${button[bg]}`}
                         src = {imagen}
                         width = {1000}
                         height = {674}
                     />
                 <div className='w-1/3 flex flex-col justify-center max-md:items-center max-md:text-center max-md:w-[300px]'>
-                    <h1 className={`${text1[bg]} py-2 text-4xl max-md:text-[32px]  leading-8 `}>{nombre}</h1>
-                    <p className = {` ${text2[bg]} py-9 font-normal`}>{descripcion}</p>
-                    <Button text = {boton} color = {bg === "green"?"white":"green"}></Button>
+                    <h1 className={`${text1[bg]} font-normal py-2 text-[60px] leading-[50px] max-md:text-[32px]  leading-8 `}>{nombre}</h1>
+                    <p className = {` ${text2[bg]} py-9 font-normal text-xl`}>{descripcion}</p>
+                    <Button text = {"+ INFO"} color = {bg === "green"?"white":"green"}></Button>
                 </div>
 
             </div>

@@ -3,6 +3,7 @@ import Button from './Button';
 import hamburger from '../assets/icons/hamburger.svg'
 import icono from '../assets/icons/icono2.svg'
 import { Link } from 'react-router-dom';
+import wpp from '../assets/images/wpp2.svg'
 
 const Nav = () => {
     let Links =[
@@ -36,7 +37,6 @@ const Nav = () => {
                                 height={25}/>
                         </div>
             </div>
-
       <ul className={`md:flex gap-8 md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-200 ease-in ${open ? 'top-[5.5rem] ':'top-[-490px]'}`}>
         {
           Links.map((link)=>(

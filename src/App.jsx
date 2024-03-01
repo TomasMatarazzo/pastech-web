@@ -10,6 +10,7 @@ import IntegranteEmpresa2 from "./sections/IntegranteEmpresa2";
 import { Route , Routes} from "react-router-dom";
 import Empresa from "./pages/Empresa";
 import Mainpage from "./pages/Mainpage";
+import wpp from "./assets/images/wpp2.svg"
 
 
 
@@ -24,6 +25,16 @@ const App = () => {
         <section className="bg-[#394140]">
           <Footer></Footer>
         </section>
+        <div className='text-3xl fixed bottom-0 right-0'>
+                <div className = "">
+                <a href = "https://wa.me/5492235270021?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target = "_blank"> 
+                            <img src ={wpp}
+                                alt = "Whatsapp"
+                                width={90}
+                                height={90}/>
+                </a>
+                </div>
+        </div>
     </main>
   );
 };

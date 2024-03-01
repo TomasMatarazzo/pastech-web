@@ -1,14 +1,14 @@
 const productos = [
     {
         nombre:"PASTUROMETRO",
-        descripcion:"Ofrecemos cocinas, caracterizadas por su durabilidad, máxima potencia y seguridad, con las cuales podrás elaborar los platos más deliciosos a lo largo de los años, de generación en generación.",
+        descripcion:"Pasturometro electrónico con mediciones georeferenciadas",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros cocinas"
     
     },
     {
         nombre:"PASTECH SATELITAL",
-        descripcion:"Nuestros calefactores son de bajo consumo y el calor se distribuye de manera óptima. Te vas a olvidar del frío, disfrutando de la calidez en todo el ambiente.",
+        descripcion:"Mediciones automáticas con satélites",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros calefactores"
     },
@@ -53,7 +53,7 @@ const empresa = [
 ]
 
 const productosLinks = [
-    'Cocinas',"Hornos y Anafes", "Calefactores","Calefones","Termotanques"
+    'Pasturometro',"Pastech Satelital", "Pastech Dron","Servicios"
 ]
 
 export { productos,productosLinks,empresa}

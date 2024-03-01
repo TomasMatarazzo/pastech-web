@@ -54,9 +54,7 @@ const Landing = () => {
       <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
         <SlArrowRight onClick={decreaseIndex} size={30} />
       </div>
-      <div className = "max-md:left-0 max-md:text-[30px] max-md:leading-[30px] max-md:left-[20px] absolute top-2/3 left-[823px] text-[#fff] font-[Lato] z-5 min-w-64 max-w-64 whitespace-normal text-[70px] leading-[70px] opacity-1 font-extrabold cursor-pointer transition-none ease">{slides[index].texto}</div>
-      <div className=" max-md:hidden z-6 left-[823px] bg-green-600 absolute top-[85%] visible text-left leading-5 border-0 m-0 p-0 font-light text-base whitespace-nowrap min-h-[0.4rem] min-w-[400px] max-h-3 max-w-[325px] opacity-100 z-5">
-      </div>
+        <div className = "absolute top-2/3 left-[823px] border-solid border-b-8 border-t-green text-[#fff] font-[Lato] z-5 min-w-64 max-w-min whitespace-normal text-[70px] leading-[70px] opacity-1 font-extrabold cursor-pointer transition-none ease">{slides[index].texto}</div>
     </section>
   )
 }

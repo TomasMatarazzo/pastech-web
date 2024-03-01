@@ -31,6 +31,7 @@ const Mainpage = () => {
                 imagen={image2}
                 boton = {productos[1].boton}
                 bg = "green"
+                botonColor={"white"}
       ></SectionCircular2>
     </section>
     <SectionCircular
