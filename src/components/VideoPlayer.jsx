@@ -12,7 +12,7 @@ const VideoPlayer = () => {
 //         <h2></h2>
 //         <video src="youtu.be/MLeIBFYY6UY" controls="false"></video>
 //    </div>
-    <div className='w-[60%] max-md:w-[375px] max-md:pb-8 max-md:p-[0] p-16'>
+    <div className='w-[60%] max-md:w-[100%] max-md:pb-8 max-md:p-[0] p-16'>
         <video id = "vid" src={pasto}  loop="true" autoplay="autoplay" muted  playsInline controls />
    </div>
   )
