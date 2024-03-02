@@ -13,7 +13,7 @@ const VideoPlayer = () => {
       <ReactPlayer
         url="https://player.vimeo.com/video/918543074?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
         frameborder="0" controls loop autoplay volume muted playing ={true}
-        width={800}
+        width={750}
         height={600}
       />
     </div>
