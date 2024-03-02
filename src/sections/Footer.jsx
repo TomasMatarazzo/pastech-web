@@ -8,7 +8,7 @@ const Footer = () => {
       <ul className=" flex flex-col justify-start items-start w-1/3">
         <h1 className="text-white text-2xl font-normal py-3">Pastech</h1>
         <Link to = '/'>
-            <li key = {1} className="py-0 my-2 text-lg font-thin text-[rgb(135,147,145)] hover:text-white hover:border-white cursor-pointer border-b-2 border-transparent">Home</li>
+            <li key = {1} className="py-0 my-2 text-lg font-thin text-[rgb(135,147,145)] hover:text-white hover:border-white cursor-pointer border-b-2 border-transparent">Inicio</li>
         </Link>
         <Link to = '/empresa'>
             <li key = {2} className="py-0 my-2 text-lg font-thin text-[rgb(135,147,145)] hover:text-white hover:border-white cursor-pointer border-b-2 border-transparent">Empresa</li>

@@ -27,7 +27,7 @@ const App = () => {
         </section>
         <div className='text-3xl fixed bottom-0 right-0'>
                 <div className = "">
-                <a href = "https://wa.me/5492235270021?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target = "_blank"> 
+                <a href = "https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target = "_blank"> 
                             <img src ={wpp}
                                 alt = "Whatsapp"
                                 width={90}
