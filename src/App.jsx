@@ -1,16 +1,10 @@
 import { Nav } from "./components";
 import { Footer } from "./sections";
-import Landing from "./sections/Landing";
-import { empresa } from "./assets/constants/constants";
-import image1 from "./assets/images/circuloFer.png"
-import image2 from "./assets/images/circuloAle.png"
-import image3 from "./assets/images/circuloJuan.png"
-import IntegranteEmpresa from "./sections/IntegranteEmpresa";
-import IntegranteEmpresa2 from "./sections/IntegranteEmpresa2";
 import { Route , Routes} from "react-router-dom";
 import Empresa from "./pages/Empresa";
 import Mainpage from "./pages/Mainpage";
 import wpp from "./assets/images/wpp2.svg"
+import Contacto from "./pages/Contacto";
 
 
 
@@ -21,6 +15,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Mainpage></Mainpage>}></Route>
           <Route path = '/empresa' element={<Empresa></Empresa>}></Route>
+          <Route path = '/contacto' element={<Contacto></Contacto>}></Route>
         </Routes>
         <section className="bg-[#394140]">
           <Footer></Footer>

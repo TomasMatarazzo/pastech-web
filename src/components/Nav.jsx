@@ -8,11 +8,11 @@ import wpp from '../assets/images/wpp2.svg'
 const Nav = () => {
     let Links =[
       {name:"Inicio",link:"/"},
-      {name:"Empresa",link:"/empresa"},
       {name:"Productos",link:"/"},
       {name:"Servicios",link:"/"},
-      {name:"Donde comprar",link:"/"},
-      {name:"Contacto",link:"/"},
+      {name:"Como comprar",link:"/"},
+      {name:"Empresa",link:"/empresa"},
+      {name:"Contacto",link:"/contacto"},
     ];
     let [open,setOpen]=useState(false);
 

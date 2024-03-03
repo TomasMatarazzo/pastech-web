@@ -14,36 +14,36 @@ const Empresa
  = () => {
   return (
     <div>
-    <section className="xl:padding-1 pt-16 max-md:pt-[80px]">
-      <TextoEmpresa></TextoEmpresa>
-    </section>
-    <section>
-      <IntegranteEmpresa nombre = {empresa[0].nombre}
-                descripcion={empresa[0].descripcion}
-                imagen={image1}
-                titulo = {empresa[0].titulo}
-                boton = {empresa[0].boton}
-                bg = "grey"
-      ></IntegranteEmpresa>
-    </section>
-    <section>
-      <IntegranteEmpresa2 nombre = {empresa[1].nombre}
-                descripcion={empresa[1].descripcion}
-                imagen={image2}
-                boton = {empresa[1].boton}
-                titulo = {empresa[1].titulo}
-                bg = "green"
-      ></IntegranteEmpresa2>
-    </section>
-    <section>
-      <IntegranteEmpresa nombre = {empresa[2].nombre}
-                descripcion={empresa[2].descripcion}
-                imagen={image3}
-                boton = {empresa[2].boton}
-                titulo = {empresa[2].titulo}
-                bg = "grey"
-      ></IntegranteEmpresa>
-    </section>
+      <section className="xl:padding-1 pt-16 max-md:pt-[80px]">
+        <TextoEmpresa></TextoEmpresa>
+      </section>
+      <section>
+        <IntegranteEmpresa nombre = {empresa[0].nombre}
+                  descripcion={empresa[0].descripcion}
+                  imagen={image1}
+                  titulo = {empresa[0].titulo}
+                  boton = {empresa[0].boton}
+                  bg = "grey"
+        ></IntegranteEmpresa>
+      </section>
+      <section>
+        <IntegranteEmpresa2 nombre = {empresa[1].nombre}
+                  descripcion={empresa[1].descripcion}
+                  imagen={image2}
+                  boton = {empresa[1].boton}
+                  titulo = {empresa[1].titulo}
+                  bg = "green"
+        ></IntegranteEmpresa2>
+      </section>
+      <section>
+        <IntegranteEmpresa nombre = {empresa[2].nombre}
+                  descripcion={empresa[2].descripcion}
+                  imagen={image3}
+                  boton = {empresa[2].boton}
+                  titulo = {empresa[2].titulo}
+                  bg = "grey"
+        ></IntegranteEmpresa>
+      </section>
     </div>
   )
 }
