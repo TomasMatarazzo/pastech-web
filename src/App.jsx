@@ -25,8 +25,8 @@ const App = () => {
                 <a href = "https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target = "_blank"> 
                             <img src ={wpp}
                                 alt = "Whatsapp"
-                                width={90}
-                                height={90}/>
+                                width={60}
+                                height={60}/>
                 </a>
                 </div>
         </div>
