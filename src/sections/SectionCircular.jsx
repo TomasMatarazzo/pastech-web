@@ -27,7 +27,7 @@ const SectionCircular = ({nombre,imagen,descripcion,boton,bg = "white"}) => {
   return (
     <section className="  max-md:px-0 py-[60px] max-md:pt-0 max-md:pb-[60px] px-[100px] bg-[#f1f4f6] ">
         <section className="flex relative max-md:flex-col rounded-[2%] ">
-            <div className = {`font-extralight ${backgroudn[bg]}  h-full w-full max-md:flex-col max-md:items-center max-md:align-middle px-8 flex flex-row py-16 bg-[#02936e] rounded-lg justify-evenly`}>
+            <div className = {`font-extralight ${backgroudn[bg]}  h-full w-full max-md:flex-col max-md:items-center max-md:align-middle px-10 flex flex-row py-16 bg-[#02936e] rounded-lg justify-evenly`}>
                 <img 
                     className = {`w-[700px] clip-circle max-md:w-[300px] max-md:h-[300px] max-md:mb-2 bg-center bg-cover duration-500 h-[475px] rounded-[50%] ${button[bg]}`}
                         src = {imagen}
