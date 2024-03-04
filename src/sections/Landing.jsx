@@ -62,7 +62,7 @@ const Landing = () => {
       <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
         <SlArrowRight onClick={decreaseIndex} size={30} />
       </div>
-        <div className = {` font-["Roboto"] absolute max-md:top-2/3 max-md:left-10 top-2/3 left-[823px] `}>
+        <div className = {` font-["Roboto"] absolute max-md:top-2/3 max-md:left-10 top-2/3 left-[50%] `}>
           <h1 className={`max-md:text-2xl max-md:border-0 ${slides[index].wrap} border-solid border-b-4 border-t-green text-[#fff] font-[Lato] z-5 min-w-64 max-w-min whitespace-normal text-[70px] leading-[70px] opacity-1 font-extrabold cursor-pointer transition-none ease">{slides[index].texto`}>{slides[index].texto}</h1>
           <div className="flex flex-row justify-center align-middle">
             <h2 className={`max-md:text-2xl max-md:hidden max-md:border-0 ${slides[index].wrap} text-[#fff] font-[Lato] z-5 min-w-64 whitespace-normal text-2xl opacity-1 font-normal w-[100%] cursor-pointer transition-none ease`}>{slides[index].descripcion}
