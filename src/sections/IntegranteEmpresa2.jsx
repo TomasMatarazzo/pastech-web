@@ -29,8 +29,8 @@ const IntegranteEmpresa2 = ({nombre,imagen,descripcion,titulo,bg = "white"}) => 
         <section className="flex relative max-md:flex-col rounded-[2%] ">
             <div className = {`flex font-extralight h-full w-full max-md:flex-col-reverse max-md:items-center max-md:align-middle flex flex-row py-12 max-md:py-10 rounded-lg justify-evenly`}>
                 <div className='w-1/3  flex flex-col justify-center max-md:items-center max-md:text-center max-md:w-[300px]'>
-                    <h1 className={`${text1[bg]} py-2 font-bold  leading-10 text-[40px] max-md:text-[32px] `}>{nombre}</h1>
-                    <h2 className={`${text1[bg]} py-2 font-semibold  leading-8 text-3xl text-gray-400 max-md:text-[32px] `}>{titulo}</h2>
+                    <h1 className={`${text1[bg]} py-2 font-bold  leading-10 text-[40px] max-md:text-[32px] font-[Roboto] `}>{nombre}</h1>
+                    <h2 className={`${text1[bg]} py-2 font-semibold  leading-8 text-3xl text-gray-400 max-md:text-[32px] font-[Roboto] `}>{titulo}</h2>
                     <p className = {` ${text2[bg]} py-9 font-normal`}>{descripcion}</p>
                 </div>
                 <img 

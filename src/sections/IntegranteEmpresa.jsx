@@ -35,8 +35,8 @@ const IntegranteEmpresa = ({nombre,imagen,descripcion,titulo,bg = "white"}) => {
                         height = {674}
                     />
                 <div className='w-1/3 flex flex-col justify-center max-md:items-center max-md:text-center max-md:w-[300px]'>
-                    <h1 className={`${text1[bg]} font-bold  leading-10 text-[40px] py-2  max-md:text-[32px] `}>{nombre}</h1>
-                    <h1 className={`${text1[bg]} font-semibold  leading-8 text-3xl py-2  max-md:text-[32px] text-gray-400`}>{titulo}</h1>
+                    <h1 className={`${text1[bg]} font-bold  leading-10 text-[40px] py-2  max-md:text-[32px] font-[Roboto] `}>{nombre}</h1>
+                    <h1 className={`${text1[bg]} font-semibold  leading-8 text-3xl py-2  max-md:text-[32px] text-gray-400 font-[Roboto]`}>{titulo}</h1>
                     <p className = {` ${text2[bg]} py-9 font-normal`}>{descripcion}</p>
                 </div>
 
