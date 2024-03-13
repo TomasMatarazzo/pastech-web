@@ -15,7 +15,7 @@ const Footer = () => {
         </Link>       
 
       </ul>
-      <LiFooter elementos={productosLinks} titulo = "Productos y Servicios" ></LiFooter>
+      <LiFooter elementos={productosLinks} titulo = {"Productos y Servicios"} ></LiFooter>
       <LiFooter elementos={["Preguntas Frecuentes","Como comprar","Contacto"]} titulo = "Soporte"></LiFooter>
   </section>
   )
