@@ -29,11 +29,11 @@ const MisionVision = ({tituloMision,tituloVision,descripcionMision,descripcionVi
             <div className = {`flex font-extralight h-full w-full   max-md:flex-col-reverse max-md:items-center max-md:align-middle flex flex-row py-12 max-md:py-10 rounded-lg justify-evenly align-baseline`}>
                 <div className='w-[30%]  flex flex-col justify-start items-center text-center max-md:text-center max-md:w-[300px] align-baseline '>
                     <h2 className={`${text1[bg]} py-2  text-[55px] leading-[50px] max-md:text-[32px] font-bold text-first-green font-[Roboto] `}>{tituloMision}</h2>
-                    <p className = {` ${text2[bg]} pt-4 font-semibold text-xl font-[Roboto] whitespace-pre-line max-md:font-normal max-md:text-[20px]`}>{descripcionMision}</p>
+                    <p className = {` ${text2[bg]} pt-4 font-semibold text-xl font-[Roboto] md:whitespace-pre-line max-md:font-normal max-md:text-[20px]`}>{descripcionMision}</p>
                 </div>
-                <div className='w-1/3  flex flex-col justify-start items-center text-center max-md:text-center max-md:w-[300px] justify-start'>
+                <div className='w-1/3  flex flex-col justify-start items-center text-center max-md:text-center max-md:w-[300px]'>
                 <h2 className={`${text1[bg]} py-2  text-[55px] leading-[50px] max-md:text-[32px] font-bold text-first-green font-[Roboto] `}>{tituloVision}</h2>
-                    <p className = {` ${text2[bg]} pt-4 font-semibold text-xl font-[Roboto] max-md:text-[20px] max-md:font-normal whitespace-pre-line max-md:font-normal max-md:text-[20px]`}>{descripcionVision}</p>
+                    <p className = {` ${text2[bg]} pt-4 font-semibold text-xl font-[Roboto] max-md:text-[20px] max-md:font-normal md:whitespace-pre-line `}>{descripcionVision}</p>
                 </div>
             </div>
         </section>
