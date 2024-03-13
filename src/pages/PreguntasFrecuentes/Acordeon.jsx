@@ -2,45 +2,6 @@ import PropTypes from 'prop-types'
 import { useState } from 'react'
 import logo from '../../assets/icons/icono.svg'
 
-// const PreguntaStyled = styled.div`
-//     display:flex;
-//     align-items:center;
-//     justify-content:center;
-//     flex-direction:column;
-//     width:100%;
-//     border-radius:16px;
-//     margin:20px 0;
-//     border: 1px solid #2d2d2d;
-
-//     .title{
-//         width:100%;
-//         display:flex;
-//         align-items:center;
-//         justify-content:space-between;
-//         padding: 20px;
-//         // border-bottom: 1px solid #2d2d2d;
-//         cursor:pointer;
-
-//         h3{
-//             font-weight:500;
-//         }
-
-//         .signo{
-//             font-weight:600;
-//             color:#FF4B27;
-//         }
-//     }
-
-//     .descripcion{
-//         padding: 20px;
-//         min-height:50px;
-//         display:flex;
-//         align-items:center;
-//         justify-content:start;
-//         font-weight:400;
-//         color:#2d2d2d;
-//     }
-// `
 
 const Acordeon = () => {
   const data =[
@@ -70,7 +31,7 @@ const Acordeon = () => {
     }
   ]
 
-  const [isActive, setActive] = useState(0)
+  const [isActive, setActive] = useState(-1)
 
   //   setActive(0)
 
