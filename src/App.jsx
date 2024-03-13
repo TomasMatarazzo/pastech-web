@@ -1,10 +1,11 @@
 import { Nav } from "./components";
 import { Footer } from "./sections";
 import { Route , Routes} from "react-router-dom";
-import Empresa from "./pages/Empresa";
+import Empresa from "./pages/Empresa/Empresa";
 import Mainpage from "./pages/Mainpage";
 import wpp from "./assets/images/wpp2.svg"
 import Contacto from "./pages/Contacto";
+import PreguntasFrecuentes from "./pages/PreguntasFrecuentes/PreguntasFrecuentes";
 
 
 
@@ -16,6 +17,7 @@ const App = () => {
           <Route path='/' element={<Mainpage></Mainpage>}></Route>
           <Route path = '/empresa' element={<Empresa></Empresa>}></Route>
           <Route path = '/contacto' element={<Contacto></Contacto>}></Route>
+          <Route path = '/preguntas' element={<PreguntasFrecuentes></PreguntasFrecuentes>}></Route>
         </Routes>
         <section className="bg-[#394140]">
           <Footer></Footer>

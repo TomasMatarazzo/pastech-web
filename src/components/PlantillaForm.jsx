@@ -4,7 +4,17 @@ import { InputError } from './InputError'
 import { Input } from './Input'
 import { correoValidation, nombreValidation,numeroValidation,textoValidation} from '../utils/inputValidation'
 import Button from "./Button"
+import emailjs from '@emailjs/browser';
+import axios from 'axios'
+
+
+
 export const PlantillaForm = () => {
+
+  
+  
+
+
   const [error, setError] = useState(false)
   const [loginExitoso, setLoginExitoso] = useState(false)
   // const dispatch = useDispatch()
@@ -13,7 +23,34 @@ export const PlantillaForm = () => {
   const onSubmit = methods.handleSubmit(async data => {
     console.log('la informacion es', data)
     setLoginExitoso(true)
+    enviarCorreo(data.nombre,data.correo,data.numero,data.mensaje)
   })
+
+  async function enviarCorreo( nombre , correo ,numero, message) {
+
+    const data = {
+      service_id: 'service_39x51y6',
+      template_id: 'template_iuo1n9j',
+      user_id: '9z5_7ynQhzUc4dwYL',
+      template_params: {
+          'to_name':nombre,
+          'reply_to': correo,
+          'numero':numero,
+          'message':message,
+      }
+  };
+
+      try {
+          await axios.post('https://api.emailjs.com/api/v1.0/email/send', JSON.stringify(data), {
+              headers: {
+                  'Content-Type': 'application/json'
+              }
+          });
+          alert('¡Tu correo ha sido enviado!');
+      } catch (error) {
+          alert('¡Vaya! ' + JSON.stringify(error));
+      }
+  }
 
 
   return (

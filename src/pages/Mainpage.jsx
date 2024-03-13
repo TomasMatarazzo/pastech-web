@@ -17,7 +17,7 @@ const Mainpage = () => {
       <Landing></Landing>
       {/* <Button></Button> */}
     </section>
-    <section>
+    <section >
       <SectionCircular nombre = {productos[0].nombre}
                 descripcion={productos[0].descripcion}
                 imagen={image1}
@@ -25,7 +25,7 @@ const Mainpage = () => {
                 bg = "grey"
       ></SectionCircular>
     </section>
-    <section>
+    <section className='max-md:pb-[60px] bg-[#f1f4f6]'>
       <SectionCircular2 nombre = {productos[1].nombre}
                 descripcion={productos[1].descripcion}
                 imagen={image2}

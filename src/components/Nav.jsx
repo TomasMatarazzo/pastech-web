@@ -12,6 +12,7 @@ const Nav = () => {
       {name:"Servicios",link:"/"},
       {name:"Como comprar",link:"/"},
       {name:"Empresa",link:"/empresa"},
+      {name:"Preguntas Frecuentes",link:"/preguntas"},
       {name:"Contacto",link:"/contacto"},
     ];
     let [open,setOpen]=useState(false);
@@ -23,7 +24,7 @@ const Nav = () => {
             <Link to = '/' className='block  w-[120px] md:w-[260px]'>
                 <img 
                 src = {icono}
-                alt = "Logo"
+                alt = "Logo"z
                 width = {260}
                 height={90}
                 className='max-lg:h-[60px] max-lg:w-[120px]'
