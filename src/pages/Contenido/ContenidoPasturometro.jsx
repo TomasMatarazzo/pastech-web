@@ -10,10 +10,14 @@ const ContenidoPasturometro = () => {
     const data = [
         {
           pregunta: "Mapeo de la disponibilidad de pasto",
-          respuesta: `Es un dispositivo inteligente de medición de altura comprimida de pasto, que mediante
-          lecturas electrónicas georeferenciadas y algoritmos integrados a una aplicación del
-          teléfono móvil, estima de forma confiable y en tiempo real la cantidad de pasto que hay
-          disponible para los animales en cada zona opotrero del campo. 
+          respuesta: `Es un dispositivo inteligente de medición de
+          altura comprimida de pasto, que mediante
+          lecturas electrónicas georeferenciadas y
+          algoritmos integrados a una aplicación del
+          teléfono móvil, estima de forma confiable y en
+          tiempo real la cantidad de pasto que hay
+          disponible para los animales en cada zona o
+          potrero del campo.  
           `
         }]
 
@@ -59,13 +63,17 @@ const ContenidoPasturometro = () => {
 
     <section className='flex justify-center items-start xl:padding-1  max-md:pt-[20px] max-md:flex-col max-md:w-[100%]'>
         <div className='w-[40%] flex flex-col justify-start max-md:items-center max-md:text-center max-md:w-full p-8'>
-            <h1 className={` py-4  text-[55px] leading-[50px] max-md:text-[32px] font-bold text-first-green font-[Roboto]`}>Pasturometro Electronico</h1>
+            <h1 className={` py-4  text-[55px] leading-[50px] max-md:text-[32px] font-bold text-first-green font-[Roboto]`}>Pasturometro Electrónico</h1>
             <h1 className={` font-semibold  leading-8 text-3xl py-2  max-md:text-[32px] text-gray-500m font-[Roboto]`}></h1>
-            <p className = {` py-4 font-semibold text-2xl `}>Descripcion del producto</p>
-            <p className = {` py-9 font-normal text-xl `}>          Su diseño ergonómico
-          facilita la manipulación del equipo y una
-          interfaz amigable simplifica la interpretación
-          de los datos. 
+            <p className = {` py-4 font-semibold text-2xl `}>Pasturometro electrónico con mediciones georeferenciadas</p>
+            <p className = {` py-9 font-normal text-xl `}> Es un dispositivo inteligente de medición de
+          altura comprimida de pasto, que mediante
+          lecturas electrónicas georeferenciadas y
+          algoritmos integrados a una aplicación del
+          teléfono móvil, estima de forma confiable y en
+          tiempo real la cantidad de pasto que hay
+          disponible para los animales en cada zona o
+          potrero del campo.  
           </p>
         </div>
         <div className=" w-1/2  max-md:w-full flex relative flex-row  justify-center items-end rounded-[2%] p-8 ">

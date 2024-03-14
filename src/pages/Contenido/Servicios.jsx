@@ -61,7 +61,7 @@ const Servicios = () => {
         <div className="flex relative  justify-center items-center flex-col rounded-[2%] p-16">
             <h1 className= {` py-2  text-[55px] leading-[50px] max-md:text-[32px] font-bold text-first-green font-[Roboto]`}>Servicios</h1>
             <h2 className={` font-semibold  leading-8 text-3xl py-2  max-md:text-[32px] text-gray-500m font-[Roboto]`}> Transforma tu negocio con nuestros servicios</h2>
-            <Button text = {"CONTACTANOS"} color = {"green"}></Button>
+            <Button text = {"CONTÁCTENOS"} color = {"green"}></Button>
         </div>
         <div></div>
     </section>

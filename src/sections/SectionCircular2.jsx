@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { Button } from '../components';
 
 
-const SectionCircular2 = ({nombre,imagen,descripcion,botonColor,bg = "white"}) => {
+const SectionCircular2 = ({nombre,imagen,descripcion,botonColor,bg = "white",link}) => {
 
 
     const backgroudn = {
@@ -26,7 +26,7 @@ const SectionCircular2 = ({nombre,imagen,descripcion,botonColor,bg = "white"}) =
                 <div className='w-[40%]  flex flex-col justify-center max-md:items-center max-md:text-center max-md:w-[300px]'>
                     <h1 className={`${text1[bg]} py-2 font-[Roboto] font-normal text-[60px] leading-[50px] max-md:text-[32px]  max-md:leading-8 `}>{nombre}</h1>
                     <p className = {` ${text2[bg]} py-9 font-normal text-xl`}>{descripcion}</p>
-                    <Button text = {"+ INFO"} color = {botonColor}></Button>
+                    <a href = {link}><Button text = {"+ INFO"} color = {botonColor}></Button></a>
                 </div>
                 <img 
                     className = "w-[600px] clip-circle max-md:w-[300px] max-md:h-[300px] max-md:mb-2 bg-center bg-cover duration-500 h-[475px] border-t-green"
@@ -46,6 +46,7 @@ SectionCircular2.propTypes = {
     imagen:PropTypes.string,
     boton:PropTypes.string,
     bg:PropTypes.string,
+    link:PropTypes.string,
   };
 
 export default SectionCircular2
