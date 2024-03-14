@@ -63,8 +63,7 @@ const ContenidoPasturometro = () => {
 
     <section className='flex justify-center items-start xl:padding-1  max-md:pt-[20px] max-md:flex-col max-md:w-[100%]'>
         <div className='w-[40%] flex flex-col justify-start max-md:items-center max-md:text-center max-md:w-full p-8'>
-            <h1 className={` py-4  text-[55px] leading-[50px] max-md:text-[32px] font-bold text-first-green font-[Roboto]`}>Pasturometro Electrónico</h1>
-            <h1 className={` font-semibold  leading-8 text-3xl py-2  max-md:text-[32px] max-md:leading-5 text-gray-500m font-[Roboto]`}></h1>
+            <h1 className={` py-4  text-[55px] leading-[50px]  max-md:leading-8 max-md:text-[32px] font-bold text-first-green font-[Roboto]`}>Pasturometro Electrónico</h1>
             <p className = {` py-4 font-semibold text-2xl `}>Pasturometro electrónico con mediciones georeferenciadas</p>
             <p className = {` py-9 font-normal text-xl `}> Es un dispositivo inteligente de medición de
           altura comprimida de pasto, que mediante
