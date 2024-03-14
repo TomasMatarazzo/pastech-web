@@ -72,7 +72,7 @@ const ContenidoPasturometro = () => {
     {/* <div className='bg-[#F7F7F7] font-[Roboto] mt-[92px] py-8 px-48 max-md:px-8 text-3xl font-bold text-first-green border-b-2 border-first-green'>
         <h1>Productos</h1>
     </div> */}
-    <h1 className={` py-4 ml-48 text-[55px] leading-[50px]  max-md:leading-8 max-md:text-[32px] font-bold text-first-green font-[Roboto] mt-[92px] px-18`}>Pasturometro Electrónico</h1>
+    <h1 className={` py-4 ml-12 md:ml-48 text-[55px] leading-[50px]  max-md:leading-8 max-md:text-[32px] font-bold text-first-green font-[Roboto] mt-[92px] px-18`}>Pasturometro Electrónico</h1>
     <section className='flex justify-center items-start xl:padding-1  max-md:pt-[20px] max-md:flex-col max-md:w-[100%]'>
        <div className=" w-1/2  max-md:w-full flex relative flex-row  justify-center items-end rounded-[2%] p-8 ">
             <a href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target="_blank">
@@ -126,7 +126,7 @@ const ContenidoPasturometro = () => {
                 <h1 className={` font-bold  leading-8 text-3xl py-6  max-md:text-[32px] text-t-green font-[Roboto]`}>PASTUROMETRO</h1>
                 <p className = {`  pt-0 pb-16 font text-2xl `}>Captura del dato</p>
             </div>
-            <span style={{"font-size": "7em", "color":"green"}} className="relative self-center">
+            <span style={{"font-size": "7em", "color":"green","margin-bottom":"140px"}} className="relative self-center md:mb-0">
               <i className="fa-solid fa-arrow-right"></i>
             </span>
             <div className='flex flex-col justify-center items-center'>
@@ -137,7 +137,7 @@ const ContenidoPasturometro = () => {
                 <p className = {`  pt-0 pb-16 font text-2xl `}> Procesamiento del dato</p>
 
             </div>
-            <span style={{"font-size": "7em", "color":"green"}} className="relative self-center">
+            <span style={{"font-size": "7em", "color":"green","margin-bottom":"140px"}} className="relative self-center max-md:mb-0">
               <i className="fa-solid fa-arrow-right"></i>
             </span>
             <div className='flex flex-col justify-center items-center'>
