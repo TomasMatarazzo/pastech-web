@@ -70,7 +70,6 @@ const ContenidoPasturometro = () => {
             fontSize: '7em',
             color: 'green',
             marginBottom: '140px',
-            // Media query for screens with a maximum width of 768px
             '@media (max-width: 768px)': { // Adjusted font size for smaller screens
               marginBottom: '40px', // Adjusted margin for smaller screens
             }
