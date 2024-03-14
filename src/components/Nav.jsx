@@ -8,7 +8,7 @@ import wpp from '../assets/images/wpp2.svg'
 const Nav = () => {
     let Links =[
       {name:"Inicio",link:"/"},
-      {name:"Productos",link:"/"},
+      {name:"Productos",link:"/pasturometro"},
       {name:"Servicios",link:"/servicios"},
       {name:"Como comprar",link:"/"},
       {name:"Empresa",link:"/empresa"},

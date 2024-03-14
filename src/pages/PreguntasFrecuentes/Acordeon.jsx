@@ -69,9 +69,9 @@ const ElementoAcordeon = ({ element, isActive, setActive, index }) => {
                                 width={60}
                                 height={60}/>
                 </a> */}
-              <h3 className='pl-4 text-t-green  font-medium font-[Roboto] max-md:text-center'>{element.pregunta}</h3>
+              <h3 className='pl-4 text-t-green  font-semibold font-[Roboto] max-md:text-center'>{element.pregunta}</h3>
             </div>
-            <div className='signo text-2xl font-normal'>{isActive ? '-' : '+'}</div>
+            <div className='signo text-2xl font-medium'>{isActive ? '-' : '+'}</div>
         </div>
         { isActive && <div className='p-20 descripcion text-xl font-normal font-[Source Sans 3] max-md:text-center max-md:p-8'><h4>{element.respuesta}</h4></div>}
     </div>)
