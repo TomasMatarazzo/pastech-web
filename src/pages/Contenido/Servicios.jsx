@@ -68,7 +68,7 @@ const Servicios = () => {
         <div className='flexjustify-center items-center xl:padding-1  max-md:pt-[20px]'>
             <ul className='px-12 flex gap-8 flex-wrap text-left justify-center pb-16'>
             {data.map((item, index) => (
-                <li key={index} className='shadow-lg w-[30%] border-gray-300 border-[1px] border-[50%] px-4 py-16 rounded-md transition-all duration-500 hover:bg-slate-200'>
+                <li key={index} className='shadow-lg w-[30%] border-first-green border-[1px] border-[50%] px-4 py-16 rounded-md transition-all duration-500 hover:bg-slate-200'>
                     <a href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target="_blank">
                         <img src={logo} alt="Whatsapp" width={100} height={100} className='' />
                     </a>

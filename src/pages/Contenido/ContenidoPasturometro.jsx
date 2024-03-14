@@ -3,6 +3,8 @@ import { Button } from '../../components'
 import pasturometro from '../../assets/images/01.jpg'
 import vista1 from '../../assets/images/vistas.png'
 import vista2 from '../../assets/images/vistas2.png'
+import { RiPlantFill } from "react-icons/ri";
+
 const ContenidoPasturometro = () => {
 
     const data = [
@@ -18,27 +20,33 @@ const ContenidoPasturometro = () => {
     const data2 = [
             {
               titulo: "Medición de altura comprimida de pasto",
-              respuesta: "Utiliza lecturas electrónicas georeferenciadas para calcular la altura del pasto de manera precisa. Proporciona estimaciones en tiempo real de la cantidad de pasto disponible en cada zona o potrero del campo."
+              respuesta: "Utiliza lecturas electrónicas georeferenciadas para calcular la altura del pasto de manera precisa. Proporciona estimaciones en tiempo real de la cantidad de pasto disponible en cada zona o potrero del campo.",
+              class: 'fa-solid fa-plant-wilt fa-2x'
             },
             {
               titulo: "Aplicación móvil integrada",
               respuesta: "Algoritmos avanzados integrados en una aplicación móvil para facilitar la recopilación y visualización de datos. Permite la interpretación rápida y sencilla de los datos recopilados por el dispositivo."
+              ,class: 'fa-solid fa-mobile fa-2x'
             },
             {
               titulo: "Diseño ergonómico",
               respuesta: "Diseñado para ser fácilmente manipulado en el campo, facilitando su uso durante las operaciones ganaderas."
+              ,class: 'fa-solid fa-check fa-2x'
             },
             {
               titulo: "Desarrollo local",
               respuesta: "Producto diseñado y desarrollado localmente para adaptarse a las necesidades específicas de los sistemas ganaderos en nuestro país."
+              ,class: 'fa-regular fa-lightbulb fa-2x'
             },
             {
               titulo: "Incorporación de tecnología innovadora",
               respuesta: "Incorpora tecnología avanzada para ofrecer mediciones precisas y confiables de la altura del pasto."
+              ,class: 'fa-solid fa-server fa-2x'
             },
             {
               titulo: "Versatilidad de uso",
               respuesta: "Puede ser utilizado en una amplia variedad de cubiertas vegetales, adaptándose a diferentes tipos de terreno y condiciones."
+              ,class: 'fa-solid fa-droplet fa-2x'
             }
           ];
 
@@ -77,7 +85,10 @@ const ContenidoPasturometro = () => {
         </div> */}
         <ul className='px-12 flex gap-8 flex-wrap text-left justify-center pb-16'>
             {data2.map((item, index) => (
-                <li key={index} className='shadow-lg w-[30%] border-gray-300 border-[1px] border-[50%] px-4 py-16 rounded-md transition-all duration-500 hover:bg-slate-200'>
+                <li key={index} className='shadow-lg w-[30%] border-first-green border-[1px] border-[50%] px-4 py-16 rounded-md transition-all duration-500 hover:bg-slate-200'>
+                    <span style={{"color":"#C7F168"}} className="relative top-1">
+                        <i class={item.class} ></i>
+                    </span>
                     <h1 className='pt-4 font-medium text-2xl font-[Roboto] max-md:text-[20px] max-md:font-normal md:whitespace-pre-line'>{item.titulo}</h1>
                     <p className='pt-4 font-normal text-md font-[Roboto] max-md:text-[20px] max-md:font-normal md:whitespace-pre-line text-[#626262]'>{item.respuesta}</p>
                 </li>
