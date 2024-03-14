@@ -72,8 +72,8 @@ const Servicios = () => {
                     <a href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target="_blank">
                         <img src={logo} alt="Whatsapp" width={100} height={100} className='' />
                     </a>
-                    <h1 className='pt-4 font-medium text-2xl font-[Roboto] max-md:text-[20px] max-md:font-normal md:whitespace-pre-line'>{item.pregunta}</h1>
-                    <p className='pt-4 font-normal text-md font-[Roboto] max-md:text-[20px] max-md:font-normal md:whitespace-pre-line text-[#626262]'>{item.respuesta}</p>
+                    <h1 className='pt-4 font-medium text-2xl font-[Roboto] max-md:text-[20px] max-md:font-semibold md:whitespace-pre-line'>{item.pregunta}</h1>
+                    <p className='pt-4 font-normal text-md font-[Roboto] max-md:text-[20px] max-md:font-medium md:whitespace-pre-line text-[#626262]'>{item.respuesta}</p>
                 </li>
                     ))}
 

@@ -89,8 +89,8 @@ const ContenidoPasturometro = () => {
                     <span style={{"color":"#C7F168"}} className="relative top-1">
                         <i class={item.class} ></i>
                     </span>
-                    <h1 className='pt-4 font-medium text-2xl font-[Roboto] max-md:text-[20px] max-md:font-normal md:whitespace-pre-line'>{item.titulo}</h1>
-                    <p className='pt-4 font-normal text-md font-[Roboto] max-md:text-[20px] max-md:font-normal md:whitespace-pre-line text-[#626262]'>{item.respuesta}</p>
+                    <h1 className='pt-4 font-medium text-2xl font-[Roboto] max-md:text-[20px] max-md:font-semibold md:whitespace-pre-line'>{item.titulo}</h1>
+                    <p className='pt-4 font-normal text-md font-[Roboto] max-md:text-[20px] max-md:font-medium md:whitespace-pre-line text-[#626262]'>{item.respuesta}</p>
                 </li>
                     ))}
             </ul>
