@@ -124,7 +124,7 @@ const ContenidoPasturometro = () => {
                     <img src={pastu} alt="Whatsapp" width = {200} height= {300} className='' />
                 </div>
                 <h1 className={` font-bold  leading-8 text-3xl py-6  max-md:text-[32px] text-t-green font-[Roboto]`}>PASTUROMETRO</h1>
-                <p className = {`  pt-0 pb-16 font text-2xl `}>Captura del dato</p>
+                <p className = {`  pt-0 pb-16 max-md:pb-4 font text-2xl `}>Captura del dato</p>
             </div>
             <span style={{"font-size": "7em", "color":"green","margin-bottom":"140px"}} className="relative self-center md:mb-0">
               <i className="fa-solid fa-arrow-right"></i>
@@ -134,7 +134,7 @@ const ContenidoPasturometro = () => {
                             <img src={celular} alt="Whatsapp" width = {150} height= {200} />
                 </div>
                 <h1 className={` font-bold  leading-8 text-3xl py-6  max-md:text-[32px] text-t-green font-[Roboto]`}>CELULAR</h1>
-                <p className = {`  pt-0 pb-16 font text-2xl `}> Procesamiento del dato</p>
+                <p className = {`  pt-0 pb-16 max-md:pb-4 font text-2xl `}> Procesamiento del dato</p>
 
             </div>
             <span style={{"font-size": "7em", "color":"green","margin-bottom":"140px"}} className="relative self-center max-md:mb-0">
@@ -145,7 +145,7 @@ const ContenidoPasturometro = () => {
                                 <img src={monitor} alt="Whatsapp" width = {250} height= {500}  />
                 </div>
                 <h1 className={` font-bold  leading-8 text-3xl py-6  max-md:text-[32px] text-t-green font-[Roboto]`}>MONITOR</h1>
-                <p className = {`  pt-0 pb-16 font text-2xl `}>Almacenamiento del dato</p>
+                <p className = {`  pt-0 pb-16 max-md:pb-4 font text-2xl `}>Almacenamiento del dato</p>
             </div>
         </div>
     </>
