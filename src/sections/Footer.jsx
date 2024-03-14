@@ -1,5 +1,5 @@
 import LiFooter from "./LiFooter"
-import { productosLinks } from "../assets/constants/constants"
+import { productosLinks,linksFooter } from "../assets/constants/constants"
 import { Link } from "react-router-dom"
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
 
       </ul>
       <LiFooter elementos={productosLinks} titulo = {"Productos y Servicios"} ></LiFooter>
-      <LiFooter elementos={["Preguntas Frecuentes","Como comprar","Contacto"]} titulo = "Soporte"></LiFooter>
+      <LiFooter elementos={linksFooter} titulo = "Soporte"></LiFooter>
   </section>
   )
 }
