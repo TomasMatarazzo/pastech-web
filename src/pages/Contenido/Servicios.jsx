@@ -6,10 +6,6 @@ const Servicios = () => {
 
     const data = [
         {
-          pregunta: "¿Qué beneficios aporta la utilización de Pastech en mi establecimiento ganadero?",
-          respuesta: "La medición certera de la cantidad de pasto disponible en el campo, permite su utilización eficiente. Conocer cuánto pasto hay disponible hace que se pueda pastorear oportunamente, aprovechando al máximo el pasto producido y con su mayor calidad para la alimentación de los animales.",
-        },
-        {
           pregunta: "Mapeo de la disponibilidad de pasto",
           respuesta: "Brindamos servicio de relevamiento de la oferta de pasto a través de la recorrida de lotes individuales y/o del campo en su totalidad. Evaluación del estado de los recursos forrajeros ofreciendo información sobre disponibilidad, expectativa de rendimiento, persistencia esperada, calidad ofrecida, etc.",
         },
