@@ -9,7 +9,7 @@ const Nav = () => {
     let Links =[
       {name:"Inicio",link:"/"},
       {name:"Productos",link:"/"},
-      {name:"Servicios",link:"/"},
+      {name:"Servicios",link:"/servicios"},
       {name:"Como comprar",link:"/"},
       {name:"Empresa",link:"/empresa"},
       {name:"Preguntas Frecuentes",link:"/preguntas"},

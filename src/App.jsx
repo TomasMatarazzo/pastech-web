@@ -6,7 +6,7 @@ import Mainpage from "./pages/Mainpage";
 import wpp from "./assets/images/wpp2.svg"
 import Contacto from "./pages/Contacto";
 import PreguntasFrecuentes from "./pages/PreguntasFrecuentes/PreguntasFrecuentes";
-
+import Servicios from "./pages/Contenido/Servicios";
 
 
 const App = () => {
@@ -18,6 +18,7 @@ const App = () => {
           <Route path = '/empresa' element={<Empresa></Empresa>}></Route>
           <Route path = '/contacto' element={<Contacto></Contacto>}></Route>
           <Route path = '/preguntas' element={<PreguntasFrecuentes></PreguntasFrecuentes>}></Route>
+          <Route path = '/servicios' element={<Servicios></Servicios>}></Route>
         </Routes>
         <section className="bg-[#394140]">
           <Footer></Footer>
