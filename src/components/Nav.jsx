@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import Button from './Button';
 import hamburger from '../assets/icons/hamburger.svg'
-import icono from '../assets/icons/icono2.svg'
+import icono from '../assets/images/logox.png'
 import { Link } from 'react-router-dom';
-import wpp from '../assets/images/wpp2.svg'
 
 const Nav = () => {
     let Links =[
@@ -21,17 +20,17 @@ const Nav = () => {
   return (
     <div className='w-full fixed top-0 left-0 z-10'>
       <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
-            <Link to = '/' className='block  w-[120px] md:w-[260px]'>
+            <Link to = '/' className='block'>
                 <img 
                 src = {icono}
                 alt = "Logo"z
                 width = {260}
                 height={90}
-                className='max-lg:h-[60px] max-lg:w-[120px]'
+                className='max-lg:h-[60px] max-lg:w-[90px] w-[100px] pl-8'
                 ></img>
             </Link>
             <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-8 cursor-pointer md:hidden'>
-                <div className = " max-lg:block hidden">
+                <div className = " max-lg:block hidden ">
                             <img src ={hamburger}
                                 alt = "Hamburguer"
                                 width={25}
