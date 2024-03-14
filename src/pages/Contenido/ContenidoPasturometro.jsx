@@ -66,6 +66,16 @@ const ContenidoPasturometro = () => {
             }
           ];
 
+          const styles = {
+            fontSize: '7em',
+            color: 'green',
+            marginBottom: '140px',
+            // Media query for screens with a maximum width of 768px
+            '@media (max-width: 768px)': { // Adjusted font size for smaller screens
+              marginBottom: '40px', // Adjusted margin for smaller screens
+            }
+          };
+
 
   return (
     <>
@@ -126,7 +136,7 @@ const ContenidoPasturometro = () => {
                 <h1 className={` font-bold  leading-8 text-3xl py-6  max-md:text-[32px] text-t-green font-[Roboto]`}>PASTUROMETRO</h1>
                 <p className = {`  pt-0 pb-16 max-md:pb-4 font text-2xl `}>Captura del dato</p>
             </div>
-            <span style={{"font-size": "7em", "color":"green","margin-bottom":"140px"}} className="relative self-center md:mb-0">
+            <span style={styles} className="relative self-center md:mb-0">
               <i className="fa-solid fa-arrow-right"></i>
             </span>
             <div className='flex flex-col justify-center items-center'>
@@ -137,7 +147,7 @@ const ContenidoPasturometro = () => {
                 <p className = {`  pt-0 pb-16 max-md:pb-4 font text-2xl `}> Procesamiento del dato</p>
 
             </div>
-            <span style={{"font-size": "7em", "color":"green","margin-bottom":"140px"}} className="relative self-center max-md:mb-0">
+            <span style={styles} className="relative self-center max-md:mb-0">
               <i className="fa-solid fa-arrow-right"></i>
             </span>
             <div className='flex flex-col justify-center items-center'>
