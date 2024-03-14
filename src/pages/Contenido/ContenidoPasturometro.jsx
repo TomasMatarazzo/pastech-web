@@ -57,8 +57,8 @@ const ContenidoPasturometro = () => {
         <h1>Productos</h1>
     </div>
 
-    <section className='flex justify-center items-start xl:padding-1  max-md:pt-[20px]'>
-        <div className='w-[40%] flex flex-col justify-start max-md:items-center max-md:text-center max-md:w-[300px] p-8'>
+    <section className='flex justify-center items-start xl:padding-1  max-md:pt-[20px] max-md:flex-col max-md:w-[100%]'>
+        <div className='w-[40%] flex flex-col justify-start max-md:items-center max-md:text-center max-md:w-full p-8'>
             <h1 className={` py-4  text-[55px] leading-[50px] max-md:text-[32px] font-bold text-first-green font-[Roboto]`}>Pasturometro Electronico</h1>
             <h1 className={` font-semibold  leading-8 text-3xl py-2  max-md:text-[32px] text-gray-500m font-[Roboto]`}></h1>
             <p className = {` py-4 font-semibold text-2xl `}>Descripcion del producto</p>
@@ -68,7 +68,7 @@ const ContenidoPasturometro = () => {
           de los datos. 
           </p>
         </div>
-        <div className=" w-1/2 flex relative flex-row  justify-center items-end rounded-[2%] p-8">
+        <div className=" w-1/2  max-md:w-full flex relative flex-row  justify-center items-end rounded-[2%] p-8 ">
             <a href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target="_blank">
                             <img src={vista1} alt="Whatsapp" width = {300} height= {600}className='' />
             </a>
@@ -83,9 +83,9 @@ const ContenidoPasturometro = () => {
                             <img src={pasturometro} alt="Whatsapp" className='' />
             </a>
         </div> */}
-        <ul className='px-12 flex gap-8 flex-wrap text-left justify-center pb-16'>
+        <ul className='px-12 flex gap-8 flex-wrap text-left justify-center pb-16 max-md:gap-0 max-md:px-4 max-md:text-center'>
             {data2.map((item, index) => (
-                <li key={index} className='shadow-lg w-[30%] border-first-green border-[1px] border-[50%] px-4 py-16 rounded-md transition-all duration-500 hover:bg-slate-200'>
+                <li key={index} className=' max-md:w-[100%] max-md:p-8 max-md:my-8 shadow-lg w-[30%] border-first-green border-[1px] border-[50%] px-4 py-16 rounded-md transition-all duration-500 hover:bg-slate-200'>
                     <span style={{"color":"#C7F168"}} className="relative top-1">
                         <i class={item.class} ></i>
                     </span>

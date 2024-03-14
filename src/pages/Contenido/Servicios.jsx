@@ -57,7 +57,7 @@ const Servicios = () => {
     <div className='bg-[#F7F7F7] font-[Roboto] mt-[92px] py-8 px-48 max-md:px-8 text-3xl font-bold text-first-green border-b-2 border-first-green'>
         <h1>Servicios</h1>
     </div>
-    <section className='flex justify-center items-center xl:padding-1  max-md:pt-[20px]'>
+    <section className='flex justify-center items-center xl:padding-1  max-md:pt-[20px] max-md:text-center'>
         <div className="flex relative  justify-center items-center flex-col rounded-[2%] p-16">
             <h1 className= {` py-2  text-[55px] leading-[50px] max-md:text-[32px] font-bold text-first-green font-[Roboto]`}>Servicios</h1>
             <h2 className={` font-semibold  leading-8 text-3xl py-2  max-md:text-[32px] text-gray-500m font-[Roboto]`}> Transforma tu negocio con nuestros servicios</h2>
@@ -66,9 +66,9 @@ const Servicios = () => {
         <div></div>
     </section>
         <div className='flexjustify-center items-center xl:padding-1  max-md:pt-[20px]'>
-            <ul className='px-12 flex gap-8 flex-wrap text-left justify-center pb-16'>
+            <ul className='px-12 flex gap-8 max-md:gap-0 max-md:px-4 flex-wrap text-left max-md:text-center  justify-center pb-16'>
             {data.map((item, index) => (
-                <li key={index} className='shadow-lg w-[30%] border-first-green border-[1px] border-[50%] px-4 py-16 rounded-md transition-all duration-500 hover:bg-slate-200'>
+                <li key={index} className='shadow-lg w-[30%] max-md:w-[100%] max-md:p-8 max-md:my-8 border-first-green border-[1px] border-[50%] px-4 py-16 rounded-md transition-all duration-500 hover:bg-slate-200'>
                     <a href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target="_blank">
                         <img src={logo} alt="Whatsapp" width={100} height={100} className='' />
                     </a>
