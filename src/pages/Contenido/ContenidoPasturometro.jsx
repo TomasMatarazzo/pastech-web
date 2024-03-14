@@ -129,7 +129,7 @@ const ContenidoPasturometro = () => {
     </section>
     <div className=" w-full  mt-16 max-md:w-full flex relative justify-evenly items-end rounded-[2%] p-8 max-md:flex-col max-md:items-center ">      
             <div className='flex flex-col justify-center items-center'>
-                <div href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target="_blank" className='w-[400px] h-[400px]  border-[#d4d401] border-[6px] border-dashed rounded-full flex justify-center items-center'>
+                <div href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target="_blank" className='w-[400px] h-[400px] max-md:w-[380px] max-md:h-[380px]  border-[#d4d401] border-[6px] border-dashed rounded-full flex justify-center items-center'>
                     <img src={pastu} alt="Whatsapp" width = {200} height= {300} className='' />
                 </div>
                 <h1 className={` font-bold  leading-8 text-3xl py-6  max-md:text-[32px] text-t-green font-[Roboto]`}>PASTUROMETRO</h1>
@@ -139,7 +139,7 @@ const ContenidoPasturometro = () => {
               <i className="fa-solid fa-arrow-right"></i>
             </span>
             <div className='flex flex-col justify-center items-center'>
-                <div href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" className='w-[400px] h-[400px]  border-first-green border-[6px] border-dashed rounded-full flex justify-center items-center' target="_blank">
+                <div href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" className='w-[400px] h-[400px] max-md:w-[380px] max-md:h-[380px]  border-first-green border-[6px] border-dashed rounded-full flex justify-center items-center' target="_blank">
                             <img src={celular} alt="Whatsapp" width = {150} height= {200} />
                 </div>
                 <h1 className={` font-bold  leading-8 text-3xl py-6  max-md:text-[32px] text-t-green font-[Roboto]`}>CELULAR</h1>
@@ -150,7 +150,7 @@ const ContenidoPasturometro = () => {
               <i className="fa-solid fa-arrow-right"></i>
             </span>
             <div className='flex flex-col justify-center items-center'>
-                <div href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?"  className='w-[400px] h-[400px]  border-black border-[6px] border-dashed rounded-full flex justify-center items-center'target="_blank">
+                <div href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?"  className='w-[400px] h-[400px] max-md:w-[380px] max-md:h-[380px]  border-black border-[6px] border-dashed rounded-full flex justify-center items-center'target="_blank">
                                 <img src={monitor} alt="Whatsapp" width = {250} height= {500}  />
                 </div>
                 <h1 className={` font-bold  leading-8 text-3xl py-6  max-md:text-[32px] text-t-green font-[Roboto]`}>MONITOR</h1>
