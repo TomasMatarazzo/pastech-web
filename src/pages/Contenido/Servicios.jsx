@@ -69,7 +69,7 @@ const Servicios = () => {
           pregunta: "Conducción de ensayos a campo",
           respuesta: "Realización y seguimiento de ensayos bajo protocolo científico, en parcelas o en franjas, para evaluar procedimientos de siembra, manejos de pastoreo, etc.",
           circulo: "border-s-green "
-          ,bg:"bg-s-green"
+          ,bg:"bg-"
         },
       ];
 
@@ -96,7 +96,7 @@ const Servicios = () => {
                         <h1 className='pt-4 p-4 font-medium text-xl font-[Roboto] max-md:text-[20px] max-md:font-semibold md:whitespace-pre-line'>{item.pregunta}</h1>
                         {/* <p className='pt-4 font-normal text-md font-[Roboto] max-md:text-[20px] max-md:font-medium md:whitespace-pre-line text-[#626262]'>{item.respuesta}</p> */}
                     </li>
-                    <div className={` ${item.bg} w-[70%] absolute px-[150px] flex left-[25%] h-[250px] text-center items-center  `}>
+                    <div className={` ${item.bg} w-[70%] absolute px-[250px] flex left-[25%] h-[250px] text-center items-center  `}>
                         <p className='{` py-9 font-medium text-xl text-left max-md:text-center `}'>{item.respuesta}</p>
                     </div>
                 </div>
