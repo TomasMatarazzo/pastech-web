@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Button from './Button';
 import hamburger from '../assets/icons/hamburger.svg'
-import icono from '../assets/images/logox.png'
+import icono from '../assets/images/logoz.jpg'
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
@@ -26,7 +26,7 @@ const Nav = () => {
                 alt = "Logo"z
                 width = {260}
                 height={90}
-                className='max-lg:h-[60px] max-lg:w-[90px] w-[100px] pl-8'
+                className=' max-lg:w-[200px] w-[250px] pl-8'
                 ></img>
             </Link>
             <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-8 cursor-pointer md:hidden'>
