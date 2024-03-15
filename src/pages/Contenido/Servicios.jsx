@@ -65,22 +65,23 @@ const Servicios = () => {
         </div>
         <div></div>
     </section>
-        <div className='flexjustify-center items-center xl:padding-1  max-md:pt-[20px]'>
-            <ul className='px-12 flex gap-8 max-md:gap-0 max-md:px-4 flex-wrap text-left max-md:text-center  justify-center pb-16'>
+        <div className='flex justify-center items-center xl:padding-1  max-md:pt-[20px]'>
+            <ul className=' px-[10%] w-[80%] relative flex gap-8 max-md:gap-0 max-md:px-4 flex-wrap text-left max-md:text-center justify-start pb-16 flex-col'>
             {data.map((item, index) => (
-                <li key={index} className='shadow-lg w-[30%] max-md:w-[100%] max-md:p-8 max-md:my-8 border-first-green border-[1px] border-[50%] px-4 py-16 rounded-md transition-all duration-500 hover:bg-slate-200'>
-                    <a href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target="_blank">
-                        <img src={logo} alt="Whatsapp" width={100} height={100} className='' />
-                    </a>
-                    <h1 className='pt-4 font-medium text-2xl font-[Roboto] max-md:text-[20px] max-md:font-semibold md:whitespace-pre-line'>{item.pregunta}</h1>
-                    <p className='pt-4 font-normal text-md font-[Roboto] max-md:text-[20px] max-md:font-medium md:whitespace-pre-line text-[#626262]'>{item.respuesta}</p>
-                </li>
+                <div className='flex items-center'>
+                    <li key={index} className=' bg-white z-50 text-center flex flex-col items-center justify-center shadow-lg w-[300px] h-[300px] relative  max-md:w-[100%] max-md:p-8 max-md:my-8 border-first-green border-[1px] border-[50%]  rounded-full transition-all duration-500 hover:bg-slate-200'>
+                        <a href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target="_blank">
+                            <img src={logo} alt="Whatsapp" width={80} height={80} className='' />
+                        </a>
+                        <h1 className='pt-4 font-medium text-xl font-[Roboto] max-md:text-[20px] max-md:font-semibold md:whitespace-pre-line'>{item.pregunta}</h1>
+                        {/* <p className='pt-4 font-normal text-md font-[Roboto] max-md:text-[20px] max-md:font-medium md:whitespace-pre-line text-[#626262]'>{item.respuesta}</p> */}
+                    </li>
+                    <div className='w-[70%] -z-0 border absolute pl-[300px] left-[20%] h-[250px] text-center  '>
+                        <p>{item.respuesta}</p>
+                    </div>
+                </div>
                     ))}
-
-
-
             </ul>
-        
         </div>
     </>
   )

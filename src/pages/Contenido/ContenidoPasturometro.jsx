@@ -82,7 +82,7 @@ const ContenidoPasturometro = () => {
         <h1>Productos</h1>
     </div> */}
     <h1 className={` py-4 ml-12 md:ml-48 text-[55px] leading-[50px]  max-md:leading-8 max-md:text-[32px] font-bold text-first-green font-[Roboto] mt-[92px] px-18`}>Pasturometro Electrónico</h1>
-    <section className='flex justify-center items-start xl:padding-1  max-md:pt-[20px] max-md:flex-col max-md:w-[100%]'>
+    <section className='flex justify-center items-center xl:padding-1  max-md:pt-[20px] max-md:flex-col max-md:w-[100%]'>
        <div className=" w-1/2  max-md:w-full flex relative flex-row  justify-center items-end rounded-[2%] p-8 ">
             <a href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target="_blank">
                             <img src={vista1} alt="Whatsapp" width = {300} height= {600}className='' />
@@ -97,7 +97,7 @@ const ContenidoPasturometro = () => {
           </p>
         </div>
     </section>
-    <section className='flex justify-center items-center xl:padding-1  max-md:pt-[20px]'>
+    <section className='w-full flex justify-center items-center xl:padding-1  max-md:pt-[20px]'>
         {/* <div className=" w-1/2 flex relative  justify-center items-center flex-col rounded-[2%] p-32">
             <a href="https://wa.me/5492235431101?text=Hola! Me gustaría obtener información sobre Pastech. ¿Podrían ayudarme con detalles sobre lo que ofrecen?" target="_blank">
                             <img src={pasturometro} alt="Whatsapp" className='' />
