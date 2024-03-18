@@ -9,7 +9,7 @@ const Subscripcion = () => {
         <Titulo titulo = 'Pastech Satelital'></Titulo>
         <div className='px-4 pb-16 flex'>
             <div className='absolute w-[100%] h-[100%] ' style={{ backgroundImage: `url(${logo}})` }}>
-                <img src = {logo} className=' absolute left-[-16%] w-[400px] h-[400px]'></img>
+                <img src = {logo} className=' absolute left-[-13%] w-[400px] h-[400px]'></img>
             </div>
             <section className='flex flex-row justify-evenly items-center max-md:flex-col gap-6 ml-[250px]'>
                 <Carta titulo = 'Gratis' descripcion={'Hasta 2 potreros'} gratis = {true}></Carta>
