@@ -1,10 +1,10 @@
 import React from 'react'
 import { Nav } from '../components'
 import { productos } from '../assets/constants/constants'
-import image1 from '../assets/images/01.jpg'
-import image2 from '../assets/images/02.jpg'
+import image1 from '../assets/images/01_.jpg'
+import image2 from '../assets/images/02_.jpg'
 import image3 from '../assets/images/03.jpg'
-import image4 from '../assets/images/04.jpg'
+import image4 from '../assets/images/04_.jpg'
 import { Landing,SectionCircular,SectionCircular2 } from '../sections'
 
 
@@ -24,6 +24,7 @@ const Mainpage = () => {
                 boton = {productos[0].boton}
                 bg = "grey"
                 link = '/pasturometro'
+                botonColor={'white'}
       ></SectionCircular>
     </section>
     <section className='max-md:pb-[60px] bg-[#f1f4f6]'>
@@ -39,7 +40,7 @@ const Mainpage = () => {
       nombre = {productos[2].nombre}
       descripcion={productos[2].descripcion}
       imagen={image3}
-      boton = {productos[2].boton}
+      botonColor={'white'}
       bg = "white"
     ></SectionCircular>
     <section className=" pb-[60px] bg-[#f1f4f6]">
@@ -48,7 +49,7 @@ const Mainpage = () => {
                   imagen={image4}
                   boton = {productos[3].boton}
                   bg = "white"
-                  botonColor = "green"
+                  botonColor={'white'}
                   link ='/servicios'
       ></SectionCircular2>
     </section>

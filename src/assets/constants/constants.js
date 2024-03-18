@@ -1,26 +1,26 @@
 const productos = [
     {
         nombre:"PASTUROMETRO ELECTRÓNICO",
-        descripcion:"Pasturometro electrónico con mediciones georeferenciadas",
+        descripcion:"Pasturometro electrónico con mediciones georeferenciadas que permite determinar la altura y humedad del pasto medido y enviarlo a un dispositivo movil y a un sistema de acceso web",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros cocinas"
     
     },
     {
         nombre:"PASTECH SATELITAL",
-        descripcion:"Mediciones automáticas con satélites",
+        descripcion:"Sistema de acceso web que utliza lecturas satelitales para determinar la altura del pasto y los KG de pasto seco por m2, para lo cual trabaja con intenligencia artificial y modelos matematicos de predicción",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros calefactores"
     },
     {
         nombre:"PASTECH DRON",
-        descripcion:"Mediciones manuales utilizando drones",
+        descripcion:"Sistema de medicion a demanda mediante la utilizacion de dispositivos de dron, cuyos valores se integran con el sistema de pastech satelital",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros calefones"
     },
     {
         nombre:"SERVICIOS",
-        descripcion:"Gestion de mediciones y datos para la toma de decisiones",
+        descripcion:"Mapeo de la disponibilidad de pasto. Servicio de monitoreo integral. Servicio de gestión de la alimentación del ganado. Asesoramiento en manejo de recursos forrajeros. Capacitaciones. Medición de huella de carbono. Desarrollo de productos. Conducción de ensayos a campo",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros termotanques"
     }
@@ -53,15 +53,15 @@ const empresa = [
 ]
 
 const productosLinks = [
-    { nombre: 'Pasturometro electrónico', link: '/pasturometro' },
+    { nombre: 'Pasturometro Electrónico', link: '/pasturometro' },
     { nombre: 'Pastech Satelital', link: '/' },
-    { nombre: 'Pastech Dron', link: '/' },
     { nombre: 'Servicios', link: '/servicios' }
   ];
 
 const linksFooter = [
+    { nombre: "Subscripción", link: "/" },
     { nombre: "Preguntas Frecuentes", link: "/preguntas" },
-    { nombre: "Como comprar", link: "/" },
+    { nombre: "Novedades", link: "/" },
     { nombre: "Contacto", link: "/contacto" }
   ];
 

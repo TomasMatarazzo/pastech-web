@@ -70,3 +70,11 @@
     box-shadow: 0 0 2px 2px rgba(0,0,0,0.02);
   }
 }
+
+.fa-arrow-right{
+
+  margin-bottom: 250px;
+  @media (max-width:768px) {
+    margin-bottom: 20px;
+  }
+}

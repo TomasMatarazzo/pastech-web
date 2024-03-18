@@ -18,8 +18,8 @@ const Empresa
       </section>
       <section>
         <MisionVision
-          tituloMision={'Mision'}
-          tituloVision = {'Vision'}
+          tituloMision={'Misión'}
+          tituloVision = {'Visión'}
           descripcionMision={`Desarrollamos innovación tecnológica basada en conocimiento científico, para el manejo sustentable de cubiertas vegetales en sistemas de producción agropecuaria.
           Mejoramos la gestión del pasto en ecosistemas
           naturales o cultivados – localmente o fuera del
@@ -38,6 +38,7 @@ const Empresa
                   titulo = {empresa[0].titulo}
                   boton = {empresa[0].boton}
                   bg = "grey"
+                  last = {true}
         ></IntegranteEmpresa>
       </section>
       <section>
@@ -56,6 +57,7 @@ const Empresa
                   boton = {empresa[2].boton}
                   titulo = {empresa[2].titulo}
                   bg = "grey"
+                  last = {false}
         ></IntegranteEmpresa>
       </section>
     </div>

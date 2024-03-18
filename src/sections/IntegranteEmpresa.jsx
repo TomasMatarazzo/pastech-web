@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { Button } from '../components';
 
 
-const IntegranteEmpresa = ({nombre,imagen,descripcion,titulo,bg = "white"}) => {
+const IntegranteEmpresa = ({nombre,imagen,descripcion,titulo,bg = "white",last}) => {
 
 
     const backgroudn = {
@@ -42,7 +42,7 @@ const IntegranteEmpresa = ({nombre,imagen,descripcion,titulo,bg = "white"}) => {
 
             </div>
         </section>
-        <div className="max-md:hidden z-6 bg-green-600 text-left leading-5 border-0 m-0 p-0 font-light text-base whitespace-nowrap min-h-[0.1rem] min-w-[400px] max-w-[90%] max-h-1 border-[50%] self-center opacity-100 z-5"></div>
+        { last ? <div className="max-md:hidden z-6 bg-green-600 text-left leading-5 border-0 m-0 p-0 font-light text-base whitespace-nowrap min-h-[0.1rem] min-w-[400px] max-w-[90%] max-h-1 border-[50%] self-center opacity-100 z-5"></div>:null}
     </section>
   )
 }
@@ -53,6 +53,7 @@ IntegranteEmpresa.propTypes = {
     imagen:PropTypes.string,
     titulo:PropTypes.string,
     bg:PropTypes.string,
+    last:PropTypes.bool
   };
 
 export default IntegranteEmpresa

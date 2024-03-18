@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
-    <section className=" w-3/5 m-auto flex relative pb-6 max-md:flex-col max-md:items-center">
+    <section className=" w-3/5 z-50 m-auto flex relative pb-6 max-md:flex-col max-md:items-center">
       <ul className=" flex flex-col justify-start items-start w-1/3 max-md:w-[90%] max-md:items-center">
         <h1 className="text-white text-2xl font-normal py-3">Pastech</h1>
         <Link to = '/'>
