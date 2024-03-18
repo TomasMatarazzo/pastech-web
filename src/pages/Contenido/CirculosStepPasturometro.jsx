@@ -40,7 +40,7 @@ const CirculosStepPasturometro = () => {
             <div target="_blank" className='w-[22vw] h-[22vw] max-md:w-[280px] max-md:h-[280px]  border-t-green border-[6px] border-dashed rounded-full flex justify-center items-center'>
                 <img src={monitor} alt="Whatsapp" width = {200} height= {300} className=' max-md:w-[160px] w-[13vw]' />
             </div>
-            <h1 className={` font-bold  leading-8 text-3xl py-6  max-md:text-[32px] text-t-green font-[Roboto]`}>PASTUROMETRO</h1>
+            <h1 className={` font-bold  leading-8 text-3xl py-6  max-md:text-[32px] text-t-green font-[Roboto]`}>SISTEMA WEB</h1>
             <p className = {`  pt-0 pb-16 max-md:pb-4 font text-2xl `}>Dispositivo electronico que permite medir el pasto y georeferenciar la ubicación.</p>
         </div>
     </div>
