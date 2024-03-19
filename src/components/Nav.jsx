@@ -9,7 +9,7 @@ const Nav = () => {
       {name:"Inicio",link:"/"},
       {name:"Empresa",link:"/empresa"},
       {name:"Pasturometro Electrónico",link:"/pasturometro"},
-      {name:"Pasturometro Satelital",link:"/"},
+      {name:"Pastech Satelital",link:"/"},
       {name:"Servicios",link:"/servicios"},
       {name:"Subscripción",link:"/subscripcion"},
       {name:"Preguntas Frecuentes",link:"/preguntas"},
@@ -42,7 +42,7 @@ const Nav = () => {
       <ul className={`md:flex gap-6 md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-200 ease-in ${open ? 'top-[4.5rem] ':'top-[-490px]'}`}>
         {
           Links.map((link)=>(
-            <li key={link.name} className='font-montserrat py-2 md:py-0 leading-normal text-[12px] text-slate-gray cursor-pointer hover:text-[#02936e]'>
+            <li key={link.name} className='font-montserrat py-2 md:py-0 leading-normal text-base text-slate-gray cursor-pointer hover:text-[#02936e]'>
               <a href={link.link}>{link.name}</a>
             </li>
           ))

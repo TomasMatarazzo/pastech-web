@@ -29,7 +29,7 @@ const SectionCircular = ({nombre,imagen,link,descripcion,botonColor,bg = "white"
         <section className="flex relative justify-evenly max-md:flex-col rounded-[2%] ">
             <div className = {`font-extralight ${backgroudn[bg]}  h-full w-full max-md:flex-col max-md:items-center max-md:align-middle px-10 flex flex-row py-16 bg-[#02936e] rounded-lg justify-evenly`}>
                 <img 
-                    className = {`w-[30vw] clip-circle max-md:w-[300px] max-md:h-[300px] max-lg:w-[500px] max-lg:h-[500px]  max-md:mb-2 bg-center bg-cover duration-500 h-[25vw] rounded-[50%] ${button[bg]}`}
+                    className = {`w-[25vw] clip-circle max-md:w-[300px] max-md:h-[300px] max-lg:w-[500px] max-lg:h-[500px]  max-md:mb-2 bg-center bg-cover duration-500 h-[25vw] rounded-[50%] ${button[bg]}`}
                         src = {imagen}
                     />
                 <div className='w-[50%] flex flex-col justify-center items-center max-md:items-center max-md:text-center max-md:w-[300px]'>
