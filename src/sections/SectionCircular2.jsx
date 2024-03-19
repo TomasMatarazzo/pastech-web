@@ -7,7 +7,7 @@ const SectionCircular2 = ({nombre,imagen,descripcion,botonColor,bg = "white",lin
 
     const backgroudn = {
         "green": " bg-first-green",
-        "white":" bg-first-green"
+        "white":" bg-[#60a115]"
     }
 
     const text1 = {
@@ -24,7 +24,7 @@ const SectionCircular2 = ({nombre,imagen,descripcion,botonColor,bg = "white",lin
         <section className="flex relative max-md:flex-row rounded-[2%] ">
             <div className = {`font-extralight ${backgroudn[bg]} md:pl-[150px] max-md:flex-col-reverse max-md:items-center max-md:align-middle items-center h-full w-full max-md:w-full px-10 flex flex-row py-16 max-md:py-10 bg-[#02936e] rounded-lg justify-evenly`}>
                 <div className='w-[30vw]  flex flex-col justify-center items-center max-md:items-center max-md:text-center max-md:w-[300px]'>
-                    <h1 className={`${text1[bg]} py-2 font-[Roboto] font-normal text-[55px] leading-[50px] max-md:text-[32px] max-md:mt-2 max-lg:text-[45px] max-md:leading-8 `}>{nombre}</h1>
+                    <h1 className={`${text1[bg]} py-2 font-[Roboto] font-normal text-[55px] leading-[50px] max-md:text-[32px] max-md:mt max-lg:text-[45px] max-md:leading-8 `}>{nombre}</h1>
                     <p className = {` ${text2[bg]} py-9 font-normal text-xl`}>{descripcion}</p>
                     <a href = {link}><Button text = {"+ INFO"} color = {botonColor}></Button></a>
                 </div>
