@@ -26,7 +26,6 @@ const Novedades = () => {
       fecha: "Agosto 2023",
       titulo: "Desarrollo de pasturometro electrónico",
       descripcion: "El equipo de informática estuvo realizando pruebas de mediciones en el campo."
-      ,imagen: imagen3
     },
     {
       fecha: "Marzo 2023",

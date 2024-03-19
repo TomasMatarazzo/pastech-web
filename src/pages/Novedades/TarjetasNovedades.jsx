@@ -16,9 +16,9 @@ const TarjetasNovedades = ({data}) => {
                 <li key={index} className={` ${item.circulo}  border-[6px] border-t-green bg-white z-20 text-center flex flex-col items-center justify-center shadow-lg w-[25vw] h-[25vw]  max-md:w-[220px] max-md:h-[220px]  border-[50%] rounded-full transition-all duration-500 hover:bg-slate-200 text-wrap`}>
                     <img src = {item.imagen} className='clip-circle w-[25vw] h-[25vw] max-md:w-[220px] max-md:h-[220px] ' ></img>
                 </li>
-                <div className={`  max-md:top-[20%]  max-md:mb-[450px] max-md:w-[100%] max-md:h-[400px] max-md:px-4 max-md:pt-8  border-[2px] border-first-green shadow-2xl bg-#[f1f4f6] bg w-[90%] justify-center absolute  h-[250px] flex flex-col text-center pl-[20vw] pr-10 right-0 items-center  `}>
-                    <p className='py-2 text-normal font-bold font-[Roboto] absolute right-16 top-0 max-md:text-lg max-md:text-cente max-md:right-10'>{item.fecha}</p>
-                    <p className='{`py-2 text-2xl font-bold font-[Roboto] max-md:text-lg max-md:text-center'>{item.titulo}</p>
+                <div className={`  max-md:top-[20%]  max-md:mb-[450px] max-md:w-[100%] max-md:h-[400px] max-md:px-4 max-md:pt-  border-[2px] border-first-green shadow-2xl bg-#[f1f4f6] bg w-[90%] justify-center absolute  h-[250px] flex flex-col text-center pl-[20vw] pr-10 right-0 items-center  `}>
+                    <p className='py-2 text-normal font-bold font-[Roboto] absolute right-16 top-0 max-md:text-lg max-md:text-center max-md:right-10 max-md:bottom-0 max-md:top-[90%]'>{item.fecha}</p>
+                    <p className='{`py-2 max-md:pt-16 text-2xl font-bold font-[Roboto] max-md:text-lg max-md:text-center'>{item.titulo}</p>
                     <p className='{` py-2 text-xl font-normal pt-8 max-md:text-lg max-md:text-center'>{item.descripcion}</p>
 
                 </div>

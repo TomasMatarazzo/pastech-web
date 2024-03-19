@@ -9,7 +9,7 @@ const TarjetaServicios = ({data}) => {
                 <li key={index} className={` ${item.circulo} border-[6px] bg-white z-20 text-center flex flex-col items-center justify-center shadow-lg w-[20vw] h-[20vw] relative  max-md:w-[200px] max-md:h-[200px] max-md:p-8  border-[50%]  rounded-full transition-all duration-500 hover:bg-slate-200 text-wrap`}>
                     <h1 className='pt-4 p-4 font-medium text-2xl max-md:text-xl font-[Roboto] max-md:text-[20px] max-md:font-semibold md:whitespace-pre-line'>{item.pregunta}</h1>
                 </li>
-                <div className={` max-md:top-[20%]  max-md:mb-[450px] max-md:w-[100%] max-md:h-[400px] max-md:px-4 max-md:pt-8  shadow-xl bg-first-green w-[90%]  justify-center absolute  h-[250px] flex text-center pl-[15vw] pr-10  right-0 items-center  `}>
+                <div className={` max-md:top-[20%]  max-md:mb-[450px] max-md:w-[100%] max-md:h-[400px] max-md:px-4 max-md:pt-12  shadow-xl bg-first-green w-[90%]  justify-center absolute  h-[250px] flex text-center pl-[15vw] pr-10  right-0 items-center  `}>
                     <p className='{` py-9 font-medium text-xl  text-center  max-md:text-lg max-md:text-center `}'>{item.respuesta}</p>
                 </div>
             </div>

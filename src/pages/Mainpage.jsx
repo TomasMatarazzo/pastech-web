@@ -17,7 +17,7 @@ const Mainpage = () => {
       <Landing></Landing>
       {/* <Button></Button> */}
     </section>
-    <section >
+    <section className=' max-md:pt-[60px]'>
       <SectionCircular nombre = {productos[0].nombre}
                 descripcion={productos[0].descripcion}
                 imagen={image1}

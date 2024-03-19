@@ -25,7 +25,7 @@ const Nav = () => {
             <Link to = '/' className='block'>
                 <img 
                 src = {icono}
-                alt = "Logo"z
+                alt = "Logo"
                 width = {260}
                 height={90}
                 className=' max-lg:w-[200px] w-[200px] pl-8'
