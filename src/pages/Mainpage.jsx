@@ -24,7 +24,7 @@ const Mainpage = () => {
                 boton = {productos[0].boton}
                 bg = "grey"
                 link = '/pasturometro'
-                botonColor={'white'}
+                botonColor={'green'}
       ></SectionCircular>
     </section>
     <section className='max-md:pb-[60px] bg-[#f1f4f6]'>
@@ -40,8 +40,8 @@ const Mainpage = () => {
       nombre = {productos[2].nombre}
       descripcion={productos[2].descripcion}
       imagen={image3}
-      botonColor={'white'}
-      bg = "white"
+      botonColor={'green'}
+      bg = "grey"
     ></SectionCircular>
     <section className=" pb-[60px] bg-[#f1f4f6]">
       <SectionCircular2 nombre = {productos[3].nombre}

@@ -6,10 +6,11 @@ import Mainpage from "./pages/Mainpage";
 import wpp from "./assets/images/wpp2.svg"
 import Contacto from "./pages/Contacto";
 import PreguntasFrecuentes from "./pages/PreguntasFrecuentes/PreguntasFrecuentes";
-import Servicios from "./pages/Contenido/Servicios";
-import ContenidoPasturometro from "./pages/Contenido/ContenidoPasturometro";
+import Servicios from "./pages/Servicios/Servicios";
+import Pasturometro from "./pages/Contenido/Pasturometro";
 import Novedades from "./pages/Novedades/Novedades";
 import Subscripcion from "./pages/Subscripcion/Subscripcion";
+import PastechSatelital from "./pages/PastechSatelital/PastechSatelital";
 
 
 const App = () => {
@@ -24,7 +25,8 @@ const App = () => {
           <Route path = '/servicios' element={<Servicios></Servicios>}></Route>
           <Route path = '/novedades' element={<Novedades></Novedades>}></Route>
           <Route path = '/subscripcion' element={<Subscripcion></Subscripcion>}></Route>
-          <Route path = '/pasturometro' element={<ContenidoPasturometro></ContenidoPasturometro>}></Route>
+          <Route path = '/pasturometro' element={<Pasturometro></Pasturometro>}></Route>
+          <Route path = '/pastech-satelital' element={<PastechSatelital></PastechSatelital>}></Route>
         </Routes>
 
         <section className="bg-[#394140] z-40">

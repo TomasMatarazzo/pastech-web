@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 const Button = ({text,color = "white",onClick}) => {
 
   const border = {
-    "green":"text-black bg-t-greens",
-    "white": "bg-white text-black"
+    "green":" text-black bg-t-green ",
+    "white": " text-black bg-s-green "
   }
   return (
-    <button onClick = {()=>onClick()}className ={`${border[color]}  bg-t-green font-semibold px-14 py-3 w-[fit-content] flex tetext-center border-spacing-6 border-0 text-sm  leading-none mt-2`}>
+    <button onClick = {()=>onClick()}className ={`${border[color]} font-semibold px-14 py-3 w-[fit-content] flex tetext-center border-spacing-6 border-0 text-sm  leading-none mt-2`}>
         {text}
     </button>
   )

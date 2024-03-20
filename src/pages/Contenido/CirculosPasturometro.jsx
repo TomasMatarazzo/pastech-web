@@ -1,7 +1,12 @@
 
 import React from 'react'
 
-const data2 = [
+
+
+
+const CirculosPasturometro = ({titulos,isPasturometro}) => {
+
+  let data = [
     {
       titulo: "Medición de altura comprimida de pasto",
       respuesta: "Utiliza lecturas electrónicas georeferenciadas para calcular la altura del pasto de manera precisa. Proporciona estimaciones en tiempo real de la cantidad de pasto disponible en cada zona o potrero del campo.",
@@ -36,8 +41,9 @@ const data2 = [
     }
   ];
 
+  console.log(titulos)
+  data = data.map((item,index) => ({...item, titulo:titulos[index]}))
 
-const CirculosPasturometro = () => {
   return (
     <section className='w-full flex justify-center items-center xl:padding-1  max-md:pt-[20px] mt-16 max-md:mt-0'>
     {/* <div className=" w-1/2 flex relative  justify-center items-center flex-col rounded-[2%] p-32">
@@ -46,13 +52,15 @@ const CirculosPasturometro = () => {
         </a>
     </div> */}
     <ul className='px-12 flex gap-8 flex-wrap justify-center pb-16 max-md:gap-0 max-md:px-4 max-md:text-center text-center'>
-        {data2.map((item, index) => (
+        {data.map((item, index) => (
             <li key={index} className={`max-md:p-8 flex flex-col justify-center max-md:my-8 shadow-lg w-[15vw] h-[15vw] max-md:w-[300px] max-md:h-[300px] text-align:center items-center ${item.border} border-[50%] px-4 py-16 transition-all duration-500 hover:bg-[#02A79C] rounded-[100%]`}>
                 {/* <span style={{"color":"#C7F168"}} className="relative top-1">
                     <i class={item.class} ></i>
                 </span> */}
                 <h1 className='pt-4 font-medium text-2xl font-[Roboto] max-md:text-[20px] max-md:font-semibold md:whitespace-pre-line'>{item.titulo}</h1>
+                { isPasturometro &&
                 <h1 className=' font-medium text-2xl font-[Roboto] max-md:text-[20px] max-md:font-semibold'>{item.titulo2}</h1>
+                }
             </li>
                 ))}
         </ul>

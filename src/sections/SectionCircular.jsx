@@ -33,7 +33,7 @@ const SectionCircular = ({nombre,imagen,link,descripcion,botonColor,bg = "white"
                             src = {imagen}
                         />
                 </div>
-                <div className='w-[50%] flex flex-col justify-center items-center max-md:items-center max-md:text-center max-md:w-[300px] max-md:pt-2'>
+                <div className='w-[50%] flex flex-col justify-center text-center items-center max-md:items-center max-md:text-center max-md:w-[300px] max-md:pt-2'>
                     <h1 className={`${text1[bg]} font-normal py-2 text-[55px] leading-[60px] max-md:text-[32px] max-lg:text-[45px] font-[Roboto] max-md:leading-8 `}>{nombre}</h1>
                     <p className = {` ${text2[bg]} py-9 font-normal text-xl`}>{descripcion}</p>
                     <a href={link} ><Button text = {"+ INFO"} color = {botonColor}></Button></a>

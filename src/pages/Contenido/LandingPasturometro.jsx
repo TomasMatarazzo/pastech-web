@@ -4,7 +4,7 @@ import vista1 from '../../assets/images/vistas_1.png'
 import vista2 from '../../assets/images/vistas_2.png'
 import Circulo from '../../components/Circulo'
 
-const LandingPasturometro = () => {
+const LandingPasturometro = ({imagen,texto}) => {
   return (
     <section className='flex justify-center text-center items-center max-md:pt-[20px] max-md:flex-col max-md:w-[100%] max-md:mb-0 mb-16 px-10 '>
         <div className=" w-1/2 px-10 max-md:px-0 max-md:w-full flex relative flex-row  justify-between items-start rounded-[2%] m-14 max-md:m-0 max-md:flex-col max-md:justify-center ">
