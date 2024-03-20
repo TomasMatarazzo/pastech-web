@@ -12,7 +12,7 @@ const CirculosStepPasturometro = ( {titulos,textos,img1,img2}) => {
       };
 
 
-    const classImagen = img1 ? ' max-md:w-[40vw] w-[17vw]':' max-md:w-[140px] w-[11vw]' 
+    const classImagen = img1 ? ' max-md:w-[40vw] w-[17vw]':' max-md:w-[140px] w-[11vw]'
 
 
   return (
