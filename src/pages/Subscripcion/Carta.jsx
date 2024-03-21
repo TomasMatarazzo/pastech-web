@@ -1,10 +1,12 @@
 import React from 'react'
 
 
-const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro}) => {
+const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta}) => {
 
 
-  const imagen = pasturometro ? ' w-[4.5vw] max-md:w-[75px] self-center':'w-[7vw] max-md:w-[100px] self-center'
+  let imagen = pasturometro ? ' w-[7vw] max-md:w-[100px] self-center':'w-[7vw] max-md:w-[120px] self-center'
+
+  imagen = alta ? ' w-[6vw] max-md:w-[75px] self-center': imagen
 
 
 
@@ -15,13 +17,13 @@ const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro}) => {
           <p className='font-semibold text-lg px-4 text-t-green whitespace-pre-line'>{descripcion}</p>
         </div>
         <div className='w-[100%] h-[30%] flex flex-col justify-end items-center'>
-        <img 
-                src = {icono}
-                alt = "Logo"
-                width = {260}
-                height={90}
-                className= {imagen}
-          ></img>
+            <img 
+                    src = {icono}
+                    alt = "Logo"
+                    width = {260}
+                    height={90}
+                    className= {imagen}
+              ></img>
             <button className='px-8 py-2 my-4 bg-first-green rounded-md font-bold text-xl text-white cursor-pointer hover:bg-t-green z-20'>CONTRATAR</button>
             { gratis ?
                   <div className='flex pb-4 '>
