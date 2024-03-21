@@ -6,7 +6,7 @@ const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta}) => {
 
   let imagen = pasturometro ? ' w-[7vw] max-md:w-[100px] self-center':'w-[7vw] max-md:w-[120px] self-center'
 
-  imagen = alta ? ' w-[6vw] max-md:w-[75px] self-center': imagen
+  imagen = alta ? ' w-[8vw] max-md:w-[75px] self-center': imagen
 
 
 
