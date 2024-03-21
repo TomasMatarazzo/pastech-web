@@ -10,7 +10,7 @@ const LandingSatelital = ({imagen,texto}) => {
         </div>
 
         <div className='max-md:mt-10 w-1/2 flex flex-col justify-start max-md:items-center max-md:text-center max-md:w-full px-8 '>
-            <p className = {`py-9 font-normal text-2xl`}><strong>Pastech Satelital</strong> es una <strong>aplicación</strong> de <strong>acceso web</strong> que permite <strong>determinar</strong> múltiples <strong>indicadores</strong> vinculados con el <strong>pasto</strong> y <strong>administrar</strong> varios <strong>potreros</strong>. Esta <strong>aplicación</strong> permite <strong>generar</strong> <strong>predicción inteligente</strong>
+            <p className = {`py-9 font-normal text-2xl`}><strong>Pastech Satelital</strong> es una <strong>aplicación</strong> de <strong>acceso web</strong> que permite determinar múltiples <strong>indicadores</strong> vinculados con el <strong>pasto</strong> y <strong>administrar</strong> varios potreros. Esta aplicación permites <strong>generar</strong> <strong>predicción inteligente</strong>
 
 
         </p>
