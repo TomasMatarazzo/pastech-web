@@ -53,6 +53,7 @@ const CirculosPasturometro = ({titulos,isPasturometro}) => {
     </div> */}
     <ul className='px-12 flex gap-8 flex-wrap justify-center pb-16 max-md:gap-0 max-md:px-4 max-md:text-center text-center'>
         {data.map((item, index) => (
+          
             <li key={index} className={`max-md:p-8 flex flex-col justify-center max-md:my-8 shadow-lg w-[15vw] h-[15vw] max-md:w-[300px] max-md:h-[300px] text-align:center items-center ${item.border} border-[50%] px-4 py-16 transition-all duration-500 hover:bg-[#02A79C] rounded-[100%]`}>
                 {/* <span style={{"color":"#C7F168"}} className="relative top-1">
                     <i class={item.class} ></i>

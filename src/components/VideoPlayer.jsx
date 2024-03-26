@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactPlayer from "react-player"
 import image from "../assets/images/01.jpg"
-import pasto from "../assets/images/pasto.mp4"
+import pasto from "../assets/images/pasto2.mp4"
 
 
 const VideoPlayer = () => {
