@@ -25,6 +25,9 @@ const PastechSatelital = ({titulo}) => {
         <h1>Productos</h1>
     </div> */}
     <Titulo titulo ="Pastech Satelital"></Titulo>
+    <div className={`flex relative  justify-center items-center flex-col rounded-[2%] max-md:text-center`}>
+        <h1 className= {` inline-block  pb-0 text-2xl leading-[30px] max-md:text-[20px] font-bold text-t-green font-[Roboto]`}>Mediciones remotas de stock de pasto con satélites e inteligencia artificial</h1>
+    </div>
     <LandingSatelital></LandingSatelital>
     <div className="max-md:hidden m-auto flex max-md:min-w-[300px] max-md:min-h-[0.5rem] z-6 bg-green-600 leading-5 border-0 p-0 font-light text-base whitespace-nowrap min-h-[0.1rem] min-w-[400px] max-w-[50%] max-h-1 border-[50%] self-center opacity-100 z-5"></div>
     <CirculosPasturometro titulos={titulos}></CirculosPasturometro>

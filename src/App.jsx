@@ -11,6 +11,7 @@ import Pasturometro from "./pages/Contenido/Pasturometro";
 import Novedades from "./pages/Novedades/Novedades";
 import Subscripcion from "./pages/Subscripcion/Subscripcion";
 import PastechSatelital from "./pages/PastechSatelital/PastechSatelital";
+import PastechDron from "./pages/PastechDron/PastechDron";
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
           <Route path = '/subscripcion' element={<Subscripcion></Subscripcion>}></Route>
           <Route path = '/pasturometro' element={<Pasturometro></Pasturometro>}></Route>
           <Route path = '/pastech-satelital' element={<PastechSatelital></PastechSatelital>}></Route>
+          <Route path = '/pastech-dron' element={<PastechDron></PastechDron>}></Route>
         </Routes>
 
         <section className="bg-[#394140] z-40">

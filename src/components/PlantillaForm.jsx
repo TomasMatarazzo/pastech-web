@@ -57,7 +57,7 @@ export const PlantillaForm = () => {
       <FormProvider {...methods} >
         <form onSubmit={ e => e.preventDefault()}
           noValidate
-          className = "flex flex-row flex-wrap max-md:flex-col">
+          className = "flex flex-row flex-wrap max-md:flex-col bg-[#BBE33E] p-12">
             <Input {...nombreValidation}/>
             <Input {...numeroValidation}/>
             <Input {...correoValidation}/>

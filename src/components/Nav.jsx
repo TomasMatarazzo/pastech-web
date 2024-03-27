@@ -10,6 +10,8 @@ const Nav = () => {
       {name:"Empresa",link:"/empresa"},
       {name:"Pasturometro Electrónico",link:"/pasturometro"},
       {name:"Pastech Satelital",link:"/pastech-satelital"},
+      {name:"Pastech Dron",link:"/pastech-dron"},
+
       {name:"Servicios",link:"/servicios"},
       {name:"Subscripción",link:"/subscripcion"},
       {name:"Preguntas Frecuentes",link:"/preguntas"},
