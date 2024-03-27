@@ -33,7 +33,7 @@ const Subscripcion = () => {
                 </div>
                 <section className='flex flex-row justify-center gap-6 items-center w-full max-md:flex-col max-md:gap-0 max-md:ml-0'>
                     <Carta titulo = 'Paso 1' descripcion={'Adquisicion de Pasturometro Electronico'} gratis={true} alta={true} icono = {pastu} pasturometro={true} noBoton = {true}></Carta>
-                    <Carta titulo = 'Paso 2' descripcion={'Subscripcion App Movil + \nPlataforma Web'} precio = '10.000'  alta = {true} gratis={true} icono = {app} pasturometro={true} img2 = {monitor} descripcionBoton={'QUIERO QUE ME CONTACTEN'}></Carta>
+                    <Carta titulo = 'Paso 2' descripcion={'Subscripcion App Movil + \nPlataforma Web'} precio = '10.000'  alta = {true} gratis={true} icono = {app} pasturometro={true} img2 = {monitor} descripcionBoton={'QUIERO QUE ME CONTACTEN'} goto='/contacto'></Carta>
                     <Carta titulo = 'Paso 3' descripcion={'Asistencia Tecnica\n\nPersonal de Pastech te orientará en la calibracion y utilizacion\n\nAcceso a 2 años de datos historicos'} gratis={true}  pasturometro= {true} icono = {icono} precio = '20.000' noBoton = {true}></Carta>
                 </section>
             </div>

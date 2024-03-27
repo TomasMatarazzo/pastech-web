@@ -34,6 +34,7 @@ const Mainpage = () => {
                 boton = {productos[1].boton}
                 bg = "green"
                 botonColor={"white"}
+                link = '/pastech-satelital'
       ></SectionCircular2>
     </section>
     <SectionCircular
@@ -42,6 +43,7 @@ const Mainpage = () => {
       imagen={image3}
       botonColor={'green'}
       bg = "grey"
+      link = '/pastech-dron'
     ></SectionCircular>
     <section className=" pb-[60px] bg-[#f1f4f6]">
       <SectionCircular2 nombre = {productos[3].nombre}

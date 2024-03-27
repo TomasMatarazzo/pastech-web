@@ -1,5 +1,5 @@
 import React from 'react'
-import satelite from '../../assets/images/satelite-logo.png'
+import satelite from '../../assets/images/dron-logo.png'
 
 const LandingDron = ({imagen,texto}) => {
   return (

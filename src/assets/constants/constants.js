@@ -55,14 +55,14 @@ const empresa = [
 const productosLinks = [
     { nombre: 'Pasturometro Electrónico', link: '/pasturometro' },
     { nombre: 'Pastech Satelital', link: '/pastech-satelital' },
-    { nombre: 'Pastech Satelital', link: '/pastech-dron' },
+    { nombre: 'Pastech Dron', link: '/pastech-dron' },
     { nombre: 'Servicios', link: '/servicios' }
   ];
 
 const linksFooter = [
-    { nombre: "Subscripción", link: "/" },
+    { nombre: "Subscripción", link: "/subscripcion" },
     { nombre: "Preguntas Frecuentes", link: "/preguntas" },
-    { nombre: "Novedades", link: "/" },
+    { nombre: "Novedades", link: "/novedades" },
     { nombre: "Contacto", link: "/contacto" }
   ];
 

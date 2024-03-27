@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descripcionBoton,noBoton}) => {
+const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descripcionBoton,noBoton,goto = "#"}) => {
 
 
   let imagen = pasturometro ? ' w-[7vw] max-md:w-[100px] self-center':'w-[7vw] max-md:w-[120px] self-center'
@@ -24,7 +24,7 @@ const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descr
                     height={90}
                     className= {imagen}
               ></img>
-            {noBoton ? "":<button className='px-8 py-2 my-4 w-[220px] bg-first-green rounded-md font-bold text-xl text-white cursor-pointer hover:bg-t-green z-20'>{descripcionBoton}</button>}
+            {noBoton ? "":<a href={goto}><button className='px-8 py-2 my-4 w-[220px] bg-first-green rounded-md font-bold text-xl text-white cursor-pointer hover:bg-t-green z-20'>{descripcionBoton}</button></a>}
             { gratis ?
                   <div className='flex pb-4 '>
                       <p className='pb-1 pr-3 invisible'>ARS</p>
