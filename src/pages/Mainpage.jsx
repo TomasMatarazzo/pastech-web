@@ -1,7 +1,7 @@
 import React from 'react'
 import { Nav } from '../components'
 import { productos } from '../assets/constants/constants'
-import image1 from '../assets/images/icono-pasturometro.png'
+import image1 from '../assets/images/icono-pasturometro2.png'
 import image2 from '../assets/images/icono-satelite.png'
 import image3 from '../assets/images/icono-dron.png'
 import { Landing,SectionCircular,SectionCircular2 } from '../sections'
