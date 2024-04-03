@@ -9,7 +9,7 @@ import imagenUsuario from '../../assets/images/circuloUsuario.jpeg'
 
 const PastechDron = ({titulo}) => {
 
- const titulos = ['Lecturas espectrales','Alta resolucion', 'Protocolo propio','Inteligencia Artificial','Multiples indicadores']
+ const titulos = ['Lecturas espectrales','Alta resolución', 'Protocolo propio','Inteligencia Artificial','Múltiples indicadores']
 
  const titulos2 = ['REGISTRO', 'LECTURA Dron','SISTEMA WEB']
  const textos = [

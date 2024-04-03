@@ -23,7 +23,7 @@ const Nav = () => {
 
   return (
     <div className='w-full fixed top-0 left-0 z-50'>
-      <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
+      <div className='md:flex items-center max-wide:text-sm justify-between bg-white py-4 md:px-10 px-7'>
             <Link to = '/' className='block'>
                 <img 
                 src = {icono}
@@ -41,11 +41,11 @@ const Nav = () => {
                                 height={25}/>
                         </div>
             </div>
-      <ul className={`md:flex gap-6 md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md</ul>:pl-0 pl-9 transition-all duration-200 ease-in ${open ? 'top-[4.5rem] ':'top-[-490px]'}`}>
+      <ul className={`md:flex gap-6 max-wide:gap-4 md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md</ul>:pl-0 pl-9 transition-all duration-200 ease-in ${open ? 'top-[4.5rem] ':'top-[-490px]'}`}>
         {
           
           Links.map((link)=>(
-            <li key={link.name} className={`font-montserrat leading-normal text-bas cursor-pointer hover:text-[#02936e] ${link.name === 'Pastech Satelital' ? 'font-semibold text-black bg-first-green py-2 px-2 rounded-md' : 'py-0 text-slate-gray'}`}>
+            <li key={link.name} className={`font-montserrat  leading-normal text-bas cursor-pointer  ${link.name === 'Pastech Satelital' ? 'font-semibold text-black bg-first-green hover:text-white py-2 px-2 rounded-md' : 'py-0 text-slate-gray hover:text-first-green'}`}>
               <a href={link.link}>{link.name}</a>
             </li>
           ))

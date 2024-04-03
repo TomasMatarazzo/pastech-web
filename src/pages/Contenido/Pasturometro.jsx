@@ -4,6 +4,7 @@ import LandingPasturometro from './LandingPasturometro'
 import CirculosPasturometro from './CirculosPasturometro'
 import CirculosStepPasturometro from './CirculosStepPasturometro'
 import Titulo from '../../components/Titulo'
+import SubscripcionPasturometro from '../Subscripcion/SubscripcionPasturometro'
 
 const Pasturometro = ({titulo}) => {
 
@@ -34,7 +35,7 @@ const Pasturometro = ({titulo}) => {
       img2 = {false}
     
     ></CirculosStepPasturometro>
-
+    <SubscripcionPasturometro></SubscripcionPasturometro>
     </>
   )
 }

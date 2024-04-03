@@ -38,14 +38,14 @@ const empresa = [
     {
         nombre:"María Alejandra Marino– Socia fundadora",
         titulo:"Especialista en Producción de Recursos Forrajeros",
-        descripcion:"Dr. en Cs. Agrarias, profesor e investigador en producción animal. Especialista en el desarrollo de tecnologías y prácticas de alto valor productivo ambiental que incluyan el manejo de la nutrición animal y del pastoreo para la producción sustentable de carne y leche de los sistemas ganaderos de base pastoril.",
+        descripcion:"Ingeniera Agrónoma y Máster en Producción Animal. Docente en la Facultad de Ciencias Agrarias de la UNMDP e investigadora. Con sólida experiencia en el estudio de la producción y manejo del pasto, y en el desarrollo de tecnología aplicada de triple impacto en sistemas ganaderos pastoriles",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros calefactores"
     },
     {
         nombre:"Juan Insua – Socio fundador",
         titulo:"Especialista en Nutrición Animal y Ecofisiología de Pasturas",
-        descripcion:"Ingeniero Agrónomo y Master....Investigador y docente universitario. Especialista en el desarrollo de tecnologías y prácticas de alto valor productivo ambiental que incluyan el manejo de la nutrición animal y del pastoreo para la producción sustentable de carne y leche de los sistemas ganaderos de base pastoril.",
+        descripcion:"Dr. en Cs. Agrarias, profesor e investigador en producción animal. Especialista en el desarrollo de tecnologías y prácticas de alto valor productivo ambiental que incluyan el manejo de la nutrición animal y del pastoreo para la producción sustentable de carne y leche de los sistemas ganaderos de base pastoril.",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros calefones"
     },
@@ -56,7 +56,7 @@ const productosLinks = [
     { nombre: 'Pasturómetro electrónico', link: '/pasturometro' },
     { nombre: 'Pastech Satelital', link: '/pastech-satelital' },
     { nombre: 'Pastech Dron', link: '/pastech-dron' },
-    // { nombre: 'Servicios', link: '/servicios' }
+    { nombre: 'Servicios', link: '/servicios' }
   ];
 
 const linksFooter = [

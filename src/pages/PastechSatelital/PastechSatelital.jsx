@@ -7,10 +7,12 @@ import Titulo from '../../components/Titulo'
 import LandingSatelital from './LandingSatelital'
 import imagenSatelite from '../../assets/images/circuloSatelite.png'
 import imagenUsuario from '../../assets/images/circuloUsuario.jpeg'
+import SubscripcionPasturometro from '../Subscripcion/SubscripcionPasturometro'
+import SubscripcionPastechSatelital from '../Subscripcion/SubscripcionPastechSatelital'
 
 const PastechSatelital = ({titulo}) => {
 
- const titulos = ['Inteligencia Artificial', 'Mediciones historicas','Lecturas automaticas','Multiples indicadores','Notificaciones por WhatsApp']
+ const titulos = ['Inteligencia Artificial', 'Mediciones históricas','Lecturas automaticas','Múltiples indicadores','Notificaciones por WhatsApp']
 
  const titulos2 = ['REGISTRO', 'LECTURA SATELITAL','SISTEMA WEB']
  const textos = [
@@ -38,7 +40,7 @@ const PastechSatelital = ({titulo}) => {
       img1 = {imagenUsuario}
       img2 = {imagenSatelite}
     ></CirculosStepPasturometro>
-
+    <SubscripcionPastechSatelital></SubscripcionPastechSatelital>
     </>
   )
 }
