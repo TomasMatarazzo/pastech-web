@@ -13,8 +13,6 @@ export const PlantillaForm = () => {
 
   
   
-
-
   const [error, setError] = useState(false)
   const [loginExitoso, setLoginExitoso] = useState(false)
   // const dispatch = useDispatch()

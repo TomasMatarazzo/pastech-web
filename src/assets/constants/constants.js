@@ -1,20 +1,20 @@
 const productos = [
     {
-        nombre:"PASTUROMETRO ELECTRÓNICO",
-        descripcion:"Pasturometro electrónico con mediciones georeferenciadas que permite determinar la altura y humedad del pasto medido y enviarlo a un dispositivo movil y a un sistema de acceso web",
+        nombre:"PASTURÓMETRO ELECTRÓNICO",
+        descripcion:"Pasturómetro electrónico con mediciones geo referenciadas que mediante sensores permite determinar la altura comprimida del pasto y enviarlo a un dispositivo móvil. La información se encuentra almacenada en un sistema de acceso web, el cual permite disponer de información para la toma de decisiones.",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros cocinas"
     
     },
     {
         nombre:"PASTECH SATELITAL",
-        descripcion:"Sistema de acceso web que utliza lecturas satelitales para determinar la altura del pasto y los KG de pasto seco por m2, para lo cual trabaja con intenligencia artificial y modelos matematicos de predicción",
+        descripcion:"Pastech Satelital es una herramienta que mediante la lectura de imágenes satelitales, te permite calcular los KG de pasto seco que dispone tu potrero y mediante la utilización de inteligencia artificial y modelos matemáticos de simulación permite predecir el crecimiento del pasto.",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros calefactores"
     },
     {
         nombre:"PASTECH DRON",
-        descripcion:"Sistema de medicion a demanda mediante la utilizacion de dispositivos de dron, cuyos valores se integran con el sistema de pastech satelital",
+        descripcion:"Sistema de medición a demanda mediante la utilización de dispositivos de dron, cuyos valores se integran con el sistema de Pastech satelital",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros calefones"
     },
@@ -38,7 +38,7 @@ const empresa = [
     {
         nombre:"María Alejandra Marino– Socia fundadora",
         titulo:"Especialista en Producción de Recursos Forrajeros",
-        descripcion:"Ingeniera Agrónoma y Máster en Producción Animal. Investigadora y docente universitario, con sólida experiencia en el estudio y la producción de pasto en sistemas ganaderos.",
+        descripcion:"Dr. en Cs. Agrarias, profesor e investigador en producción animal. Especialista en el desarrollo de tecnologías y prácticas de alto valor productivo ambiental que incluyan el manejo de la nutrición animal y del pastoreo para la producción sustentable de carne y leche de los sistemas ganaderos de base pastoril.",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros calefactores"
     },
@@ -53,10 +53,10 @@ const empresa = [
 ]
 
 const productosLinks = [
-    { nombre: 'Pasturometro Electrónico', link: '/pasturometro' },
+    { nombre: 'Pasturómetro electrónico', link: '/pasturometro' },
     { nombre: 'Pastech Satelital', link: '/pastech-satelital' },
     { nombre: 'Pastech Dron', link: '/pastech-dron' },
-    { nombre: 'Servicios', link: '/servicios' }
+    // { nombre: 'Servicios', link: '/servicios' }
   ];
 
 const linksFooter = [

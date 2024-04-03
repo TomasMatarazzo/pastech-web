@@ -1,10 +1,9 @@
 import React from 'react'
 import { Nav } from '../components'
 import { productos } from '../assets/constants/constants'
-import image1 from '../assets/images/01_.jpg'
-import image2 from '../assets/images/02_.jpg'
-import image3 from '../assets/images/03.jpg'
-import image4 from '../assets/images/04_.jpg'
+import image1 from '../assets/images/icono-pasturometro.png'
+import image2 from '../assets/images/icono-satelite.png'
+import image3 from '../assets/images/icono-dron.png'
 import { Landing,SectionCircular,SectionCircular2 } from '../sections'
 
 
@@ -45,7 +44,7 @@ const Mainpage = () => {
       bg = "grey"
       link = '/pastech-dron'
     ></SectionCircular>
-    <section className=" pb-[60px] bg-[#f1f4f6]">
+    {/* <section className=" pb-[60px] bg-[#f1f4f6]">
       <SectionCircular2 nombre = {productos[3].nombre}
                   descripcion={productos[3].descripcion}
                   imagen={image4}
@@ -54,7 +53,7 @@ const Mainpage = () => {
                   botonColor={'white'}
                   link ='/servicios'
       ></SectionCircular2>
-    </section>
+    </section> */}
   </main>
   )
 }

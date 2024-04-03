@@ -9,8 +9,8 @@ const Landing = () => {
 
     const slides = [
         {
-          texto:"PASTUROMETRO ELECTRÓNICO",
-          descripcion:"Pasturometro electrónico con mediciones georeferenciadas",
+          texto:"PASTURÓMETRO ELECTRÓNICO",
+          descripcion:"Pasturómetro electrónico con mediciones georeferenciadas",
           url: image1,
           wrap: "text-nonwrap"
         },

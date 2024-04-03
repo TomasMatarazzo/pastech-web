@@ -8,11 +8,11 @@ const Nav = () => {
     let Links =[
       {name:"Inicio",link:"/"},
       {name:"Empresa",link:"/empresa"},
-      {name:"Pasturometro Electrónico",link:"/pasturometro"},
+      {name:"Pasturómetro electrónico",link:"/pasturometro"},
       {name:"Pastech Satelital",link:"/pastech-satelital"},
       {name:"Pastech Dron",link:"/pastech-dron"},
 
-      {name:"Servicios",link:"/servicios"},
+      // {name:"Servicios",link:"/servicios"},
       {name:"Subscripción",link:"/subscripcion"},
       {name:"Preguntas Frecuentes",link:"/preguntas"},
       {name:"Novedades",link:"/novedades"},
@@ -30,7 +30,7 @@ const Nav = () => {
                 alt = "Logo"
                 width = {260}
                 height={90}
-                className=' max-lg:w-[200px] w-[200px] pl-8'
+                className=' max-lg:w-[200px] w-[250px] pl-8'
                 ></img>
             </Link>
             <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-8 cursor-pointer md:hidden'>
@@ -41,10 +41,11 @@ const Nav = () => {
                                 height={25}/>
                         </div>
             </div>
-      <ul className={`md:flex gap-6 md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-200 ease-in ${open ? 'top-[4.5rem] ':'top-[-490px]'}`}>
+      <ul className={`md:flex gap-6 md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md</ul>:pl-0 pl-9 transition-all duration-200 ease-in ${open ? 'top-[4.5rem] ':'top-[-490px]'}`}>
         {
+          
           Links.map((link)=>(
-            <li key={link.name} className='font-montserrat py-2 md:py-0 leading-normal text-base text-slate-gray cursor-pointer hover:text-[#02936e]'>
+            <li key={link.name} className={`font-montserrat leading-normal text-bas cursor-pointer hover:text-[#02936e] ${link.name === 'Pastech Satelital' ? 'font-semibold text-black bg-first-green py-2 px-2 rounded-md' : 'py-0 text-slate-gray'}`}>
               <a href={link.link}>{link.name}</a>
             </li>
           ))

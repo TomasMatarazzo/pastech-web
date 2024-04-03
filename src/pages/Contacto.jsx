@@ -4,6 +4,8 @@ import Titulo from '../components/Titulo'
 import Circulo from '../components/Circulo'
 
 const Contacto = () => {
+
+
   return (
     <div className='bg-[#e9e8e8]'>
       <Titulo titulo = 'Contacto' ></Titulo>
