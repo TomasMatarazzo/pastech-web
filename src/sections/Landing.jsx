@@ -60,7 +60,7 @@ const Landing = () => {
     <>
     <section
         id = "home"
-        className = " transition-none ease relative w-screen flex xl:flex-row flex-col justify-center min-h-screen gap-10 py-2 bg-center bg-cover duration-500 max-md:min-h-[411px] "
+        className = " transition-none ease relative w-screen  flex xl:flex-row flex-col justify-center  max-md:ml-[50px] md:min-h-screen gap-10 py-2 bg-center bg-cover duration-500 max-md:w-[60%] max-md:gap-0 max-md:m-auto self-center "
         style={{ backgroundImage: `url(${slides[index].url})` }}>
           { index === 0 ? <img src = {image0}></img> : null }
       {/* Left Arrow */}
@@ -81,7 +81,11 @@ const Landing = () => {
             </span>
             </h2>
           </div>
-          </div> : null
+          </div> :    
+          <div className='arrow max-md:hidden'>
+            <span></span>
+            <span></span>
+          </div>
         }
     </section>
     </>
