@@ -123,7 +123,7 @@
 }
 
 .slider {
-  animation: slider 5s infinite;
+  animation: slider 3s infinite;
 }
 
 @keyframes slider {
