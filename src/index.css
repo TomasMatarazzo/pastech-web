@@ -121,3 +121,28 @@
       transform: rotate(45deg) translate(-20px, -20px);
   }
 }
+
+.slider {
+  animation: slider 5s infinite;
+}
+
+@keyframes slider {
+  0% {
+    left: translateX(0%);
+  }
+  25% {
+    left: translateX(-100%);
+  }
+  45% {
+    left: translateX(-100%);
+  }
+  65% {
+    left: translateX(-200%);
+  }
+  85% {
+    left: translateX(-200%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+}
