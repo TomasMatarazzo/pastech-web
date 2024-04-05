@@ -15,7 +15,7 @@ const SubscripcionPasturometro = () => {
             <div className='absolute w-[100%] max-lg:hidden ' style={{ backgroundImage: `url(${logo}})` }}>
                 <img src = {logo} className=' absolute right-[-11%] w-[400px] h-[400px]'></img>
             </div>
-            <section className='flex flex-row justify-center gap-6 items-start w-full max-md:flex-col max-md:gap-0 max-md:ml-0'>
+            <section className='flex flex-row justify-center gap-6 items-start max-md:items-center w-full max-md:flex-col max-md:gap-0 max-md:ml-0'>
                 <Carta titulo = 'Paso 1' descripcion={'Adquisicion de Pasturómetro electrónico'} gratis={true} icono = {pastu} pasturometro={true} noBoton = {true}></Carta>
                 <Carta titulo = 'Paso 2' descripcion={'Subscripción App Movil + \nPlataforma Web'} precio = '10.000'  alta = {true} gratis={true} icono = {app} pasturometro={true} img2 = {monitor} descripcionBoton={'QUIERO QUE ME CONTACTEN'} goto='/contacto'></Carta>
                 <Carta titulo = 'Paso 3' descripcion={'Asistencia Técnica\n\nPersonal de Pastech te orientará en la calibración y utilización\n\nAcceso a 2 años de datos históricos'} gratis={true}  pasturometro= {true} icono = {icono} precio = '20.000' noBoton = {true}></Carta>

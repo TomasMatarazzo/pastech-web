@@ -62,9 +62,9 @@ const Landing = () => {
     <>
     <section
         id = "home"
-        className = {`${transition} relative w-screen  flex xl:flex-row flex-col justify-center max-md:ml-[50px] md:min-h-screen gap-10 py-2 bg-center bg-cover max-md:w-[60%] max-md:gap-0 max-md:m-auto self-center `}
+        className = {`${transition} relative w-screen  flex xl:flex-row flex-col justify-center  md:min-h-screen max-md:min-h-[500px] gap-10 py-2 bg-center bg-cover  self-center `}
         style={{ backgroundImage: `url(${slides[index].url})` }}>
-          { index === 0 ? <img src = {image0}></img> : null }
+          { index === 0 ? <img src = {image0} className="max-md:p-16"></img> : null }
       {/* Left Arrow */}
       <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
         <SlArrowLeft onClick={decreaseIndex} size={30} />
