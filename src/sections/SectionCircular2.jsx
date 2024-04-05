@@ -29,7 +29,7 @@ const SectionCircular2 = ({nombre,imagen,descripcion,botonColor,bg = "white",lin
                     <a href = {link}><Button text = {"+ INFO"} color = {botonColor}></Button></a>
                 </div>
                 <div className = {`w-[26vw] rounded-full max-md:w-[330px] max-md:h-[330px] max-lg:w-[510px] max-lg:h-[510px]  bg-center bg-cover duration-500 h-[26vw] border-[6px] border-s-green border-dashed flex items-center justify-center `}>
-                     <img   className = {`w-[25vw] rounded-full max-md:w-[300px] max-md:h-[300px] max-lg:w-[500px] max-lg:h-[500px]  bg-center bg-cover duration-500 h-[25vw] border-[3px] border-s-green`}
+                     <img   className = {`w-[25vw]  h-[25vw] p-8 rounded-full max-md:w-[300px] max-md:h-[300px] max-lg:w-[500px] max-lg:h-[500px]  bg-center bg-cover duration-500 border-[3px] border-s-green`}
                             src = {imagen}
                         />
                 </div>
