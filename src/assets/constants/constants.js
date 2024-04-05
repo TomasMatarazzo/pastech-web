@@ -55,8 +55,7 @@ const empresa = [
 const productosLinks = [
     { nombre: 'Pasturómetro electrónico', link: '/pasturometro' },
     { nombre: 'Pastech Satelital', link: '/pastech-satelital' },
-    { nombre: 'Pastech Dron', link: '/pastech-dron' },
-    { nombre: 'Servicios', link: '/servicios' }
+    { nombre: 'Pastech Dron', link: '/pastech-dron' }
   ];
 
 const linksFooter = [

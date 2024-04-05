@@ -8,18 +8,18 @@ import FormCompra from './FormCompra'
 const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descripcionBoton,noBoton,goto = "#", setTipo}) => {
 
 
-  let imagen = pasturometro ? ' w-[7vw] max-md:w-[100px] self-center':'w-[7vw] max-md:w-[120px] self-center'
+  let imagen = pasturometro ? ' w-[35%] max-md:w-[100px] self-center':'w-[35%] max-md:w-[120px] self-center'
 
-  imagen = alta ? ' w-[6vw] max-md:w-[75px] self-center': imagen
+  imagen = alta ? ' w-[30%] max-md:w-[75px] self-center': imagen
 
   
 
   return (
-    <div className='w-[18vw] max-md:w-[80vw] max-md:my-8 max-md:mx-18 max-md:h-[60vh] h-[70vh] bg-s-green rounded-md flex flex-col items-center justify-between text-center'>
+    <div className='relative w-[18vw] max-md:w-[80vw] max-md:my-8 max-md:mx-18 min-h-[70vh] bg-s-green rounded-md flex flex-col items-center justify-between text-center'>
         <>
         <div className=''> 
-          <h1 className='font-bold text-3xl text-t-green py-2'>{titulo}</h1>
-          <p className='font-semibold text-lg px-4 leading-[30px] whitespace-pre-line text-black'>{descripcion}</p>
+          <h1 className='h-[20%] font-bold text-3xl text-t-green py-2'>{titulo}</h1>
+          <p className='h-[50%] font-semibold text-lg px-4 leading-[30px] whitespace-pre-line text-black'>{descripcion}</p>
         </div>
         <div className='w-[100%] h-[30%] flex flex-col justify-end items-center'>
             <img 
