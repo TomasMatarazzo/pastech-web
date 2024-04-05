@@ -7,8 +7,7 @@ const LandingSatelital = ({imagen,texto}) => {
   return (
     <section className='flex justify-evenly relative pt-12 text-center items-center max-md:pt-[20px] max-md:flex-col max-md:w-[100%] max-md:mb-0 mb-16 px-10 '>
         <div className="  max-md:px-0 w-[20vw]  max-md:w-full flex relative flex-row  justify-center items-start rounded-[2%] max-md:m-0 max-md:flex-col max-md:justify-center ">
-                            <img src={satelite} alt="Whatsapp" className='z-30 self-center' />
-                            
+                            <img src={satelite} alt="Whatsapp" className='z-30 self-center' />            
         </div>
 
         <div className='w-[50vw] max-md:mt-10 flex flex-col justify-center max-md:items-center max-md:text-center max-md:w-full px-8'>

@@ -69,7 +69,7 @@ const Mainpage = () => {
       ></SectionCircular2>
     </section> */}
         <div className='w-[100%] flex flex-col justify-center items-center max-md:items-center text-center max-md:w-[300px]'>
-            <h1 className={` py-2 pt-8  text-[55px] leading-[50px] max-md:text-[32px] font-bold font-[Roboto]`}><span className = 'text-t-green'>¿Por qué la <span className='text-first-green'>medición</span> genera beneficios ?</span></h1>
+            <h1 className={` py-2 pt-8  text-[55px] leading-[50px] max-md:text-[32px] text-center font-bold font-[Roboto]`}><span className = 'text-t-green'>¿Por qué la <span className='text-first-green'>medición</span> genera beneficios ?</span></h1>
 
         </div>
     <section className='w-full flex justify-center items-center xl:padding-1  max-md:pt-[20px] mt-16 max-md:mt-0'>
