@@ -2,11 +2,15 @@ import React from 'react'
 import Titulo from '../../components/Titulo'
 import Circulo from '../../components/Circulo'
 import { PlantillaFormCompra } from '../../components/PlantillaFormCompra'
+import { useParams } from 'react-router-dom';
 
-const FormCompra = ({tipo}) => {
+const FormCompra = () => {
 
-  // armalo con esto sdatos     // tipo 0 = gratis, 1 = basico, 2 = avanzado, 3 = inteligente
+  const { productId } = useParams();
+  // armalo con esto sdatos
+  // tipo 0 = gratis, 1 = basico, 2 = avanzado, 3 = inteligente
   let tipoSuscripcion;
+  let tipo = parseInt(productId)
   switch (tipo) {
     case 0:
       tipoSuscripcion = 'Gratis';
@@ -25,14 +29,17 @@ const FormCompra = ({tipo}) => {
 
   let precio;
   switch (tipo) {
+    case 0:
+      precio = 'GRATIS'
     case 1:
-      precio = 10000;
+      console.log('entro');
+      precio = '$10000';
       break;
     case 2:
-      precio = 20000;
+      precio = '$20000';
       break;
     case 3:
-      precio = 40000;
+      precio = '$40000';
       break;
   }
 

@@ -15,7 +15,7 @@ const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descr
   
 
   return (
-    <div className='relative w-[18vw] max-md:w-[80vw] max-md:my-8 max-md:mx-18 min-h-[70vh] bg-s-green rounded-md flex flex-col items-center justify-between text-center'>
+    <div className='relative w-[18vw] max-md:w-[80vw] max-md:my-8 max-md:mx-18 min-h-[75vh] bg-s-green rounded-md flex flex-col items-center justify-between text-center'>
         <>
         <div className=''> 
           <h1 className='h-[20%] font-bold text-3xl text-t-green py-2'>{titulo}</h1>
