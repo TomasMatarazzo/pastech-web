@@ -12,7 +12,8 @@ import Novedades from "./pages/Novedades/Novedades";
 import Subscripcion from "./pages/Subscripcion/Subscripcion";
 import PastechSatelital from "./pages/PastechSatelital/PastechSatelital";
 import PastechDron from "./pages/PastechDron/PastechDron";
-
+import FinalizacionCompra from './pages/Subscripcion/FinalizacionCompra'
+import FormCompra from './pages/Subscripcion/FormCompra'
 
 const App = () => {
   return (
@@ -29,6 +30,8 @@ const App = () => {
           <Route path = '/pasturometro' element={<Pasturometro></Pasturometro>}></Route>
           <Route path = '/pastech-satelital' element={<PastechSatelital></PastechSatelital>}></Route>
           <Route path = '/pastech-dron' element={<PastechDron></PastechDron>}></Route>
+          <Route path = '/confirmacion' element = {<FinalizacionCompra></FinalizacionCompra>}></Route> 
+          <Route path = '/form/:productId' element = {<FormCompra></FormCompra>}></Route> 
         </Routes>
 
         <section className="bg-[#394140] z-40">
