@@ -21,7 +21,7 @@ const SubscripcionPastechSatelital = () => {
     <section className='mb-10'>
             <Titulo titulo = 'Susbscripción Pastech Satelital'></Titulo>
             <div className={`flex relative  justify-center items-center flex-col rounded-[2%] max-md:text-center pb-6`}>
-                <h1 className= {` inline-block  pb-0 text-2xl leading-[30px] max-md:text-[20px] font-bold text-t-green font-[Roboto]`}>Mediciones automáticas y remotas de stock de pasto con satélites e inteligencia artificial</h1>
+                <h1 className= {` inline-block max-md:px-16  pb-0 text-2xl leading-[30px] max-md:text-[20px] font-bold text-t-green font-[Roboto]`}>Mediciones automáticas y remotas de stock de pasto con satélites e inteligencia artificial</h1>
             </div>
             <div className='px-4 pt-4  flex max-md:flex-col'>
                 <div className='absolute w-[100%]  max-lg:hidden ' style={{ backgroundImage: `url(${logo}})` }}>
