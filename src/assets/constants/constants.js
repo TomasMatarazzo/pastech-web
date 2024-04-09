@@ -65,4 +65,6 @@ const linksFooter = [
     { nombre: "Contacto", link: "/contacto" }
   ];
 
-export { productos,productosLinks,empresa,linksFooter}
+const urlBack = 'http://localhost:3000'
+
+export { productos,productosLinks,empresa,linksFooter,urlBack}

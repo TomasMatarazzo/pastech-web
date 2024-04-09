@@ -18,8 +18,8 @@ const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descr
     <div className='relative w-[18vw] max-md:w-[80vw] max-md:my-8 max-md:mx-18 min-h-[75vh] bg-s-green rounded-md flex flex-col items-center justify-between text-center'>
         <>
         <div className=''> 
-          <h1 className='h-[20%] font-bold text-3xl text-t-green py-2'>{titulo}</h1>
-          <p className='h-[50%] font-semibold text-lg px-4 leading-[30px] whitespace-pre-line text-black'>{descripcion}</p>
+          <h1 className='h-[20%] font-bold text-2xl text-t-green py-2'>{titulo}</h1>
+          <p className='h-[50%] font-semibold text-base px-4 leading-[27px] whitespace-pre-line text-black'>{descripcion}</p>
         </div>
         <div className='w-[100%] h-[30%] flex flex-col justify-end items-center'>
             <img 

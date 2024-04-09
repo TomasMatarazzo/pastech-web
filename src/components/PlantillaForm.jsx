@@ -1,11 +1,8 @@
 import React, { useState } from 'react'
 import { FormProvider, useForm } from 'react-hook-form'
-import { InputError } from './InputError'
 import { Input } from './Input'
 import { correoValidation, nombreValidation,numeroValidation,textoValidation} from '../utils/inputValidation'
 import Button from "./Button"
-import emailjs from '@emailjs/browser';
-import axios from 'axios'
 import { enviarCorreo } from '../services/services'
 
 
@@ -17,6 +14,7 @@ export const PlantillaForm = () => {
   const [error, setError] = useState(false)
   const [loginExitoso, setLoginExitoso] = useState(false)
   // const dispatch = useDispatch()
+  
   const methods = useForm({ shouldUnregister: false })
   const url = 'http://localhost:3000/email/emailConsulta'
 
@@ -24,6 +22,10 @@ export const PlantillaForm = () => {
     console.log('la informacion es', data)
     setLoginExitoso(true)
     await enviarCorreo(data.nombre,data.correo,data.numero,data.mensaje)
+    methods.resetField('nombre')
+    methods.resetField('correo')
+    methods.resetField('numero')
+    methods.resetField('mensaje')
   })
 
 
