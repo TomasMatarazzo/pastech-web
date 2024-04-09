@@ -1,7 +1,7 @@
 const productos = [
     {
         nombre:"PASTURÓMETRO ELECTRÓNICO",
-        descripcion:"Pasturómetro electrónico con mediciones georeferenciadas que mediante sensores permite determinar la altura comprimida del pasto y enviarlo a un dispositivo móvil. La información se encuentra almacenada en un sistema de acceso web, el cual permite disponer de información para la toma de decisiones.",
+        descripcion:"Pasturómetro electrónico con mediciones georreferenciadas que mediante sensores permite determinar la altura comprimida del pasto y enviarlo a un dispositivo móvil. La información se encuentra almacenada en un sistema de acceso web, el cual permite disponer de información para la toma de decisiones.",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros cocinas"
     

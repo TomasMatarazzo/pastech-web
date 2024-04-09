@@ -9,7 +9,7 @@ const CirculosPasturometro = ({titulos,isPasturometro}) => {
   let data = [
     {
       titulo: "Medición de altura comprimida de pasto",
-      respuesta: "Utiliza lecturas electrónicas georeferenciadas para calcular la altura del pasto de manera precisa. Proporciona estimaciones en tiempo real de la cantidad de pasto disponible en cada zona o potrero del campo.",
+      respuesta: "Utiliza lecturas electrónicas georreferenciadas para calcular la altura del pasto de manera precisa. Proporciona estimaciones en tiempo real de la cantidad de pasto disponible en cada zona o potrero del campo.",
       class: 'fa-solid fa-plant-wilt fa-2x',
       border:'border-first-green border-[4px] border-dashed'
     },

@@ -17,7 +17,7 @@ const Landing = () => {
         },
         {
           texto:"PASTURÓMETRO ELECTRÓNICO",
-          descripcion:"Pasturómetro electrónico con mediciones georeferenciadas",
+          descripcion:"Pasturómetro electrónico con mediciones georreferenciadas",
           url: image1,
           wrap: "text-nonwrap"
         },
