@@ -29,7 +29,7 @@ const Pasturometro = ({titulo}) => {
     <CirculosPasturometro titulos = {titulos} isPasturometro={true}></CirculosPasturometro>
     <div className=" max-md:hidden m-auto flex max-md:min-w-[300px] max-md:min-h-[0.5rem] z-6 bg-green-600 leading-5 border-0 p-0 font-light text-base whitespace-nowrap min-h-[0.1rem] min-w-[400px] max-w-[50%] max-h-1 border-[50%] self-center opacity-100 z-5"></div>
     <CirculosStepPasturometro
-      textos = {['Dispositivo electrónico que permite medir el pasto y georeferenciar la ubicación.','Mediante una aplicación movil es posible visualizar y procesar los datos suministrados por el pasturómetro','Sistema de acceso web que te permite consultar las mediciones realizadas en tu campo y calcular indicadores']}
+      textos = {['Dispositivo electrónico que permite medir el pasto y georeferenciar la ubicación.','Mediante una aplicación movil es posible visualizar y procesar los datos suministrados por el pasturómetro','Sistema de acceso web que permite consultar las mediciones realizadas en tu campo y calcular indicadores']}
       titulos={titulos2}
       img1 = {false}
       img2 = {false}

@@ -15,7 +15,7 @@ const PastechDron = ({titulo}) => {
  const textos = [
   "Generá un usuario y comenzá a utilizar Pastech Dron",
   "Consulta y almacenamiento de las imágenes Drones de tus potreros",
-  "Sistema de acceso web que te permite consultar las mediciones realizadas en tu campo y calcular indicadores"
+  "Sistema de acceso web que permite consultar las mediciones realizadas en el campo y calcular indicadores."
   ];
   
   return (

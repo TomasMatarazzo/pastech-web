@@ -6,6 +6,12 @@ export const data = [
       ,imagen: '/noticia1.jpg'
     },
     {
+      fecha: "Marzo 2024",
+      titulo: "Subsecretaria de Desarrollo Emprendedor. Secretaria de Industria y Desarrollo Productivo",
+      descripcion: "Pastech formó parte de la reunión con Pablo Gutiérrez, Subsecretario de Desarrollo Emprendedor, a efectos de mostrar y dar a conocer el proyecto del pasturometro electrónico."
+      ,imagen: '/noticia-4.jpeg'
+    },
+    {
       fecha: "Septiembre 2023",
       titulo: "Premio Intecmar",
       descripcion: "Pastech fue premiado en el premio Intecmar organizado en Mar del Plata."
@@ -16,12 +22,6 @@ export const data = [
       titulo: "Desarrollo de pasturometro electrónico",
       descripcion: "El equipo de informática estuvo realizando pruebas de mediciones en el campo.",
       imagen: '/noticia3-.jpg'
-    },
-    {
-      fecha: "Marzo 2023",
-      titulo: "Subsecretaria de Desarrollo Emprendedor. Secretaria de Industria y Desarrollo Productivo",
-      descripcion: "Pastech formó parte de la reunión con Pablo Gutiérrez, Subsecretario de Desarrollo Emprendedor, a efectos de mostrar y dar a conocer el proyecto del pasturometro electrónico."
-      ,imagen: '/noticia-4.jpeg'
     },
     {
       fecha: "Marzo 2023",

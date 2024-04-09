@@ -6,6 +6,7 @@ import { correoValidation, nombreValidation,numeroValidation,textoValidation} fr
 import Button from "./Button"
 import emailjs from '@emailjs/browser';
 import axios from 'axios'
+import { enviarCorreo } from '../services/services'
 
 
 
@@ -17,38 +18,14 @@ export const PlantillaForm = () => {
   const [loginExitoso, setLoginExitoso] = useState(false)
   // const dispatch = useDispatch()
   const methods = useForm({ shouldUnregister: false })
+  const url = 'http://localhost:3000/email/emailConsulta'
 
   const onSubmit = methods.handleSubmit(async data => {
     console.log('la informacion es', data)
     setLoginExitoso(true)
-    enviarCorreo(data.nombre,data.correo,data.numero,data.mensaje)
+    await enviarCorreo(data.nombre,data.correo,data.numero,data.mensaje)
   })
 
-  async function enviarCorreo( nombre , correo ,numero, message) {
-
-    const data = {
-      service_id: 'service_39x51y6',
-      template_id: 'template_iuo1n9j',
-      user_id: '9z5_7ynQhzUc4dwYL',
-      template_params: {
-          'to_name':nombre,
-          'reply_to': correo,
-          'numero':numero,
-          'message':message,
-      }
-  };
-
-      try {
-          await axios.post('https://api.emailjs.com/api/v1.0/email/send', JSON.stringify(data), {
-              headers: {
-                  'Content-Type': 'application/json'
-              }
-          });
-          alert('¡Tu correo ha sido enviado!');
-      } catch (error) {
-          alert('¡Vaya! ' + JSON.stringify(error));
-      }
-  }
 
 
   return (

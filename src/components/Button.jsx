@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 const Button = ({text,color = "white",onClick}) => {
 
   const border = {
-    "green":" text-black bg-t-green ",
+    "green":" text-white bg-t-green ",
     "white": " text-black bg-s-green "
   }
   return (

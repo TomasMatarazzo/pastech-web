@@ -14,12 +14,12 @@ import {Landing,SectionCircular,SectionCircular2} from '../sections'
 
 
 let data = [
-  { titulo: 'Menor costo de adquisición del producto', imagen: i1 },
-  { titulo: 'Incremento en la precisión de las mediciones', imagen: i2 },
-  { titulo: 'Menor tiempo en mediciones', imagen: i3 },
-  { titulo: 'Información para la toma de decisiones en tu celular', imagen: i4 },
-  { titulo: 'Sustentabilidad', imagen: i5 },
-  { titulo: 'Predicción del crecimiento de tu pasto', imagen: i6 }
+  { titulo: 'Menor costo de alimentación del ganado', imagen: i1 },
+  { titulo: 'Información precisa contribuye a tomar decisiones acertadas', imagen: i2 },
+  { titulo: 'Menor tiempo de mediciones y manejo de datos en tiempo real', imagen: i3 },
+  { titulo: 'Información disponible en el celular', imagen: i4 },
+  { titulo: 'Buen manejo del pasto contribuye a la sustentabilidad', imagen: i5 },
+  { titulo: 'Predicción del crecimiento del pasto', imagen: i6 }
 ];
 
 const Mainpage = () => {

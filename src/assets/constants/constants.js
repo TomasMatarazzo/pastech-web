@@ -1,20 +1,20 @@
 const productos = [
     {
         nombre:"PASTURÓMETRO ELECTRÓNICO",
-        descripcion:"Pasturómetro electrónico con mediciones geo referenciadas que mediante sensores permite determinar la altura comprimida del pasto y enviarlo a un dispositivo móvil. La información se encuentra almacenada en un sistema de acceso web, el cual permite disponer de información para la toma de decisiones.",
+        descripcion:"Pasturómetro electrónico con mediciones georeferenciadas que mediante sensores permite determinar la altura comprimida del pasto y enviarlo a un dispositivo móvil. La información se encuentra almacenada en un sistema de acceso web, el cual permite disponer de información para la toma de decisiones.",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros cocinas"
     
     },
     {
         nombre:"PASTECH SATELITAL",
-        descripcion:"Pastech Satelital es una herramienta que mediante la lectura de imágenes satelitales, te permite calcular los KG de pasto seco que dispone tu potrero y mediante la utilización de inteligencia artificial y modelos matemáticos de simulación permite predecir el crecimiento del pasto.",
+        descripcion:"Pastech Satelital es una herramienta que mediante la lectura de imágenes satelitales, permite estimar en forma automática la disponibilidad de pasto en cada potrero del campo. Mediante la utilización de inteligencia artificial y modelos matemáticos de simulación permite predecir el crecimiento del pasto.",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros calefactores"
     },
     {
         nombre:"PASTECH DRON",
-        descripcion:"Sistema de medición a demanda mediante la utilización de dispositivos de dron, cuyos valores se integran con el sistema de Pastech satelital",
+        descripcion:"Pastech Dron es un sistema de medición remota de la disponibilidad de pasto mediante la utilización de imágenes de drones. Los datos se integran con el sistema de Pastech satelital, lo cual te permite predecir el crecimiento del pasto.",
         imagen:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         boton:"Nuestros calefones"
     },

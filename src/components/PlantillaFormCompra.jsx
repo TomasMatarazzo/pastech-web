@@ -6,6 +6,7 @@ import { correoValidation, nombreValidation,numeroValidation,textoValidation} fr
 import Button from "./Button"
 import emailjs from '@emailjs/browser';
 import axios from 'axios'
+import {generarLink} from '../services/services'  
 
 
 
@@ -18,63 +19,20 @@ export const PlantillaFormCompra = ({tipoSubscripcion}) => {
   const methods = useForm({ shouldUnregister: false })
 
   const onSubmit = methods.handleSubmit(async data => {
-    console.log('la informacion es', data)
-    generarLink(50)
+    try{ 
+      const link = await generarLink('mata123',tipoSubscripcion)
+      setLoginExitoso(true)
+      routeChange(link);
+    }
+    catch (error) {
+      console.error(error);
+      setError(true)
+    }
   })
 
   const routeChange = (link) =>{ 
     window.location.href = link;
   }
-
-  async function generarLink(id = 50) {
-    try {
-      // agrega ademas del id el tipo de subscripcion
-      const tipoSubscripcion = 'premium';
-      const response = await fetch(`http://localhost:8080/generarLink?id=${id}&tipo=${tipoSubscripcion}`, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const link = await response.json();
-      console.log(link);
-      routeChange(link);
-    } catch (error) {
-      console.error(error);
-    }
-  }
-
-  async function enviarCorreo( nombre , correo ,numero, message) {
-
-    const data = {
-      service_id: 'service_39x51y6',
-      template_id: 'template_iuo1n9j',
-      user_id: '9z5_7ynQhzUc4dwYL',
-      template_params: {
-          'to_name':nombre,
-          'reply_to': correo,
-          'numero':numero,
-          'message':message,
-      }
-    };
-
-      try {
-          await axios.post('https://api.emailjs.com/api/v1.0/email/send', JSON.stringify(data), {
-              headers: {
-                  'Content-Type': 'application/json'
-              }
-          });
-          alert('¡Tu correo ha sido enviado!');
-      } catch (error) {
-          alert('¡Vaya! ' + JSON.stringify(error));
-      }
-  }
-
 
   return (
       <FormProvider {...methods} >
@@ -88,7 +46,12 @@ export const PlantillaFormCompra = ({tipoSubscripcion}) => {
         </form>
             {loginExitoso && (
               <p className="flex items-center gap-1 text-2xl px-2 font-semibold mt-4 text-green-500 bg-green-100 mb-5">
-                Email enviado con exito.
+                Generación de pago exitosa.
+              </p>
+            )}
+            {error && (
+              <p className="flex items-center gap-1 text-2xl px-2 font-semibold mt-4 text-red-500 bg-red-100 mb-5">
+                Error en la generacion del Pago. Contactarse por Correo o WhatsApp.
               </p>
             )}
       </FormProvider>
