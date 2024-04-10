@@ -65,6 +65,6 @@ const linksFooter = [
     { nombre: "Contacto", link: "/contacto" }
   ];
 
-const urlBack = 'https://170.78.73.69:3004'
+const urlBack = 'https://pastech.com.ar/back'
 
 export { productos,productosLinks,empresa,linksFooter,urlBack}

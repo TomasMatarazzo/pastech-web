@@ -10,9 +10,16 @@ const mercadopagoRouter = require('./src/services/mercadopago');
 const PORT = process.env.PORT || 3004;
 
 // Middleware
-app.use(cors())
+const allowedOrigins = ["http://localhost:3004", "https://pastech.com.ar","http://localhost:5173"];
+
+const corsOptions = {
+  origin: allowedOrigins,
+  credentials: true,
+};
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(cors(corsOptions));
 
 
 app.use('/email', emailRouter);
