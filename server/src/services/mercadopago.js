@@ -72,7 +72,7 @@ router.get('/generarLink', async (req, res) => {
             auto_return: 'approved',
             additional_info: JSON.stringify(info),
             // tambien tiene que ser variable de entorno
-            notification_url: `https://f483-201-212-154-250.ngrok-free.app/mercadopago/notificar`,
+            notification_url: `http://${process.env.HOST}:${process.env.PORT}/mercadopago/notificar`,
         };
         const result = await preference.create({ body });
         res.json(result.init_point.replace('checkout', 'payment-link'));
@@ -133,7 +133,7 @@ router.post('/notificar', async (req, res) => {
                 let bodi = { nombre:info.nombre,numero:info.numero,correo:info.correo,tipo:info.tipo};
 
                 // aca el puerto tiene que ver variable de entorno
-                const back = await fetch('http://localhost:3000/email/emailCompra', {
+                const back = await fetch(`http://localhost:${process.env.PORT}/email/emailCompra`, {
                     method: 'POST', 
                     headers: {
                         'Content-Type': 'application/json',
@@ -141,7 +141,7 @@ router.post('/notificar', async (req, res) => {
                     body: JSON.stringify(bodi),
                 });
 
-                const back2 = await fetch('http://localhost:3000/email/emailAvisoCompra', {
+                const back2 = await fetch(`http://localhost:${process.env.PORT}/email/emailAvisoCompra`, {
                     method: 'POST', 
                     headers: {
                         'Content-Type': 'application/json',

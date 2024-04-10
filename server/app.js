@@ -7,7 +7,7 @@ const emailRouter = require('./src/routes/email');
 const mercadopagoRouter = require('./src/services/mercadopago');
 
 
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 3004;
 
 // Middleware
 app.use(cors())
