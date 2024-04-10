@@ -125,30 +125,35 @@ router.post('/notificar', async (req, res) => {
 
                 //Busco preferencia para matar el hilo y pegarle al back
                 const pref = new Preference(client);
-                const data = await pref.get({ preferenceId: infoMerchant.preference_id });
+                try{
+                    const data = await pref.get({ preferenceId: infoMerchant.preference_id });
 
-                let info = data.additional_info;
-                info = JSON.parse(info);
+                    let info = data.additional_info;
+                    info = JSON.parse(info);
+                    
+                    let bodi = { nombre:info.nombre,numero:info.numero,correo:info.correo,tipo:info.tipo};
                 
-                let bodi = { nombre:info.nombre,numero:info.numero,correo:info.correo,tipo:info.tipo};
-                console.log(bodi)
-                // aca el puerto tiene que ver variable de entorno
-                const back = await fetch(`http://localhost:${process.env.PORT}/email/emailCompra`, {
-                    method: 'POST', 
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(bodi),
-                });
-                console.log(back)
+                    // aca el puerto tiene que ver variable de entorno
+                    const back = await fetch(`http://localhost:${process.env.PORT}/email/emailCompra`, {
+                        method: 'POST', 
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(bodi),
+                    });
+                    console.log(back)
 
-                const back2 = await fetch(`http://localhost:${process.env.PORT}/email/emailAvisoCompra`, {
-                    method: 'POST', 
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(bodi),
-                });
+                    const back2 = await fetch(`http://localhost:${process.env.PORT}/email/emailAvisoCompra`, {
+                        method: 'POST', 
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(bodi),
+                    });
+                }
+                catch(e){
+                    console.log(e)
+                }
                 
             } else {
                 console.log('\nel pago NO SE COMPLETO');
