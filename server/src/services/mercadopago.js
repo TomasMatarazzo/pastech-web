@@ -2,6 +2,7 @@ const { MercadoPagoConfig, Preference, MerchantOrder } = require('mercadopago');
 
 const express = require('express');
 const router = express.Router();
+const fetch = require("node-fetch");
 
 // Agrega credenciales
 const client = new MercadoPagoConfig({ accessToken: process.env.MP_ACCESS_TOKEN });
