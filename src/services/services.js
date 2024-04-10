@@ -22,13 +22,12 @@ async function enviarCorreo( nombre , correo ,numero, message) {
       }
   }
 
-async function generarLink(correo, tipo) {
+async function generarLink(correo, nombre,numero , tipo) {
 
 
     const url = `${urlBack}/mercadopago/generarLink`
 
     tipo = tipo.toString()
-    console.log(tipo)
     try {
 
         console.log('tipo', tipo)
@@ -36,9 +35,13 @@ async function generarLink(correo, tipo) {
             throw new Error('Valor de tipo inválido');
         }
 
+        console.log(correo, nombre,numero, tipo )
         const response = await axios.get(url, {
             params: {
-                tipo: tipo
+                correo:correo,
+                nombre:nombre,
+                numero:numero,
+                tipo: tipo,
             }
         });
 

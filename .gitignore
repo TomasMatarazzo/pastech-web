@@ -1,2 +1,4 @@
 /node_modules
 src/assets/images/tpGPG.pdf
+/server/node_modules
+/server/.env
