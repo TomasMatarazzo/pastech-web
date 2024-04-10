@@ -20,7 +20,7 @@ export const PlantillaFormCompra = ({tipoSubscripcion}) => {
 
   const onSubmit = methods.handleSubmit(async data => {
     try{ 
-      console.log(d)
+      console.log(data)
       const link = await generarLink(data.correo,data.nombre,data.numero,tipoSubscripcion)
       setLoginExitoso(true)
       routeChange(link);
