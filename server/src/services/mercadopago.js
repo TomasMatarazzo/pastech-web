@@ -131,7 +131,7 @@ router.post('/notificar', async (req, res) => {
                 info = JSON.parse(info);
                 
                 let bodi = { nombre:info.nombre,numero:info.numero,correo:info.correo,tipo:info.tipo};
-
+                console.log(bodi)
                 // aca el puerto tiene que ver variable de entorno
                 const back = await fetch(`http://localhost:${process.env.PORT}/email/emailCompra`, {
                     method: 'POST', 
