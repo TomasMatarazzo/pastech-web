@@ -10,7 +10,7 @@ const SubscripcionPastechSatelital = () => {
     const [isActive , setActive] = useState(false)
 
     // tipo 0 = gratis, 1 = basico, 2 = avanzado, 3 = inteligente
-    const [tipo, setTipo ] = useState(2)
+    const [tipo, setTipo ] = useState(0)
 
     const arrancarCompra = (tipo) =>{
         setTipo(tipo)

@@ -30,7 +30,9 @@ const FormCompra = () => {
   let precio;
   switch (tipo) {
     case 0:
-      precio = 'GRATIS'
+      console.log('entro acaa')
+      precio = '$0'
+      break
     case 1:
       console.log('entro');
       precio = '$10000';
@@ -39,7 +41,7 @@ const FormCompra = () => {
       precio = '$20000';
       break;
     case 3:
-      precio = '$40000';
+      precio = '$100000';
       break;
   }
 
