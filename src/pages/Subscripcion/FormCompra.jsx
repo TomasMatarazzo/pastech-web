@@ -3,7 +3,7 @@ import Titulo from '../../components/Titulo'
 import Circulo from '../../components/Circulo'
 import { PlantillaFormCompra } from '../../components/PlantillaFormCompra'
 import { useParams } from 'react-router-dom';
-import imagen from '../../assets/images/icono-pasturometro2.png' 
+import imagen from '../../assets/images/icono-satelite2.png' 
 const FormCompra = () => {
 
   const { productId } = useParams();
