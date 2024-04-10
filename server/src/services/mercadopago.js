@@ -140,6 +140,7 @@ router.post('/notificar', async (req, res) => {
                     },
                     body: JSON.stringify(bodi),
                 });
+                console.log(back)
 
                 const back2 = await fetch(`http://localhost:${process.env.PORT}/email/emailAvisoCompra`, {
                     method: 'POST', 
@@ -148,6 +149,7 @@ router.post('/notificar', async (req, res) => {
                     },
                     body: JSON.stringify(bodi),
                 });
+                
             } else {
                 console.log('\nel pago NO SE COMPLETO');
             }
