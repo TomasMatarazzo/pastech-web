@@ -1,5 +1,6 @@
 const nodemailer = require('nodemailer');
 const from = 'pastech.soporte@gmail.com'
+const mailReceptor = 'geninfernando@gmail.com'
 
 class EmailSender {
     constructor() {
@@ -15,7 +16,7 @@ class EmailSender {
     async enviarCorreoConsulta(nombre, correo, numero, textoConsulta) {
         const mailOptions = {
             from: from,
-            to: correo, // aca iria el mail de fernando
+            to: mailReceptor, // aca iria el mail de fernando
             subject: 'Nuevo mensaje de consulta recibido',
             html: `
                 <html>
@@ -87,7 +88,7 @@ class EmailSender {
     
         const mailOptions = {
             from: from,
-            to: from, // aca iria el mail de fernando
+            to: mailReceptor, // aca iria el mail de fernando
             subject: 'Nueva compra realizada en tu empresa',
             html: `
                 <html>
