@@ -29,11 +29,21 @@ router.get('/generarLink', async (req, res) => {
 
         let items = [];
         switch (tipo) {
+            case '0':
+                items = [
+                    {
+                        title: 'Pastech Satelital Gratis',
+                        unit_price: 1,
+                        quantity: 1,
+                        currency_id: 'ARS',
+                    },
+                ];
+                break;
             case '1':
                 items = [
                     {
-                        title: 'Pastech Basico',
-                        unit_price: 1,
+                        title: 'Pastech Satelital Basico',
+                        unit_price: 10000,
                         quantity: 1,
                         currency_id: 'ARS',
                     },
@@ -42,7 +52,7 @@ router.get('/generarLink', async (req, res) => {
             case '2':
                 items = [
                     {
-                        title: 'Pastech Intermedio',
+                        title: 'Pastech Satelital Intermedio',
                         unit_price: 20000,
                         quantity: 1,
                         currency_id: 'ARS',
@@ -52,7 +62,7 @@ router.get('/generarLink', async (req, res) => {
             case '3':
                 items = [
                     {
-                        title: 'Pastech Avanzado',
+                        title: 'Pastech Satelital Avanzado',
                         unit_price: 100000,
                         quantity: 1,
                         currency_id: 'ARS',
