@@ -23,7 +23,7 @@ router.get('/generarLink', async (req, res) => {
             tipo
         };
         console.log(info)
-        if (!tipo || (tipo !== '1' && tipo !== '2' && tipo !== '3')) {
+        if (!tipo || (tipo !== '0' && tipo !== '1' && tipo !== '2' && tipo !== '3')) {
             throw new Error('Valor de tipo inválido');
         }
 
