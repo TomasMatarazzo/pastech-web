@@ -10,7 +10,7 @@ const mercadopagoRouter = require('./src/services/mercadopago');
 const PORT = process.env.PORT || 3004;
 
 // Middleware
-const allowedOrigins = ["http://localhost:3004", "https://pastech.com.ar","http://localhost:5173"];
+const allowedOrigins = ["http://localhost:3004", "https://pastech.com.ar","http://pastech.com.ar","http://localhost:5173"];
 
 const corsOptions = {
   origin: allowedOrigins,
