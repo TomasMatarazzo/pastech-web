@@ -44,7 +44,7 @@ async function generarLink(correo, nombre,numero , tipo) {
 
         return response.data
     } catch (error) {
-        throw new Error('Valor de tipo inválido' + error);
+        throw new Error('Valor de tipo inválidoooo' + error);
     }
 }
 
