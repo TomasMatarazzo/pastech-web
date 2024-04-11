@@ -31,9 +31,6 @@ async function generarLink(correo, nombre,numero , tipo) {
     try {
 
         console.log('tipo', tipo)
-        if (!tipo || (tipo !== '0' && tipo !== '1' && tipo !== '2' && tipo !== '3')) {
-            throw new Error('Valor de tipo inválido');
-        }
 
         console.log(correo, nombre,numero, tipo )
         const response = await axios.get(url, {
