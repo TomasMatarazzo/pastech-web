@@ -45,7 +45,7 @@ const Nav = () => {
         {
           
           Links.map((link)=>(
-            <li key={link.name} className={`font-montserrat max-md:pt-2  leading-normal text-bas cursor-pointer  ${link.name === '?' ? 'md:font-semibold md:text-black md:bg-first-green md:hover:text-white md:py-2 text-slate-gray md:px-2 md:rounded-md' : 'py-0 text-slate-gray hover:text-first-green'}`}>
+            <li key={link.name} className={`font-montserrat max-md:pt-2  leading-normal text-bas cursor-pointer py-0 text-slate-gray hover:text-first-green`}>
               <a href={link.link}>{link.name}</a>
             </li>
           ))
