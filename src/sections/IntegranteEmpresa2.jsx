@@ -41,7 +41,6 @@ const IntegranteEmpresa2 = ({nombre,imagen,descripcion,titulo,bg = "white"}) => 
                     />
             </div>
         </section>
-        <div className="max-md:hidden z-6 bg-green-600 text-left leading-5 border-0 m-0 p-0 font-light text-base whitespace-nowrap min-h-[0.1rem] min-w-[400px] self-center opacity-100 z-5 max-w-[90%] max-h-1 border-[50%]"></div>
     </section>
   )
 }

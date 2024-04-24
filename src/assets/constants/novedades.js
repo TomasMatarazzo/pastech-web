@@ -29,5 +29,16 @@ export const data = [
       descripcion: "Pastech forma parte de la red de mujeres emprendedoras."
       ,imagen: '/noticia5.jpg'
     },
-
+    {
+      fecha: "Noviembre 2022",
+      titulo: "Hackathon MGP 2022",
+      descripcion: "Ganadores del primer premio con la idea: 'Software para medir la disponibilidad del pasto en el campo'",
+      imagen: '/noticia6.jpeg'
+    },
+    {
+      fecha: "Julio 2022",
+      titulo: "Mar del Plata 2022 AEMPRENDER",
+      descripcion: "Ganador a 'Mejor idea de negocio'. Premio otorgado por la Union del Comercio, la Industria y la Producción de Mar del Plata",
+      imagen: '/noticia7.jpeg'
+    }
   ]
