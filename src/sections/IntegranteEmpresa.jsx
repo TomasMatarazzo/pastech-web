@@ -42,7 +42,7 @@ const IntegranteEmpresa = ({nombre,imagen,descripcion,titulo,bg = "white",last})
 
             </div>
         </section>
-        { last ? <div className="max-md:hidden z-6 bg-green-600 text-left leading-5 border-0 m-0 p-0 font-light text-base whitespace-nowrap min-h-[0.1rem] min-w-[400px] max-w-[90%] max-h-1 border-[50%] self-center opacity-100 z-5"></div>:null}
+        <div className="max-md:hidden z-6 bg-green-600 text-left leading-5 border-0 m-0 p-0 font-light text-base whitespace-nowrap min-h-[0.1rem] min-w-[400px] max-w-[90%] max-h-1 border-[50%] self-center opacity-100 z-5"></div>
     </section>
   )
 }
