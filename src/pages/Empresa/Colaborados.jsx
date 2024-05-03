@@ -11,6 +11,7 @@ import circuloBautista from '../../assets/images/circulos/circuloBautista.png'
 import circuloMelisa from '../../assets/images/circulos/circuloMelisa.png'
 import circuloJuan from '../../assets/images/circulos/circuloJuan.png'
 import circuloRodrigo from '../../assets/images/circulos/circuloRodrigo.png'
+import circuloTomasInsua from '../../assets/images/circulos/circuloTomasInsua.png'
 
 const Colaboradores = ({nombre,imagen,descripcion,titulo,bg = "white",last}) => {
 
@@ -60,11 +61,18 @@ const Colaboradores = ({nombre,imagen,descripcion,titulo,bg = "white",last}) => 
             descripcion: "Desarrollador web. Responsable integración con Pasarelas de pago",
             imagen: circuloTomas
         },
+        
         {
             nombre: "Bautista Rodriguez",
             titulo: "Estudiante avanzado Ing. Informática",
             descripcion: "Frond-end Pastech",
             imagen: circuloBautista
+        },
+        {
+            nombre: "Tomás Insua",
+            titulo: "Mg. en Business Analytics",
+            descripcion: "Consultor Data Scientist",
+            imagen: circuloTomasInsua
         },
         {
             nombre: "Melisa Kuzman",
@@ -105,7 +113,6 @@ const Colaboradores = ({nombre,imagen,descripcion,titulo,bg = "white",last}) => 
     <section className="  max-md:px-0 py-[1px] px-[100px] bg-[#f1f4f6] flex flex-col justify-center">
         <section className="flex relative justify-evenly max-md:flex-col rounded-[2%] flex-wrap">
             {colaboradores.map((colaborador, index) => (
-                index <= 7 ?
                 <div key={index} className={`font-extralight  h-full w-[30%] max-md:w-full flex-col max-md:flex-col items-center text-center align-middle flex py-12 max-md:py-10 rounded-lg justify-evenly`}>
                     <img
                         className={`w-[285px] h-[285px] max-md:w-[300px] max-md:h-[300px] max-md:mb-2 bg-center bg-cover duration-500  rounded-[50%]`}
@@ -118,10 +125,10 @@ const Colaboradores = ({nombre,imagen,descripcion,titulo,bg = "white",last}) => 
                         <h1 className={`${text1[bg]} font-semibold  leading-8 text-2xl py-2  max-md:text-[32px] text-gray-400 font-[Roboto]`}>{colaborador.titulo}</h1>
                         <p className={` ${text2[bg]} w-[70%] py-2 text-xl font-medium`}>{colaborador.descripcion}</p>
                     </div>
-                </div> : null
+                </div> 
             ))}
         </section>
-        <section className="flex relative justify-evenly max-md:flex-col rounded-[2%] flex-wrap">
+        {/* <section className="flex relative justify-evenly max-md:flex-col rounded-[2%] flex-wrap">
         {colaboradores.map((colaborador, index) => (
                 index > 7 ?
                 <div key={index} className={`font-extralight  h-full w-[30%] max-md:w-full flex-col max-md:flex-col items-center text-center align-middle flex py-12 max-md:py-10 rounded-lg justify-evenly`}>
@@ -138,7 +145,7 @@ const Colaboradores = ({nombre,imagen,descripcion,titulo,bg = "white",last}) => 
                     </div>
                 </div> : null
             ))}
-        </section>
+        </section> */}
         { last ? <div className="max-md:hidden z-6 bg-green-600 text-left leading-5 border-0 m-0 p-0 font-light text-base whitespace-nowrap min-h-[0.1rem] min-w-[400px] max-w-[90%] max-h-1 border-[50%] self-center opacity-100 z-5"></div>:null}
     </section>
   )
