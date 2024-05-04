@@ -56,7 +56,7 @@ const FormCompra = () => {
             <div className='p-8 flex flex-row max-md:flex-col justify-evenly items-center'>
               <div className='flex flex-col items-center'>
                 <div className = {`w-[10vw] rounded-full max-md:w-[270px] max-md:h-[270px] max-lg:w-[510px] max-lg:h-[510px] bg-center bg-cover duration-500 h-[10vw] border-[6px] border-t-green border-dashed flex items-center justify-center `}>
-                     <img   className = {`w-[10vw] p-2 rounded-full max-md:w-[300px] max-md:h-[300px] max-lg:w-[500px] max-lg:h-[500px]   bg-center bg-cover duration-500 h-[10vw]border-[3px]`}
+                     <img   className = {`w-[10vw] p-2 rounded-full max-md:w-[260px] max-md:h-[260px] max-lg:w-[500px] max-lg:h-[500px]   bg-center bg-cover duration-500 h-[10vw]border-[3px]`}
                             src = {imagen}
                         />
                         
