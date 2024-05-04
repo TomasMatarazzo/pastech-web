@@ -55,7 +55,7 @@ const FormCompra = () => {
           <div className=' w-[100%] relative bg-white pb-0 my-4 rounded-md inline-block'>
             <div className='p-8 flex flex-row max-md:flex-col justify-evenly items-center'>
               <div className='flex flex-col items-center'>
-                <div className = {`w-[10vw] rounded-full max-md:w-[330px] max-md:h-[330px] max-lg:w-[510px] max-lg:h-[510px] bg-center bg-cover duration-500 h-[10vw] border-[6px] border-t-green border-dashed flex items-center justify-center `}>
+                <div className = {`w-[10vw] rounded-full max-md:w-[270px] max-md:h-[270px] max-lg:w-[510px] max-lg:h-[510px] bg-center bg-cover duration-500 h-[10vw] border-[6px] border-t-green border-dashed flex items-center justify-center `}>
                      <img   className = {`w-[10vw] p-2 rounded-full max-md:w-[300px] max-md:h-[300px] max-lg:w-[500px] max-lg:h-[500px]   bg-center bg-cover duration-500 h-[10vw]border-[3px]`}
                             src = {imagen}
                         />
@@ -64,8 +64,8 @@ const FormCompra = () => {
                 <p className='py-2 mt-4 text-[36px] leading-[50px] max-md:text-[32px] font-bold font-[Roboto] text-first-green'>Pastech Satelital</p>
                 </div>
               <div>
-                <p className='py-2  text-2xl leading-[40px] max-md:text-[32px] font-normal font-[Roboto] text-t-green'><b>Tipo de suscripción:</b> {tipoSuscripcion}</p>
-                <p className='py-2  text-2xl leading-[40px] max-md:text-[32px] font-normal font-[Roboto] text-t-green'><b>Precio:</b> <span  className='font-[Lato]'> {precio} </span></p>
+                <p className='py-2  text-2xl leading-[40px] max-md:text-2xl font-normal font-[Roboto] text-t-green'><b>Tipo de suscripción:</b> {tipoSuscripcion}</p>
+                <p className='py-2  text-2xl leading-[40px] max-md:text-2xl font-normal font-[Roboto] text-t-green'><b>Precio:</b> <span  className='font-[Lato]'> {precio} </span></p>
               </div>
             </div>
             {/* <div className='w-[100%] bg-s-green text-s-green'> - </div> */}
