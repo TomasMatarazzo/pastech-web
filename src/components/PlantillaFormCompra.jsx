@@ -6,7 +6,7 @@ import { correoValidation, nombreValidation,numeroValidation,textoValidation} fr
 import Button from "./Button"
 import emailjs from '@emailjs/browser';
 import axios from 'axios'
-import {generarLink} from '../services/services'  
+import {enviarCorreoCompraGratuita, generarLink} from '../services/services'  
 
 
 
@@ -18,12 +18,24 @@ export const PlantillaFormCompra = ({tipoSubscripcion}) => {
   // const dispatch = useDispatch()
   const methods = useForm({ shouldUnregister: false })
 
+  function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
   const onSubmit = methods.handleSubmit(async data => {
     try{ 
-      console.log(data)
-      const link = await generarLink(data.correo,data.nombre,data.numero,tipoSubscripcion)
-      setLoginExitoso(true)
-      routeChange(link);
+      if (tipoSubscripcion === 0){
+        const link = await enviarCorreoCompraGratuita(data.nombre,data.correo,data.numero,tipoSubscripcion)
+        setLoginExitoso(true)
+        await wait(2000)
+        routeChange('https://pastech.com.ar/confirmacion');
+      }
+      else{
+        const link = await generarLink(data.correo,data.nombre,data.numero,tipoSubscripcion)
+        setLoginExitoso(true)
+        routeChange(link);
+      }
     }
     catch (error) {
       console.error(error);

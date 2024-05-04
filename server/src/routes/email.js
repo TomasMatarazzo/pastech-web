@@ -18,11 +18,13 @@ router.post('/emailConsulta', async (req, res) => {
 router.post('/emailCompra', async (req, res) => {
     //destructuring del body
     const {nombre, correo} = req.body;
+    console.log(nombre,correo)
 
     try {
         await emailSender.enviarCorreoCompra(nombre,correo);
         res.status(200).json({ message: 'Email de compra enviado' });
     } catch (error) {
+        console.log(error)
         res.status(500).json({ error: 'Error al enviar email' });
     }
 });

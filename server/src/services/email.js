@@ -73,6 +73,9 @@ class EmailSender {
     async enviarAvisoDeCompra(nombre, correo, numero, tipoCompra) {
         let tipoSubscripcion;
         switch(tipoCompra) {
+            case "0":
+                tipoSubscripcion = "Subscripción Gratuita";
+                break;  
             case "1":
                 tipoSubscripcion = "Subscripción Básica";
                 break;
@@ -105,7 +108,7 @@ class EmailSender {
                             padding: 20px;
                         }
                         h1 {
-                            color: #ffffff; /* Texto blanco */
+                            color: #000000; /* Texto blanco */
                         }
                         .logo {
                             margin-bottom: 20px;
@@ -174,16 +177,15 @@ class EmailSender {
                     </style>
                 </head>
                 <body>
-                    <div class="container">
-                        <img src="https://pastech-web.netlify.app/assets/icono-voGCpR3S.svg" alt="Logo de Pastech" class="logo"> 
-                        <h1>¡Gracias por realizar una compra con Pastech!</h1>
-                        <p>Hola, ${nombre}</p>
-                        <p>Queremos expresar nuestro sincero agradecimiento por haber realizado una compra con nosotros. Valoramos tu confianza en nuestros productos y servicios.</p>
-                        <p>Si tienes alguna pregunta o necesitas asistencia adicional, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte en cualquier momento.</p>
-                        <p>Esperamos que disfrutes de tu compra y que tengas una excelente experiencia con nuestros productos.</p>
-                        <strong><p>Gracias nuevamente por elegir Pastech.</p>
-                        <p>Saludos,<br/>El equipo de Pastech</p></strong>
-                    </div>
+                <div class="container">
+                    <h2>¡Gracias por adquirir nuestros servicios en Pastech!</h2>
+                    <p>Hola, ${nombre}</p>
+                    <p>Agradecemos sinceramente tu elección de nuestros servicios. Para comenzar a disfrutar de nuestra plataforma, te invitamos a visitar <a href="http://www.pastech2.com.ar">www.pastech2.com.ar</a>.</p>
+                    <strong>
+                        <p>¡Gracias por confiar en nosotros!.</p>
+                        <p>Saludos,<br/>El equipo de Pastech</p>
+                    </strong>
+                </div>
                 </body>
                 </html>
             `

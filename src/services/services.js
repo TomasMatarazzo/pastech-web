@@ -48,5 +48,35 @@ async function generarLink(correo, nombre,numero , tipo) {
     }
 }
 
+async function enviarCorreoCompraGratuita( nombre, correo,numero,tipo) {
 
-  export { enviarCorreo, generarLink };
+    const url1 = `${urlBack}/email/emailCompra`
+    const url2 = `${urlBack}/email/emailAvisoCompra`
+    //cambiar este link
+
+    tipo = tipo.toString()
+    try {
+
+        console.log(correo, nombre,numero, tipo )
+        const data = {'correo':correo,'nombre':nombre,'numero':numero,'tipo':tipo}
+
+        const response = await axios.post(url1, JSON.stringify(data), {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        const response2 = await axios.post(url2, JSON.stringify(data), {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        return response.data
+    } catch (error) {
+        throw new Error('Valor de tipo inválidoooo' + error);
+    }
+}
+
+
+  export { enviarCorreo, generarLink, enviarCorreoCompraGratuita };
