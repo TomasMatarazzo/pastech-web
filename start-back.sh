@@ -7,10 +7,10 @@ export NVM_DIR="$HOME/.nvm"
 git pull
 nvm use 16.20.1
 # Detener el proceso existente si está en ejecución
-pm2 stop server
+sudo pm2 stop server
 
 # Reiniciar el proceso
-pm2 start server/app.js --name server
+sudo pm2 start server/app.js --name server
 
 # Mostrar el estado después de reiniciar
-pm2 status
+sudo pm2 status
