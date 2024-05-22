@@ -3,6 +3,7 @@ const { MercadoPagoConfig, Preference, MerchantOrder } = require('mercadopago');
 const express = require('express');
 const router = express.Router();
 const fetch = require("node-fetch");
+const precios = require('../PRECIOS');
 
 // Agrega credenciales
 const client = new MercadoPagoConfig({ accessToken: process.env.MP_ACCESS_TOKEN });
@@ -43,7 +44,7 @@ router.get('/generarLink', async (req, res) => {
                 items = [
                     {
                         title: 'Pastech Satelital Basico',
-                        unit_price: 10000,
+                        unit_price: precios[0],
                         quantity: 1,
                         currency_id: 'ARS',
                     },
@@ -53,7 +54,7 @@ router.get('/generarLink', async (req, res) => {
                 items = [
                     {
                         title: 'Pastech Satelital Intermedio',
-                        unit_price: 20000,
+                        unit_price: precios[1],
                         quantity: 1,
                         currency_id: 'ARS',
                     },
@@ -63,7 +64,7 @@ router.get('/generarLink', async (req, res) => {
                 items = [
                     {
                         title: 'Pastech Satelital Avanzado',
-                        unit_price: 100000,
+                        unit_price: precios[2],
                         quantity: 1,
                         currency_id: 'ARS',
                     },

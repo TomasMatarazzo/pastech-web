@@ -1,5 +1,5 @@
 #!/bin/bash
-
+git pull
 # Detener el proceso existente si está en ejecución
 pm2 stop server
 
