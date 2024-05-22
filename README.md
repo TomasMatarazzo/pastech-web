@@ -16,7 +16,7 @@ pasarla a /var/www/html y al final se reinicia el servidor.
 2. **Ejecutar el script de inicio del front:**
 
    ```bash
-   sh start-back.sh
+   sh start-front.sh
    ```
 ## Cambios en el backend
 Una vez realizado los cambios(commits) dentro del backend, unicamente lo que hay que hacer es ubicarnos
