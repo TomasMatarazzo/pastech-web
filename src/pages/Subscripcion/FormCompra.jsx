@@ -4,6 +4,7 @@ import Circulo from '../../components/Circulo'
 import { PlantillaFormCompra } from '../../components/PlantillaFormCompra'
 import { useParams } from 'react-router-dom';
 import imagen from '../../assets/images/icono-satelite2.png' 
+import precios from '../../assets/constants/precios';
 const FormCompra = () => {
 
   const { productId } = useParams();
@@ -30,18 +31,16 @@ const FormCompra = () => {
   let precio;
   switch (tipo) {
     case 0:
-      console.log('entro acaa')
-      precio = 'Gratuito'
+      precio = precios[0]
       break
     case 1:
-      console.log('entro');
-      precio = '$10.000';
+      precio = precios[1];
       break;
     case 2:
-      precio = '$20.000';
+      precio = precios[2];
       break;
     case 3:
-      precio = '$100.000';
+      precio = precios[3];
       break;
   }
 

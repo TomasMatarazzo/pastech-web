@@ -33,13 +33,13 @@ const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descr
             { gratis ?
                   <div className='flex pb-4 '>
                       <p className='pb-1 pr-3 invisible'>ARS</p>
-                      <p className='text-3xl font-bold py-0 leading-6 self-end invisible'>{precio}</p>
+                      <p className='text-3xl font-bold py-0 leading-6 self-end invisible font-[Lato]'>{precio}</p>
                       <p className='text-xl self-end invisible'> /mes</p>
                   </div>
                         :
             <div className='flex pb-4 '>
                 <p className='pb-1 pr-3'>ARS</p>
-                <p className='text-3xl font-bold py-0 leading-6 self-end'>{precio}</p>
+                <p className='text-2xl font-bold py-0 leading-6 self-end  font-[Lato]'>{precio}</p>
                 <p className='text-xl self-end'> /mes</p>
             </div>
             
