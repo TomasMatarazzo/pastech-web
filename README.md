@@ -26,7 +26,7 @@ Una vez que todas las dependencias estén instaladas, puedes iniciar la aplicaci
 
          npm run dev
 
-## Instrucciones para ejecutar la aplicación la maquina virtual
+# Instrucciones para ejecutar la aplicación la maquina virtual
 
 Estas instrucciones te guiarán para correr la aplicación en una máquina virtual después de haber realizado los commits correspondientes. La aplicación consta de un front-end desarrollado en React y un back-end para procesar pagos a través de MercadoPago.
 
