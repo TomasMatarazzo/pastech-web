@@ -10,21 +10,21 @@ Antes de comenzar a trabajar con esta aplicación, asegúrate de tener instalado
 
 1. Clona este repositorio en tu máquina local utilizando el siguiente comando:
 
-git clone <URL_DEL_REPOSITORIO>
+         git clone <URL_DEL_REPOSITORIO>
 
 2. Navega hasta el directorio de la aplicación:
 
-cd pastech-web
+         cd pastech-web
 
 3. Instala las dependencias del proyecto utilizando npm:
 
-npm install
+         npm install
 
 ## Uso
 
 Una vez que todas las dependencias estén instaladas, puedes iniciar la aplicación localmente. Ejecuta el siguiente comando:
 
-npm run dev
+         npm run dev
 
 ## Instrucciones para ejecutar la aplicación la maquina virtual
 
