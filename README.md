@@ -1,3 +1,31 @@
+# Pastech web
+
+## Requisitos Previos
+
+Antes de comenzar a trabajar con esta aplicación, asegúrate de tener instalado lo siguiente:
+- Node.js y npm (Node Package Manager)
+- Un navegador web moderno como Google Chrome o Mozilla Firefox
+
+## Instalación
+
+1. Clona este repositorio en tu máquina local utilizando el siguiente comando:
+
+git clone <URL_DEL_REPOSITORIO>
+
+2. Navega hasta el directorio de la aplicación:
+
+cd pastech-web
+
+3. Instala las dependencias del proyecto utilizando npm:
+
+npm install
+
+## Uso
+
+Una vez que todas las dependencias estén instaladas, puedes iniciar la aplicación localmente. Ejecuta el siguiente comando:
+
+npm run dev
+
 ## Instrucciones para ejecutar la aplicación la maquina virtual
 
 Estas instrucciones te guiarán para correr la aplicación en una máquina virtual después de haber realizado los commits correspondientes. La aplicación consta de un front-end desarrollado en React y un back-end para procesar pagos a través de MercadoPago.
