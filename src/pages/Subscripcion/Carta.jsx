@@ -25,7 +25,7 @@ const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descr
             <p className='h-[50%] font-semibold text-[32px] px-4 leading-10 whitespace-pre-line text-black'>potreros</p>
           </div>
           :
-          <p className='h-[50%] font-semibold text-xl px-4 leading-[27px] whitespace-pre-line text-black'>{descripcion.toUpperCase()}</p>
+          <p className='h-[50%] font-semibold text-base px-4 leading-[27px] whitespace-pre-line text-black'>{descripcion.toUpperCase()}</p>
           }
           </div>
         <div className='w-[100%] h-[30%] flex flex-col justify-end items-center'>
