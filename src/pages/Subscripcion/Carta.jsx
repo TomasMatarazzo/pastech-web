@@ -15,13 +15,13 @@ const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descr
   
 
   return (
-    <div className='relative w-[18vw] max-md:w-[80vw] max-md:my-8 max-md:mx-18 min-h-[68vh] max-md:min-h-[67vh] bg-s-green rounded-md flex flex-col items-center justify-between text-center'>
+    <div className='relative w-[18vw] max-md:w-[80vw] max-md:my-8 max-md:mx-18 min-h-[70vh] max-md:min-h-[67vh] bg-s-green rounded-md flex flex-col items-center justify-between text-center'>
         <>
         <div className=''> 
           <h1 className='h-[20%] font-bold text-2xl text-t-green py-2'>{titulo}</h1>
           { esPotrero ?
           <div className='mt-14'>
-            <p className='h-[50%]  font-semibold text-[64px] leading-10 px-4 whitespace-pre-line text-black'>{descripcion}</p>
+            <p className='h-[50%]  font-semibold text-[54px] leading-10 px-4 whitespace-pre-line text-black'>{descripcion}</p>
             <p className='h-[50%] font-semibold text-[32px] px-4 leading-10 whitespace-pre-line text-black'>potreros</p>
           </div>
           :
@@ -48,9 +48,9 @@ const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descr
             }
               {gratis ?
                   <div className='flex pb-4 mt-4 '>
-                      <p className='pb-1 pr-3 invisible text-3xl'>USD</p>
-                      <p className='text-3xl font-bold py-0 leading-6 self-end invisible font-[Lato]'>${precio}</p>
-                      <p className='text-xl self-end invisible'> /mes</p>
+                      <p className='pb-1 pr-3 invisible text-xl'>USD</p>
+                      <p className=' text-[30px] font-bold py-0 invisible font-[Lato]'>${precio}</p>
+                      <p className='text-[30px] self-end invisible'> /mes</p>
                   </div>
                         :
             <div className='flex pb-4 mt-4'>
