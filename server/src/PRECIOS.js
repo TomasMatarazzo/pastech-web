@@ -1,5 +1,5 @@
 
-const precios = [13,43,60]
+const precios = [13,43,96]
 const fetch = require("node-fetch");
 
 
