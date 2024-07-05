@@ -50,8 +50,7 @@ const FormCompra = () => {
   let precioPesos;
   switch (tipo) {
     case 0:
-      precio = parseInt(precios[0])
-      precioPesos = precio * parseInt(precioDolar)
+      precio = precios[0];
       break
     case 1:
       precio = parseInt(precios[1]);
@@ -88,7 +87,7 @@ const FormCompra = () => {
                 </div>
               <div>
                 <p className='py-2  text-2xl leading-[40px] max-md:text-2xl font-normal font-[Roboto] text-t-green'><b>Tipo de suscripción:</b> {tipoSuscripcion}</p>
-                <p className='py-2  text-2xl leading-[40px] max-md:text-2xl font-normal font-[Roboto] text-t-green'><b>Precio:</b> <span  className='font-[Lato]'>USD {precio} </span> {precioDolar == "0" ?"":`| ARS ${ precioPesos.toLocaleString('es')} `} </p>
+                <p className='py-2  text-2xl leading-[40px] max-md:text-2xl font-normal font-[Roboto] text-t-green'><b>Precio:</b> <span  className='font-[Lato]'>{precio === "Gratuito" ?"":"USD "}{precio} </span> {precioDolar == "0" ?"":`| ARS ${ precioPesos.toLocaleString('es')} `} </p>
               </div>
             </div>
             {/* <div className='w-[100%] bg-s-green text-s-green'> - </div> */}

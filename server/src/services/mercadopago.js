@@ -91,7 +91,7 @@ router.get('/generarLink', async (req, res) => {
         res.json(result.init_point.replace('checkout', 'payment-link'));
     } catch (error) {
         console.log(error);
-        res.status(500).json({ error: 'Error al generar el link de pago' });
+        res.status(500).json({ error: error.message});
     }
 });
 
@@ -102,7 +102,7 @@ router.get('/precio', async (req, res) => {
         res.end(precio.toString())
     }
     catch(e){
-        res.status(404).end("Error al obtener el precio del dolar")   
+        res.status(404).end(e.toString())   
     }
 }
 
