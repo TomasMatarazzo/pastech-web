@@ -15,7 +15,7 @@ const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descr
   
 
   return (
-    <div className='relative w-[18vw] max-md:w-[80vw] max-md:my-8 max-md:mx-18 min-h-[60vh] max-md:min-h-[67vh] bg-s-green rounded-md flex flex-col items-center justify-between text-center'>
+    <div className='relative w-[18vw] max-md:w-[80vw] max-md:my-8 max-md:mx-18 min-h-[68vh] max-md:min-h-[67vh] bg-s-green rounded-md flex flex-col items-center justify-between text-center'>
         <>
         <div className=''> 
           <h1 className='h-[20%] font-bold text-2xl text-t-green py-2'>{titulo}</h1>
@@ -55,8 +55,8 @@ const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descr
                         :
             <div className='flex pb-4 mt-4'>
                 <p className='pb-1 pr-3 text-xl'>USD</p>
-                <p className='text-[40px] font-bold py-0  font-[Lato]'>${precio}</p>
-                <p className='text-[40px] self-end'> /mes</p>
+                <p className='text-[30px] font-bold py-0  font-[Lato]'>${precio}</p>
+                <p className='text-[30px] self-end'> /mes</p>
             </div>
             }
             {esPotrero? "" :(noBoton ? "" :

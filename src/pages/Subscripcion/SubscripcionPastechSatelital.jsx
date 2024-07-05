@@ -26,7 +26,7 @@ const SubscripcionPastechSatelital = () => {
             </div>
             <div className='px-4 pt-4  flex max-md:flex-col'>
                 <div className='absolute w-[100%]  max-lg:hidden ' style={{ backgroundImage: `url(${logo}})` }}>
-                    <img src = {logo} className=' absolute left-[-13%] w-[400px] h-[400px]'></img>
+                    <img src = {logo} className=' absolute left-[-13%] lg:[-16%] w-[400px] h-[400px]'></img>
                 </div>
                 <section className='flex flex-row justify-evenly items-start max-md:items-center max-md:flex-col gap-6 max-md:gap-0 ml-[250px] max-md:ml-0'>
                     <Carta goto = {`form/0`} titulo = 'Gratis'  esPotrero= {true} setTipo = {()=>{arrancarCompra(0)}} descripcion={'2'} gratis={true}  icono = {icono} descripcionBoton = {'CONTRATAR'}></Carta>
