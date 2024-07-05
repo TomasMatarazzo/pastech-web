@@ -1,5 +1,7 @@
 
 const precios = [13,43,60]
+const fetch = require("node-fetch");
+
 
 let valorDelDolar = {
     valor: null,
