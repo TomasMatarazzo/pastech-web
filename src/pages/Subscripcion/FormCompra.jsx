@@ -1,16 +1,34 @@
-import React from 'react'
+
 import Titulo from '../../components/Titulo'
 import Circulo from '../../components/Circulo'
 import { PlantillaFormCompra } from '../../components/PlantillaFormCompra'
 import { useParams } from 'react-router-dom';
 import imagen from '../../assets/images/icono-satelite2.png' 
 import precios from '../../assets/constants/precios';
+import { obtenerPrecioDolar } from '../../services/services';
+import { useEffect, useState } from 'react'
 const FormCompra = () => {
 
   const { productId } = useParams();
+  const [precioDolar, setPrecioDolar] =useState(0);
+
+  const getPrecio = async () => {
+    try {
+      obtenerPrecioDolar().then((precio) => { setPrecioDolar(precio)});
+    }
+    catch(e){
+      console.log(e)
+    }
+  } 
+
+  useEffect(() => {
+    getPrecio().then(() => console.log(precioDolar));
+  }, [precioDolar])
+
   // armalo con esto sdatos
   // tipo 0 = gratis, 1 = basico, 2 = avanzado, 3 = inteligente
   let tipoSuscripcion;
+  
   let tipo = parseInt(productId)
   switch (tipo) {
     case 0:
@@ -29,20 +47,26 @@ const FormCompra = () => {
   }
 
   let precio;
+  let precioPesos;
   switch (tipo) {
     case 0:
-      precio = precios[0]
+      precio = parseInt(precios[0])
+      precioPesos = precio * parseInt(precioDolar)
       break
     case 1:
-      precio = precios[1];
+      precio = parseInt(precios[1]);
+      precioPesos = precio * parseInt(precioDolar)
       break;
     case 2:
-      precio = precios[2];
+      precio = parseInt(precios[2]);
+      precioPesos = precio * parseInt(precioDolar)
       break;
     case 3:
       precio = precios[3];
+      precioPesos = precio * parseInt(precioDolar)
       break;
   }
+
 
   return (
     <div className='bg-[#e9e8e8]'>
@@ -64,7 +88,7 @@ const FormCompra = () => {
                 </div>
               <div>
                 <p className='py-2  text-2xl leading-[40px] max-md:text-2xl font-normal font-[Roboto] text-t-green'><b>Tipo de suscripción:</b> {tipoSuscripcion}</p>
-                <p className='py-2  text-2xl leading-[40px] max-md:text-2xl font-normal font-[Roboto] text-t-green'><b>Precio:</b> <span  className='font-[Lato]'> {precio} </span></p>
+                <p className='py-2  text-2xl leading-[40px] max-md:text-2xl font-normal font-[Roboto] text-t-green'><b>Precio:</b> <span  className='font-[Lato]'>USD {precio} </span> {precioDolar == "0" ?"":`| ARS ${ precioPesos.toLocaleString('es')} `} </p>
               </div>
             </div>
             {/* <div className='w-[100%] bg-s-green text-s-green'> - </div> */}

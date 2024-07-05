@@ -5,7 +5,7 @@ import FormCompra from './FormCompra'
 
 
 
-const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descripcionBoton,noBoton,goto = "#", setTipo}) => {
+const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descripcionBoton,noBoton,goto = "#", setTipo, esPotrero = false}) => {
 
 
   let imagen = pasturometro ? ' w-[35%] max-md:w-[100px] self-center':'w-[35%] max-md:w-[120px] self-center'
@@ -15,12 +15,19 @@ const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descr
   
 
   return (
-    <div className='relative w-[18vw] max-md:w-[80vw] max-md:my-8 max-md:mx-18 min-h-[77vh] max-md:min-h-[67vh] bg-s-green rounded-md flex flex-col items-center justify-between text-center'>
+    <div className='relative w-[18vw] max-md:w-[80vw] max-md:my-8 max-md:mx-18 min-h-[60vh] max-md:min-h-[67vh] bg-s-green rounded-md flex flex-col items-center justify-between text-center'>
         <>
         <div className=''> 
           <h1 className='h-[20%] font-bold text-2xl text-t-green py-2'>{titulo}</h1>
-          <p className='h-[50%] font-semibold text-base px-4 leading-[27px] whitespace-pre-line text-black'>{descripcion}</p>
-        </div>
+          { esPotrero ?
+          <div className='mt-14'>
+            <p className='h-[50%]  font-semibold text-[64px] leading-10 px-4 whitespace-pre-line text-black'>{descripcion}</p>
+            <p className='h-[50%] font-semibold text-[32px] px-4 leading-10 whitespace-pre-line text-black'>potreros</p>
+          </div>
+          :
+          <p className='h-[50%] font-semibold text-xl px-4 leading-[27px] whitespace-pre-line text-black'>{descripcion.toUpperCase()}</p>
+          }
+          </div>
         <div className='w-[100%] h-[30%] flex flex-col justify-end items-center'>
             <img 
                     src = {icono}
@@ -29,21 +36,36 @@ const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descr
                     height={90}
                     className= {imagen}
               ></img>
-            {noBoton ? "":<a href={goto}><button onClick={setTipo} className='px-8 py-2 my-4 w-[220px] bg-first-green rounded-md font-bold text-xl text-white cursor-pointer hover:bg-t-green z-20'>{descripcionBoton}</button></a>}
-            { gratis ?
-                  <div className='flex pb-4 '>
-                      <p className='pb-1 pr-3 invisible'>ARS</p>
-                      <p className='text-3xl font-bold py-0 leading-6 self-end invisible font-[Lato]'>{precio}</p>
+            { esPotrero ?
+                (noBoton ? "" :
+                  <a href={goto}>
+                    <button onClick={setTipo} className='px-8 py-2 mt-4 w-[220px] bg-first-green rounded-md font-bold text-xl text-white cursor-pointer hover:bg-t-green z-20'>
+                      {descripcionBoton}
+                    </button>
+                  </a>
+                )
+              : ""
+            }
+              {gratis ?
+                  <div className='flex pb-4 mt-4 '>
+                      <p className='pb-1 pr-3 invisible text-3xl'>USD</p>
+                      <p className='text-3xl font-bold py-0 leading-6 self-end invisible font-[Lato]'>${precio}</p>
                       <p className='text-xl self-end invisible'> /mes</p>
                   </div>
                         :
-            <div className='flex pb-4 '>
-                <p className='pb-1 pr-3'>ARS</p>
-                <p className='text-2xl font-bold py-0 leading-6 self-end  font-[Lato]'>{precio}</p>
-                <p className='text-xl self-end'> /mes</p>
+            <div className='flex pb-4 mt-4'>
+                <p className='pb-1 pr-3 text-xl'>USD</p>
+                <p className='text-[40px] font-bold py-0  font-[Lato]'>${precio}</p>
+                <p className='text-[40px] self-end'> /mes</p>
             </div>
-            
             }
+            {esPotrero? "" :(noBoton ? "" :
+                  <a href={goto}>
+                    <button onClick={setTipo} className='px-8 py-2 mb-8 w-[220px] bg-first-green rounded-md font-bold text-xl text-white cursor-pointer hover:bg-t-green z-20'>
+                      {descripcionBoton}
+                    </button>
+                  </a>
+                )}
         </div>
         </>
     </div>

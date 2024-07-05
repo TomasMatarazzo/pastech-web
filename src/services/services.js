@@ -78,5 +78,15 @@ async function enviarCorreoCompraGratuita( nombre, correo,numero,tipo) {
     }
 }
 
+async function obtenerPrecioDolar() {
+    const url = `${urlBack}/mercadopago/precio`;
+    try {
+        const response = await axios.get(url);
+        return response.data;
+    } catch (error) {
+        throw new Error('Error al obtener el precio del dólar: ' + error);
+    }
+}
 
-  export { enviarCorreo, generarLink, enviarCorreoCompraGratuita };
+
+  export { enviarCorreo, generarLink, enviarCorreoCompraGratuita,obtenerPrecioDolar };

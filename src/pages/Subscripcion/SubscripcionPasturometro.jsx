@@ -10,7 +10,7 @@ import icono from '../../assets/icons/icono.svg'
 const SubscripcionPasturometro = () => {
   return (
     <section className='mb-10'>
-        <Titulo titulo = 'Subscripción Pasturómetro electrónico' padding={'mt-0 pt-2'}></Titulo>
+        <Titulo titulo = 'Subscripción Pasturómetro electrónico'  pastechSatelital={'max-md:px-16'} padding={'mt-0 pt-2'}></Titulo>
         <div className=' px-4 pt-4 pb-16 flex max-md:flex-col'>
             <div className='absolute w-[100%] max-lg:hidden ' style={{ backgroundImage: `url(${logo}})` }}>
                 <img src = {logo} className=' absolute right-[-11%] w-[400px] h-[400px]'></img>

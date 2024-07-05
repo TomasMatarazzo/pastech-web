@@ -3,13 +3,14 @@ const { MercadoPagoConfig, Preference, MerchantOrder } = require('mercadopago');
 const express = require('express');
 const router = express.Router();
 const fetch = require("node-fetch");
-const precios = require('../PRECIOS');
+const { preciosActualizados, obtenerValorDolar } = require('../PRECIOS');
 
 // Agrega credenciales
 const client = new MercadoPagoConfig({ accessToken: process.env.MP_ACCESS_TOKEN });
 
 router.get('/generarLink', async (req, res) => {
     try {
+        let precios  = await preciosActualizados();
         const preference = new Preference(client);
         const tipo = req.query.tipo;
 
@@ -94,6 +95,19 @@ router.get('/generarLink', async (req, res) => {
     }
 });
 
+router.get('/precio', async (req, res) => {
+    try{
+        let precio = await obtenerValorDolar()
+        console.log(precio)
+        res.end(precio.toString())
+    }
+    catch(e){
+        res.status(404).end("Error al obtener el precio del dolar")   
+    }
+}
+
+
+)
 router.post('/notificar', async (req, res) => {
 
     const { body, query } = req;
