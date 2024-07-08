@@ -55,7 +55,7 @@ const Carta = ({titulo,descripcion,precio,gratis,icono, pasturometro,alta, descr
                         :
             <div className='flex pb-4 mt-4'>
                 <p className='pb-1 pr-3 text-xl'>USD</p>
-                <p className='text-[30px] font-bold py-0  font-[Lato]'>${precio}</p>
+                <p className='text-[30px] font-bold py-0  font-[Roboto]'>${precio}</p>
                 <p className='text-[30px] self-end'> /mes</p>
             </div>
             }

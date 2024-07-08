@@ -87,7 +87,7 @@ const FormCompra = () => {
                 </div>
               <div>
                 <p className='py-2  text-2xl leading-[40px] max-md:text-2xl font-normal font-[Roboto] text-t-green'><b>Tipo de suscripción:</b> {tipoSuscripcion}</p>
-                <p className='py-2  text-2xl leading-[40px] max-md:text-2xl font-normal font-[Roboto] text-t-green'><b>Precio:</b> <span  className='font-[Lato]'>{precio === "Gratuito" ?"":"USD $"}{precio} </span> {(precioDolar == "0" || precio === "Gratuito"  ) ?"":`| ARS $${ precioPesos.toLocaleString('es')} `} </p>
+                <p className='py-2  text-2xl leading-[40px] max-md:text-2xl font-normal font-[Roboto] text-t-green'><b>Precio:</b> <span >{precio === "Gratuito" ?"":"USD $"}{precio} </span> {(precioDolar == "0" || precio === "Gratuito"  ) ?"":<span>| ARS <span className='font-[Lato]'>$</span>{ precioPesos.toLocaleString('es')} </span>} </p>
               </div>
             </div>
             {/* <div className='w-[100%] bg-s-green text-s-green'> - </div> */}

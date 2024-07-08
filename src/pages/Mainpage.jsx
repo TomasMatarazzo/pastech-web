@@ -73,14 +73,14 @@ const Mainpage = () => {
 
         </div>
     <section className='w-full flex justify-center items-center xl:padding-1  max-md:pt-[20px] mt-16 max-md:mt-0'>
-      <ul className='px-12 flex gap-8 flex-wrap justify-center items-start pb-16 mt-4 max-md:gap-0 max-md:px-4 max-md:text-center text-center'>
+      <ul className='px-12 flex gap-4 flex-wrap justify-center items-start pb-16 mt-4 max-md:gap-0 max-md:px-4 max-md:text-center text-center'>
           {data.map((item, index) => (
 
-              <li key={index} className={`  relative max-md:p-8 flex flex-col justify-start max-md:my-8 w-[13vw] h-[20vw] max-md:w-[300px] max-md:h-[350px] text-align:center items-center  ease-in-out transition-all duration-100 hover:border-[#02A79C] hover:border-[5px]`}>
-                  <div className=" max-md:px-0 w-[90%] h-[23vh] max-md:w-full flex relative flex-row  justify-center items-start rounded-[2%] max-md:m-0 max-md:flex-col max-md:justify-center ">
-                        <img src={item.imagen} alt="Whatsapp" className='z-30 self-center' />            
+              <li key={index} className={`  h-[50vh] relative max-md:p-8 flex flex-col justify-start max-md:my-8 w-[13vw] px-1 py-2 max-md:w-[300px] max-md:h-[350px] text-align:center items-center  ease-in-out transition-all duration-100 hover:border-[#02A79C] border-[5px] border-transparent  hover:border-[5px]`}>
+                  <div className=" max-md:px-0 w-[90%] h-[25vh] max-md:w-full flex relative flex-row  justify-center items-start rounded-[2%] max-md:m-0 max-md:flex-col max-md:justify-center ">
+                        <img src={item.imagen} alt="Whatsapp" className='z-30 self-center h-[110px]' />            
                   </div>
-                  <h1 className='pt-4 font-medium text-2xl font-[Roboto] max-md:text-[20px] max-md:font-semibold md:whitespace-pre-line'>{item.titulo}</h1>
+                  <h1 className='pt-4 font-medium text-xl font-[Roboto] max-md:text-[20px] max-md:font-semibold md:whitespace-pre-line'>{item.titulo}</h1>
               </li>
                   ))}
       </ul>
