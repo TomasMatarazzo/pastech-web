@@ -5,6 +5,7 @@ const emailSender = new EmailSender();
 const router = express.Router();
 
 router.post('/emailConsulta', async (req, res) => {
+    // Envio de mails para las consultas de los clientes
     const {nombre,correo,numero,textoConsulta} = req.body;
 
     try {
@@ -16,16 +17,18 @@ router.post('/emailConsulta', async (req, res) => {
 });
 
 router.post('/emailCompra', async (req, res) => {
-    //destructuring del body
+
     const {nombre, correo} = req.body;
     console.log(nombre,correo)
 
     try {
         await emailSender.enviarCorreoCompra(nombre,correo);
+
+        // faltaria avisar a pastech que se realizo una compra
         res.status(200).json({ message: 'Email de compra enviado' });
     } catch (error) {
         console.log(error)
-        res.status(500).json({ error: 'Error al enviar email' });
+        res.status(500).json({error});
     }
 });
 

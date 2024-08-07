@@ -71,6 +71,7 @@ class EmailSender {
     }
 
     async enviarAvisoDeCompra(nombre, correo, numero, tipoCompra) {
+        // Mail de aviso a pastech que se realizo una compra
         let tipoSubscripcion;
         switch(tipoCompra) {
             case "0":
