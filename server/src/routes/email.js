@@ -26,9 +26,9 @@ router.post('/emailCompra', async (req, res) => {
 
         // faltaria avisar a pastech que se realizo una compra
         res.status(200).json({ message: 'Email de compra enviado' });
-    } catch (error) {
-        console.log(error)
-        res.status(500).json({error});
+    } catch (e) {
+        console.log(e)
+        res.status(500).json({error:e});
     }
 });
 
