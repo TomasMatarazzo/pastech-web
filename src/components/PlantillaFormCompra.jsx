@@ -7,6 +7,7 @@ import Button from "./Button"
 import emailjs from '@emailjs/browser';
 import axios from 'axios'
 import {enviarCorreoCompraGratuita, generarLink} from '../services/services'  
+import LoadingSpinner from './Loading'
 
 
 
@@ -14,32 +15,45 @@ export const PlantillaFormCompra = ({tipoSubscripcion}) => {
 
 
   const [error, setError] = useState(false)
+  const [loading, setLoading] = useState(false)
   const [loginExitoso, setLoginExitoso] = useState(false)
+  const [disabled, setIsDisabled] = useState(false)
+
   // const dispatch = useDispatch()
   const methods = useForm({ shouldUnregister: false })
 
   function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-}
+  }
 
 
   const onSubmit = methods.handleSubmit(async data => {
+    setLoading(true)
+    setIsDisabled(true)
+
     try{ 
-      if (tipoSubscripcion === 0){
-        const link = await enviarCorreoCompraGratuita(data.nombre,data.correo,data.numero,tipoSubscripcion)
-        setLoginExitoso(true)
-        await wait(2000)
-        routeChange('https://pastech.com.ar/confirmacion');
-      }
-      else{
-        const link = await generarLink(data.correo,data.nombre,data.numero,tipoSubscripcion)
-        setLoginExitoso(true)
-        routeChange(link);
-      }
+        if (tipoSubscripcion === 0){
+          const link = await enviarCorreoCompraGratuita(data.nombre,data.correo,data.numero,tipoSubscripcion)
+          setLoginExitoso(true)
+          setLoading(false)
+          await wait(2000)
+          routeChange('https://pastech.com.ar/confirmacion');
+        }
+        else{
+          const link = await generarLink(data.correo,data.nombre,data.numero,tipoSubscripcion)
+          setLoading(false)
+          setLoginExitoso(true)
+          routeChange(link);
+        }
     }
     catch (error) {
       console.error(error);
       setError(true)
+    }
+    finally {
+      setTimeout(() => {
+        setIsDisabled(false);
+      }, 120000); // 120000ms = 2 minutos
     }
   })
 
@@ -55,7 +69,10 @@ export const PlantillaFormCompra = ({tipoSubscripcion}) => {
             <Input {...nombreValidation}/>
             <Input {...numeroValidation}/>
             <Input {...correoValidation}/>
-            <Button  text = {"ADQUIRIR SUSCRIPCION"} color = {"green"} onClick = {onSubmit}></Button>
+            {loading && (
+              <LoadingSpinner></LoadingSpinner>
+            )}
+            <Button  text = {"ADQUIRIR SUSCRIPCIÓN"} color = {"green"} onClick = {onSubmit} disabled = {disabled || loading}></Button>
         </form>
             {loginExitoso && (
               <p className="flex items-center gap-1 text-2xl px-2 font-semibold mt-4 text-green-500 bg-green-100 mb-5">

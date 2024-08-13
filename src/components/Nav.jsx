@@ -13,9 +13,7 @@ const Nav = () => {
       {name:"Pastech Dron",link:"/pastech-dron"},
 
       // {name:"Servicios",link:"/servicios"},
-      {name:"Subscripción",link:"/subscripcion"},
-      {name:"Preguntas Frecuentes",link:"/preguntas"},
-      {name:"Novedades",link:"/novedades"},
+      {name:"Suscripción",link:"/subscripcion"},
       {name:"Contacto",link:"/contacto"},
     ];
     let [open,setOpen]=useState(false);

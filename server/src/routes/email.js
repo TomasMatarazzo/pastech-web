@@ -18,19 +18,35 @@ router.post('/emailConsulta', async (req, res) => {
 
 router.post('/emailCompra', async (req, res) => {
 
-    const {nombre, correo} = req.body;
+    const {nombre, correo,numero} = req.body;
     console.log(nombre,correo)
 
     try {
         await emailSender.enviarCorreoCompra(nombre,correo);
 
-        // faltaria avisar a pastech que se realizo una compra
+        // await emailSender.enviarAvisoDeCompra(nombre,correo,numero,"0");
         res.status(200).json({ message: 'Email de compra enviado' });
     } catch (e) {
         console.log(e)
-        res.status(500).json({error:e});
+        res.status(500).json(e);
     }
 });
+
+// router.post('/emailCompraGratuito', async (req, res) => {
+
+//     const {nombre, correo} = req.body;
+//     console.log(nombre,correo)
+
+//     try {
+//         await emailSender.enviarCorreoCompra(nombre,correo);
+
+//         // faltaria avisar a pastech que se realizo una compra
+//         res.status(200).json({ message: 'Email de compra enviado' });
+//     } catch (e) {
+//         console.log(e)
+//         res.status(500).json(e);
+//     }
+// });
 
 router.post('/emailAvisoCompra', async (req, res) => {
     const {nombre,correo,numero,tipo} = req.body;

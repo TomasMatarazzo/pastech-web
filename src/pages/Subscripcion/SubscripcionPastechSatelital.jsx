@@ -20,7 +20,7 @@ const SubscripcionPastechSatelital = () => {
 
   return (
     <section className='mb-10'>
-            <Titulo titulo = 'Subscripción Pastech Satelital' pastechSatelital={'max-md:px-16'}></Titulo>
+            <Titulo titulo = 'Suscripción Pastech Satelital' pastechSatelital={'max-md:px-16'}></Titulo>
             <div className={`flex relative  justify-center items-center flex-col rounded-[2%] max-md:text-center pb-6`}>
                 <h1 className= {` inline-block max-md:px-16  pb-0 text-2xl leading-[30px] max-md:text-[20px] font-bold text-t-green font-[Roboto]`}>Mediciones automáticas y remotas de stock de pasto con satélites e inteligencia artificial</h1>
             </div>

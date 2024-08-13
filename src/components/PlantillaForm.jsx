@@ -4,28 +4,40 @@ import { Input } from './Input'
 import { correoValidation, nombreValidation,numeroValidation,textoValidation} from '../utils/inputValidation'
 import Button from "./Button"
 import { enviarCorreo } from '../services/services'
+import LoadingSpinner from './Loading'
 
 
 
 export const PlantillaForm = () => {
 
   
-  
+  const [disabled, setIsDisabled] = useState(false)
+  const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
   const [loginExitoso, setLoginExitoso] = useState(false)
   // const dispatch = useDispatch()
+
+  function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
   
   const methods = useForm({ shouldUnregister: false })
   const url = 'http://localhost:3000/email/emailConsulta'
 
   const onSubmit = methods.handleSubmit(async data => {
-    console.log('la informacion es', data)
-    setLoginExitoso(true)
+    setIsDisabled(true)
+    setLoading(true)
     await enviarCorreo(data.nombre,data.correo,data.numero,data.mensaje)
+    setLoginExitoso(true)
+    setLoading(false)
     methods.resetField('nombre')
     methods.resetField('correo')
     methods.resetField('numero')
     methods.resetField('mensaje')
+    setTimeout(()=>{
+      setIsDisabled(false)
+    },120000)
   })
 
 
@@ -39,7 +51,8 @@ export const PlantillaForm = () => {
             <Input {...numeroValidation}/>
             <Input {...correoValidation}/>
             <Input  esTexto = {true} {...textoValidation}/>
-            <Button  text = {"ENVIAR"} color = {"green"} onClick = {onSubmit}></Button>
+            { loading && <LoadingSpinner></LoadingSpinner>}
+            <Button  text = {"ENVIAR"} color = {"green"} onClick = {onSubmit} disabled={disabled || loading}></Button>
 
         </form>
             {loginExitoso && (

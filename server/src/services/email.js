@@ -20,40 +20,16 @@ class EmailSender {
             subject: 'Nuevo mensaje de consulta recibido',
             html: `
                 <html>
-                <head>
-                    <style>
-                        body {
-                            background-color: #c7f168; /* Fondo verde claro */
-                            color: #000000; /* Texto negro */
-                            font-family: Arial, sans-serif; /* Fuente del texto */
-                        }
-                        .container {
-                            max-width: 600px;
-                            margin: 0 auto;
-                            padding: 20px;
-                        }
-                        h1 {
-                            color: #ffffff; /* Texto blanco */
-                        }
-                        .logo {
-                                margin-bottom: 20px;
-                                margin:auto;
-                                width:100px;
-                                height:100px;
-                                display: block;
-                            }
-                    </style>
-                </head>
                 <body>
-                    <div class="container">
+                    <div>
                         <h1>Nuevo mensaje de consulta recibido</h1>
                         <p>Hola,</p>
                         <p>Se ha recibido un nuevo mensaje de consulta a través del formulario en la página web:</p>
                         <ul>
-                            <li><strong>Nombre del consultor:</strong> ${nombre}</li>
-                            <li><strong>Número de contacto:</strong> ${numero}</li>
-                            <li><strong>Correo electrónico:</strong> ${correo}</li>
-                            <li><strong>Texto de la consulta:</strong> ${textoConsulta}</li>
+                            <li>Nombre del consultor: ${nombre}</li>
+                            <li>Número de contacto: ${numero}</li>
+                            <li>Correo electrónico: ${correo}</li>
+                            <li>Texto de la consulta: ${textoConsulta}</li>
                         </ul>
                         <p>Saludos,<br/>El equipo de Pastech</p>
                     </div>
@@ -93,45 +69,19 @@ class EmailSender {
         const mailOptions = {
             from: from,
             to: mailReceptor, // aca iria el mail de fernando
-            subject: 'Nueva compra realizada en tu empresa',
+            subject: 'Nueva compra realizada en Pastech',
             html: `
                 <html>
-                <head>
-                    <style>
-                        body {
-                            background-color: #c7f168; /* Fondo verde claro */
-                            color: #000000; /* Texto negro */
-                            font-family: Arial, sans-serif; /* Fuente del texto */
-                        }
-                        .container {
-                            max-width: 600px;
-                            margin: 0 auto;
-                            padding: 20px;
-                        }
-                        h1 {
-                            color: #000000; /* Texto blanco */
-                        }
-                        .logo {
-                            margin-bottom: 20px;
-                            margin:auto;
-                            width:100px;
-                            height:100px;
-                            display: block;
-                        }
-                    </style>
-                </head>
                 <body>
-                    <div class="container">
-                        <h1>Nueva compra realizada en tu empresa</h1>
-                        <p>Hola,</p>
-                        <p>Se ha realizado una nueva compra en tu empresa:</p>
+                    <div >
+                        <h1>Nueva compra realizada en Pastech</h1>
                         <ul>
                             <li><strong>Nombre del comprador:</strong> ${nombre}</li>
                             <li><strong>Número de contacto:</strong> ${numero}</li>
                             <li><strong>Correo electrónico:</strong> ${correo}</li>
                             <li><strong>Tipo de subscripción:</strong> ${tipoSubscripcion}</li>
                         </ul>
-                        <p>Saludos,<br/>El equipo de Pastech</p>
+                        <p>Saludos</p>
                     </div>
                 </body>
                 </html>
@@ -140,7 +90,7 @@ class EmailSender {
         try {
             console.log('hola')
             await this.transporter.sendMail(mailOptions);
-            console.log('¡Tu correo ha sido enviado!');
+            console.log('¡Se envio mail a fernando!');
         } catch (error) {
             throw new Error('¡Vaya! ' + JSON.stringify(error));
         }
@@ -150,42 +100,16 @@ class EmailSender {
         const mailOptions = {
             from: from,
             to: correoDestino,
-            subject: 'Gracias por realizar una compra con Pastech',
+            subject: 'Bienvenido a Pastech',
             html: `
                 <html>
-                <head>
-                    <style>
-                        body {
-                            background-color: #c7f168; /* Fondo blanco */
-                            color: #000000; /* Texto negro */
-                            font-family: Arial, sans-serif; /* Fuente del texto */
-                        }
-                        .container {
-                            max-width: 600px;
-                            margin: 0 auto;
-                            padding: 20px;
-                        }
-                        h1 {
-                            color: #000000; /* Texto azul */
-                        }
-                        .logo {
-                            margin-bottom: 20px;
-                            margin:auto;
-                            width:150px;
-                            height:150px;
-                            display: block;
-                        }
-                    </style>
-                </head>
                 <body>
-                <div class="container">
-                    <h2>¡Gracias por adquirir nuestros servicios en Pastech!</h2>
+                <div >
+                    <h2>¡Gracias por adquirir nuestros servicios!</h2>
                     <p>Hola, ${nombre}</p>
-                    <p>Agradecemos sinceramente tu elección de nuestros servicios. Para comenzar a disfrutar de nuestra plataforma, te invitamos a visitar <a href="http://www.pastech2.com.ar">www.pastech2.com.ar</a>.</p>
-                    <strong>
-                        <p>¡Gracias por confiar en nosotros!.</p>
-                        <p>Saludos,<br/>El equipo de Pastech</p>
-                    </strong>
+                    <p>Para comenzar a disfrutar de nuestra plataforma, te invitamos a visitar <a href="https://www.pastech2.com.ar"> https://www.pastech2.com.ar </a>.</p>
+                    <p>Nos alegra que nos hayas elegido para tus necesidades tecnológicas.</p>
+                    <p>Saludos,<br/>El equipo de Pastech</p>
                 </div>
                 </body>
                 </html>
@@ -194,7 +118,7 @@ class EmailSender {
         try {
             console.log('hola')
             await this.transporter.sendMail(mailOptions);
-            console.log('¡Tu correo ha sido enviado!');
+            console.log('¡Se envio mail a comprador!');
         } catch (error) {
             throw new Error('¡Vaya! ' + JSON.stringify(error));
         }

@@ -69,7 +69,7 @@ const FormCompra = () => {
 
   return (
     <div className='bg-[#e9e8e8]'>
-      <Titulo titulo='Subscripción'></Titulo>
+      <Titulo titulo='Suscripción'></Titulo>
 
       <section className='py-8 px-48  max-md:px-8 min-h-[80vh] z-10'>
         <section className='flex items-center justify-center flex-col text-center'>
