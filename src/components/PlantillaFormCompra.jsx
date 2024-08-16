@@ -49,6 +49,7 @@ export const PlantillaFormCompra = ({tipoSubscripcion}) => {
     catch (error) {
       console.error(error);
       setError(true)
+      setLoading(false)
     }
     finally {
       setTimeout(() => {
