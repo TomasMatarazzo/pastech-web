@@ -79,9 +79,9 @@ export const PlantillaFormCompra = ({tipoSubscripcion}) => {
                 Generación de pago exitosa.
               </p>
             )}
-            {error && (
-              <p className="flex items-center gap-1 text-2xl px-2 font-semibold mt-4 text-red-500 bg-red-100 mb-5">
-                Error en la generacion del Pago. Contactarse por Correo o WhatsApp.
+            {!error && (
+              <p className="text-2xl px-2 font-semibold mt-4 text-red-500 bg-red-100 mb-5">
+                Error al generar el registro.<br ></br> Para ingresar a Pastech Satelital ingrese al siguiente link: <a href='https://pastech2.com.ar' className=' text-gray-600 italic' >www.pastech2.com.ar</a> o comuníquese por WhatsApp a 2235270021
               </p>
             )}
       </FormProvider>
