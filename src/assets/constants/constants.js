@@ -59,7 +59,7 @@ const productosLinks = [
   ];
 
 const linksFooter = [
-    { nombre: "Suscripción", link: "/subscripcion" },
+    // { nombre: "Suscripción", link: "/subscripcion" },
     { nombre: "Preguntas Frecuentes", link: "/preguntas" },
     { nombre: "Novedades", link: "/novedades" },
     { nombre: "Contacto", link: "/contacto" }

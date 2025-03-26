@@ -40,7 +40,7 @@ const PastechSatelital = ({titulo}) => {
       img1 = {imagenUsuario}
       img2 = {imagenSatelite}
     ></CirculosStepPasturometro>
-    <SubscripcionPastechSatelital></SubscripcionPastechSatelital>
+    {/* <SubscripcionPastechSatelital></SubscripcionPastechSatelital> */}
     </>
   )
 }
